@@ -9,6 +9,7 @@
 
 /* Desktop */
 @media screen and (min-width:1200px) {
+    /* Disabling footer because no extra space is required at the bottom */
     #footer {
         height: 0;
         content: '';

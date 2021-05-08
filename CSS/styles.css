@@ -41,30 +41,26 @@ img {
 
 /* Desktop */
 @media screen and (min-width:1200px) {
+    /* Fitting pages to entire height */
+    /* Removing padding at the top since no extra space is required at the bottom */
     .page {
         height: 100vh;
         padding-top: 0vh !important;
-    }
-
-    .page_content {
-        height: 78vh;
     }
 }
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    /* Reducing font sizes */
     .page h1 {
         font-size: 1rem;
     }
-
     .page h2 {
         font-size: 0.85rem;
     }
-
     .page h3 {
         font-size: 0.7rem;
     }
-
     .page p {
         font-size: 0.5rem;
     }

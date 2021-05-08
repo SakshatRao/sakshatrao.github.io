@@ -4,6 +4,7 @@
 
 /* Desktop */
 @media screen and (min-width:1200px) {
+    /* Adding background color */
     #skills {
         background-color: darkkhaki;
     }

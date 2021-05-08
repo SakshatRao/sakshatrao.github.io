@@ -1,4 +1,4 @@
-// Animate Smooth Scroll
+// Animate Smooth Scroll to top of page
 $('.scroll_button').on('click', function() {
     $('html, body').animate(
         {
@@ -8,6 +8,7 @@ $('.scroll_button').on('click', function() {
     );
 });
 
+// Animate Smooth Scroll to top of content
 $('.scroll_button_2').on('click', function() {
     $('html, body').animate(
         {

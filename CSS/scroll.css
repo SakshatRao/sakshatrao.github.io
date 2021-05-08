@@ -24,10 +24,12 @@
 
 /* Desktop */
 @media screen and (min-width:1200px) {
+    /* Disabling scroll to top of page */
     .scroll_button {
         display: none;
     }
 
+    /* Enabling scroll to top of content */
     .scroll_button_2 {
         display: inline;
         width: 34px;
