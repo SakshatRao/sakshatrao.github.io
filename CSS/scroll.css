@@ -1,0 +1,47 @@
+.scroll_button {
+    width: 34px;
+    height: 34px;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom left, white, gray, black);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.scroll_button_2 {
+    display: none;
+}
+
+/* .frontpage_scroll {
+    padding-top: 0 0 10vh 10vh;
+} */
+
+/* Tablets / IPads */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+    .scroll_button {
+        display: none;
+    }
+
+    .scroll_button_2 {
+        display: inline;
+        width: 34px;
+        height: 34px;
+        border-bottom: 10px solid black;
+        border-left: 10px solid black;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to bottom left, white, gray, black);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+/* Rotated mobile */
+@media screen and (max-height: 500px) {
+}

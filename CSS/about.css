@@ -1,0 +1,14 @@
+/* Tablets / IPads */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+    #about {
+        background-color: cornflowerblue;
+    }
+}
+
+/* Rotated mobile */
+@media screen and (max-height: 500px) {
+}
