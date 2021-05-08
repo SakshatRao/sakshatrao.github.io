@@ -14,10 +14,6 @@
     display: none;
 }
 
-/* .frontpage_scroll {
-    padding-top: 0 0 10vh 10vh;
-} */
-
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 }
@@ -46,4 +42,11 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    .scroll_button {
+        width: 17px;
+        height: 17px;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        border-width: 2px;
+    }
 }

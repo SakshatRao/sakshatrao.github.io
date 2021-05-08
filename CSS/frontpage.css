@@ -26,7 +26,7 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     /* Reducing width of content area */
     #frontpage_content {
-        width: 50%;
+        width: 40%;
     }
 }
 
@@ -51,7 +51,12 @@
 @media screen and (max-height: 500px) {
     /* Reducing width of content area */
     #frontpage_content {
-        width: 10%;
+        width: 50%;
+    }
+
+    #frontpage_img img {
+        width: 20%;
+        margin: auto;
     }
 
     /* Reducing font sizes */
