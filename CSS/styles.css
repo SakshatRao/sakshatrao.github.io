@@ -2,6 +2,10 @@
 
 /* Style is assumed for width<768 and height>768 */
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -30,6 +34,26 @@ img {
     flex: 1;
 }
 
+/* Reducing font sizes */
+.page h1 {
+    font-size: 2rem;
+}
+.page h2 {
+    font-size: 1.5rem;
+}
+.page h3 {
+    font-size: 1.17rem;
+}
+.page h4 {
+    font-size: 1rem;
+}
+.page h5 {
+    font-size: 0.83rem;
+}
+.page p {
+    font-size: 0.75rem;
+}
+
 .page_content {
     width: 90%;
     height: 78vh;
@@ -46,6 +70,26 @@ img {
     .page {
         height: 100vh;
         padding-top: 0vh !important;
+    }
+
+    /* Reducing font sizes */
+    .page h1 {
+        font-size: 2.5rem;
+    }
+    .page h2 {
+        font-size: 1.875rem;
+    }
+    .page h3 {
+        font-size: 1.45rem;
+    }
+    .page h4 {
+        font-size: 1.25rem;
+    }
+    .page h5 {
+        font-size: 1rem;
+    }
+    .page p {
+        font-size: 0.935rem;
     }
 }
 
