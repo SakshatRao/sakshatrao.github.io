@@ -110,4 +110,8 @@
     .about_text {
         flex: 3;
     }
+
+    .about_box {
+        padding: 2px;
+    }
 }

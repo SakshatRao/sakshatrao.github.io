@@ -1,3 +1,45 @@
+.experience_timeline {
+    background-color: blueviolet;
+    border-left: 2px solid black;
+}
+
+.timeline_point {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.timeline_info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.timeline_circle {
+    margin-left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: cyan;
+}
+
+.timeline_date {
+    height: 100%;
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.timeline_text {
+    display: block;
+}
+
+.timeline_duration {
+    margin: auto 0;
+    padding-right: 10px;
+}
+
+
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 }
