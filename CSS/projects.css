@@ -48,6 +48,32 @@
 
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .project_box:nth-of-type(5), .project_box:nth-of-type(6) {
+        display: flex;
+    }
+
+    .projects_boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project_box {
+        flex-direction: column;
+        margin: 10px 10px;
+        flex: 1;
+        min-width: 30%;
+    }
+
+    .project_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project_button {
+        margin: 0 10px;
+    }
 }
 
 /* Desktop */
