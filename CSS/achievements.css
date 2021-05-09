@@ -10,25 +10,93 @@
 }
 
 .achievement_box {
+    background-color: hotpink;
+    margin: 5px auto;
     width: 100%;
+}
+
+.achievement_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hotpink;
-    margin: 5px auto;
 }
 
-.achievement_box h5 {
+.achievement_image {
+    display: none;
+}
+
+.achievement_name {
     padding: 0 5px;
 }
 
-.achievement_box p {
-    padding: 0 10px;
+.achievement_title, .achievement_button {
+    margin: 0 10px;
+}
+
+.achievement_button p {
+    padding: 0 5px;
+}
+
+.achievement_button {
+    background-color: cornflowerblue;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .achievements_boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .achievement_box {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .achievement_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .achievement_image {
+        display: block;
+        flex: 1;
+    }
+
+    .achievement_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .achievement_name {
+        padding: 5px 5px;
+        margin: 0;
+    }
+    
+    .achievement_title, .achievement_button {
+        padding: 2px 5px;
+        margin: 0;
+    }
+
+    .achievement_button {
+        display: inline-block;
+        margin: 5px auto;
+    }
+
+    .achievement_button p {
+        padding: 0 5px;
+        margin: 0;
+    }
 }
 
 /* Desktop */
@@ -36,6 +104,56 @@
     /* Adding background color */
     #achievements    {
         background-color: goldenrod;
+    }
+
+    .achievements_boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .achievement_box {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .achievement_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .achievement_image {
+        display: block;
+        flex: 1;
+    }
+
+    .achievement_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .achievement_name {
+        padding: 5px 5px;
+        margin: 0;
+    }
+    
+    .achievement_title, .achievement_button {
+        padding: 2px 5px;
+        margin: 0;
+    }
+
+    .achievement_button {
+        display: inline-block;
+        margin: 5px auto;
+    }
+
+    .achievement_button p {
+        padding: 0 5px;
+        margin: 0;
     }
 }
 
