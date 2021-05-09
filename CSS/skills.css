@@ -1,3 +1,23 @@
+.skill_boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_box {
+    flex: 1;
+    background-color:cyan;
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.skill_name {
+    font-weight: bold;
+}
+
+
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 }

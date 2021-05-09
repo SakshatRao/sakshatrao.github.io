@@ -9,10 +9,6 @@
 
 .project_box {
     background-color: lightskyblue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     flex: 1;
     margin: 10px 0;
 }
@@ -21,8 +17,17 @@
     display: none;
 }
 
+.project_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_image {
+    display: none;
+}
+
 .project_title {
-    display: inline-block;
     margin: 0 5px;
     font-weight: bold;
 }
@@ -48,32 +53,6 @@
 
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .project_box:nth-of-type(5), .project_box:nth-of-type(6) {
-        display: flex;
-    }
-
-    .projects_boxes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .project_box {
-        flex-direction: column;
-        margin: 10px 10px;
-        flex: 1;
-        min-width: 30%;
-    }
-
-    .project_buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .project_button {
-        margin: 0 10px;
-    }
 }
 
 /* Desktop */
@@ -88,6 +67,7 @@
     }
 
     .projects_boxes {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -103,11 +83,28 @@
     .project_buttons {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .project_button {
         margin: 0 10px;
+    }
+
+    .project_image {
+        display: block;
+        flex: 1;
+    }
+
+    .project_image img {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .project_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
     }
 }
 
