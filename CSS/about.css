@@ -27,6 +27,10 @@
     margin: auto;
 }
 
+.about_text2 {
+    display: none;
+}
+
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
@@ -64,6 +68,10 @@
         width: 100%;
         height: auto;
         margin: auto;
+    }
+
+    .about_text2 {
+        display: inline;
     }
 }
 
