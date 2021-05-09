@@ -1,0 +1,44 @@
+#achievements_content {
+    width: 100% !important;
+}
+
+.achievements_boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.achievement_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    margin: 5px auto;
+}
+
+.achievement_box h5 {
+    padding: 0 5px;
+}
+
+.achievement_box p {
+    padding: 0 10px;
+}
+
+
+/* Tablets / IPads / Squarer Phones */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+    /* Adding background color */
+    #achievements    {
+        background-color: goldenrod;
+    }
+}
+
+/* Rotated mobile */
+@media screen and (max-height: 500px) {
+}
