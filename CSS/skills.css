@@ -1,4 +1,4 @@
-.skill_boxes {
+.skills_boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +17,46 @@
     font-weight: bold;
 }
 
+.skill_detail1, .skill_detail2, .skills_others, .skills_heading {
+    display: none;
+}
+
 
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .skills_boxes {
+        flex-direction: row;
+    }
+
+    .skill_box {
+        width: 30%;
+        margin: 0 10px;
+    }
+
+    .skill_info1, .skill_info2 {
+        display: none;
+    }
+
+    .skill_detail1, .skill_detail2, .skills_others, .skills_heading {
+        display: block;
+    }
+
+    .skills_others_boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill_other_box {
+        background-color: cyan;
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .skill_other_text {
+        display: inline-block;
+    }
 }
 
 /* Desktop */
@@ -27,6 +64,40 @@
     /* Adding background color */
     #skills {
         background-color: darkkhaki;
+    }
+
+    .skills_boxes {
+        flex-direction: row;
+    }
+
+    .skill_box {
+        width: 30%;
+        margin: 0 10px;
+    }
+
+    .skill_info1, .skill_info2 {
+        display: none;
+    }
+
+    .skill_detail1, .skill_detail2, .skills_others, .skills_heading {
+        display: block;
+    }
+
+    .skills_others_boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill_other_box {
+        background-color: cyan;
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .skill_other_text {
+        display: inline-block;
     }
 }
 
