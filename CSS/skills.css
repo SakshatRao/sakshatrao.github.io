@@ -31,6 +31,7 @@
     .skill_box {
         width: 30%;
         margin: 0 10px;
+        padding: 5px;
     }
 
     .skill_info1, .skill_info2 {
@@ -52,6 +53,7 @@
         background-color: cyan;
         flex: 1;
         margin: 0 10px;
+        padding: 5px;
     }
 
     .skill_other_text {
@@ -73,6 +75,7 @@
     .skill_box {
         width: 30%;
         margin: 0 10px;
+        padding: 5px;
     }
 
     .skill_info1, .skill_info2 {
@@ -94,6 +97,7 @@
         background-color: cyan;
         flex: 1;
         margin: 0 10px;
+        padding: 5px;
     }
 
     .skill_other_text {
@@ -103,4 +107,25 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    .skills_boxes {
+        flex-direction: row;
+    }
+
+    .skill_box {
+        width: 30%;
+        margin: 0 10px;
+        padding: 5px;
+    }
+
+    .skill_info1, .skill_info2 {
+        display: none;
+    }
+
+    .skill_detail1, .skill_detail2, .skills_heading2 {
+        display: block;
+    }
+
+    #skills p {
+        font-size: 0.5rem;
+    }
 }

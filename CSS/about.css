@@ -97,21 +97,29 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
-    /* Fitting first image to 80% of its width */
+    /* Changing orientation of boxes */
+    .about_info {
+        display: flex;
+        flex-direction: row;
+        height: 100%;   
+    }
+
+    /* Changing orientation of content of boxes */
+    .about_box {
+        flex-direction: column;
+        margin: 0 10px;
+        height: 100%;
+        padding: 5px;
+        flex: 1;
+    }
+
     .about_box_box img {
-        width: 100%;
+        width: 60%;
+        height: auto;
         margin: auto;
     }
 
-    /* Increasing weightage of text in box */
-    .about_img {
-        flex: 1;
-    }
-    .about_text {
-        flex: 3;
-    }
-
-    .about_box {
-        padding: 2px;
-    }
+    /* .about_text2 {
+        display: inline;
+    } */
 }

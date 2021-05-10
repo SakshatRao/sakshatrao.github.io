@@ -61,6 +61,25 @@ img {
 
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* Reducing font sizes */
+    .page h1 {
+        font-size: 2.5rem;
+    }
+    .page h2 {
+        font-size: 1.875rem;
+    }
+    .page h3 {
+        font-size: 1.45rem;
+    }
+    .page h4 {
+        font-size: 1.25rem;
+    }
+    .page h5 {
+        font-size: 1rem;
+    }
+    .page p {
+        font-size: 0.935rem;
+    }
 }
 
 /* Desktop */
@@ -97,26 +116,26 @@ img {
 @media screen and (max-height: 500px) {
     /* Reducing font sizes */
     .page h1 {
-        font-size: 0.75rem;
+        font-size: 1.25rem;
     }
     .page h2 {
-        font-size: 0.6rem;
+        font-size: 1.1rem;
     }
     .page h3 {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
     }
     .page h4 {
-        font-size: 0.4rem;
+        font-size: 0.75rem;
     }
     .page h5 {
-        font-size: 0.3rem;
+        font-size: 0.6rem;
     }
     .page p {
-        font-size: 0.2rem;
+        font-size: 0.4rem;
     }
 
     .page {
-        width: 40%;
+        width: 100%;
         margin: auto;
     }
 }

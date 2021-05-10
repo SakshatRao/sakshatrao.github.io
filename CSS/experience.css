@@ -73,4 +73,12 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    #experience {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .timeline_point {
+        margin: 10px 0;
+    }
 }

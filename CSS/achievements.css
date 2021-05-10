@@ -202,4 +202,21 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    #achievements {
+        width: 75%;
+    }
+
+    .achievement_title, .achievement_button {
+        margin: 0 5px;
+    }
+    
+    .achievement_button p {
+        padding: 0 5px;
+        margin: 2px 0;
+        font-size: 0.4rem;
+    }
+
+    .achievement_name {
+        margin: 10px auto;
+    }
 }

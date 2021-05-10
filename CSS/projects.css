@@ -188,4 +188,19 @@
 
 /* Rotated mobile */
 @media screen and (max-height: 500px) {
+    #projects {
+        width: 75%;
+    }
+
+    .project_text {
+        justify-content: space-between;
+    }
+
+    .project_box {
+        margin: 5px 0;
+    }
+
+    .project_button p {
+        padding: 1px;
+    }
 }
