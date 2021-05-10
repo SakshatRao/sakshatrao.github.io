@@ -57,6 +57,65 @@
 
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .project_box:nth-of-type(5), .project_box:nth-of-type(6) {
+        display: flex;
+    }
+
+    .projects_boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project_box {
+        flex-direction: column;
+        margin: 10px 10px;
+        flex: 1;
+        min-width: 30%;
+    }
+
+    .project_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .project_button {
+        margin: 0 10px;
+    }
+
+    .project_image {
+        display: block;
+        flex: 1;
+    }
+
+    .project_image img {
+        width: 75%;
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .project_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .project_extra_button {
+        display: block;
+    }
+
+    .project_extra_button {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .project_extra_button p {
+        background-color: lime;
+        border: 1px solid black;
+        padding: 2px;
+    }
 }
 
 /* Desktop */

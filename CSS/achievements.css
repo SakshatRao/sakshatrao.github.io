@@ -108,8 +108,16 @@
         display: inline-block;
         margin: 5px auto;
     }
+    
+    .achievement_button2 {
+        background-color: cornflowerblue;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
 
-    .achievement_button p {
+    .achievement_button2 p {
         padding: 0 5px;
         margin: 0;
     }
