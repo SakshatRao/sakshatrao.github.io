@@ -56,7 +56,7 @@
 }
 
 /* Tablets / IPads / Squarer Phones */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
     .project_box:nth-of-type(5), .project_box:nth-of-type(6) {
         display: flex;
     }
@@ -187,7 +187,7 @@
 }
 
 /* Rotated mobile */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 499px) and (max-width: 1199px) {
     #projects {
         width: 75%;
     }

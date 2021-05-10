@@ -60,7 +60,7 @@ img {
 }
 
 /* Tablets / IPads */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
     /* Reducing font sizes */
     .page h1 {
         font-size: 2.5rem;
@@ -113,7 +113,7 @@ img {
 }
 
 /* Rotated mobile */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 499px) and (max-width: 1199px) {
     /* Reducing font sizes */
     .page h1 {
         font-size: 1.25rem;

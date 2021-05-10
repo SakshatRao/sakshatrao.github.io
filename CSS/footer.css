@@ -4,7 +4,7 @@
 }
 
 /* Tablets / IPads */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
 }
 
 /* Desktop */
@@ -17,5 +17,5 @@
 }
 
 /* Rotated mobile */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 499px) and (max-width: 1199px) {
 }

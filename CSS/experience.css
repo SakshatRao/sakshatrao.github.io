@@ -45,7 +45,7 @@
 
 
 /* Tablets / IPads */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
     .timeline_point {
         margin: 20px 0;
     }
@@ -72,7 +72,7 @@
 }
 
 /* Rotated mobile */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 499px) and (max-width: 1199px) {
     #experience {
         width: 50%;
         margin: 0 auto;
