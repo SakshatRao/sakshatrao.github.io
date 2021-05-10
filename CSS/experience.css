@@ -6,7 +6,7 @@
     background-color: blueviolet;
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .timeline_info {
@@ -39,6 +39,10 @@
     padding-right: 10px;
 }
 
+.timeline_descr {
+    display: none;
+}
+
 
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -53,6 +57,10 @@
 
     .timeline_point {
         margin: 20px 0;
+    }
+
+    .timeline_descr {
+        display: block;
     }
 }
 

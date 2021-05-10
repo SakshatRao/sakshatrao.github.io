@@ -13,11 +13,11 @@
     width: 100%;
 }
 
-.skill_name {
+.skill_name, .skill_other_name {
     font-weight: bold;
 }
 
-.skill_detail1, .skill_detail2, .skills_others, .skills_heading {
+.skill_detail1, .skill_detail2, .skills_others, .skills_heading2 {
     display: none;
 }
 

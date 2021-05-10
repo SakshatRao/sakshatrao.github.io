@@ -35,6 +35,7 @@
 
 .achievement_button p {
     padding: 0 5px;
+    font-size: 0.6rem;
 }
 
 .achievement_button {
@@ -43,6 +44,10 @@
     color: black;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.achievement_buttons, .achievement_button2 {
+    display: none;
 }
 
 
@@ -89,6 +94,17 @@
     }
 
     .achievement_button {
+        display: none;
+    }
+
+    .achievement_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .achievement_button2 {
         display: inline-block;
         margin: 5px auto;
     }
@@ -132,9 +148,8 @@
     }
 
     .achievement_image img {
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin: 0 auto;
     }
 
     .achievement_name {
@@ -148,11 +163,30 @@
     }
 
     .achievement_button {
+        display: none;
+    }
+
+    .achievement_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .achievement_button2 {
         display: inline-block;
         margin: 5px auto;
     }
+    
+    .achievement_button2 {
+        background-color: cornflowerblue;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
 
-    .achievement_button p {
+    .achievement_button2 p {
         padding: 0 5px;
         margin: 0;
     }

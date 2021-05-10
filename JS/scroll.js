@@ -4,7 +4,7 @@ $('.scroll_button').on('click', function() {
         {
         scrollTop: $($(this).attr('href')).offset().top
         },
-        1500
+        1200
     );
 });
 
@@ -14,6 +14,6 @@ $('.scroll_button_2').on('click', function() {
         {
         scrollTop: $($(this).attr('href')).offset().top
         },
-        1500
+        1200
     );
 });

@@ -51,6 +51,10 @@
     padding: 2px;
 }
 
+.project_extra_button {
+    display: none;
+}
+
 /* Tablets / IPads / Squarer Phones */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 }
@@ -98,13 +102,28 @@
     .project_image img {
         width: 75%;
         height: auto;
-        margin: 0 auto;
+        margin: 5px auto;
     }
 
     .project_text {
         display: inline-block;
         width: 100%;
         flex: 1;
+    }
+
+    .project_extra_button {
+        display: block;
+    }
+
+    .project_extra_button {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .project_extra_button p {
+        background-color: lime;
+        border: 1px solid black;
+        padding: 2px;
     }
 }
 
