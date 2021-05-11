@@ -156,8 +156,9 @@
     }
 
     .achievement_image img {
-        width: 100%;
+        width: 90%;
         height: auto;
+        margin: auto;
     }
 
     .achievement_name {
