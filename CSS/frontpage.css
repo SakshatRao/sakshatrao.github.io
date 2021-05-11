@@ -10,9 +10,13 @@
 }
 
 #frontpage_content {
-    width: 60%;
     height: 68vh;
     text-align: center;
+}
+
+#frontpage_img {
+    width: 60%;
+    margin: 0 auto;
 }
 
 #frontpage_img img {
@@ -22,11 +26,33 @@
     border-radius: 50%;
 }
 
+#frontpage_text {
+    padding-top: 35px;
+}
+
+#frontpage_text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#frontpage_text h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 /* Tablets / IPads */
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
     /* Reducing width of content area */
-    #frontpage_content {
+    #frontpage_img {
         width: 40%;
+    }
+
+    #frontpage_text h1 {
+        font-size: 3rem;
+    }
+
+    #frontpage_text h2 {
+        font-size: 1.875rem;
     }
 }
 
@@ -35,8 +61,11 @@
     /* Reducing width of content area */
     /* Increasing height of content area because of no extra space below */
     #frontpage_content {
-        width: 25%;
         height: 78vh;
+    }
+
+    #frontpage_img {
+        width: 40%;
     }
 
     /* Fitting frontpage to entire height */
@@ -45,12 +74,20 @@
         height: 100vh;
         background-color: bisque;
     }
+
+    #frontpage_text h1 {
+        font-size: 3rem;
+    }
+
+    #frontpage_text h2 {
+        font-size: 1.875rem;
+    }
 }
 
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     /* Reducing width of content area */
-    #frontpage_content {
+    #frontpage_img {
         width: 100%;
     }
 
@@ -60,10 +97,14 @@
     }
 
     /* Reducing font sizes */
-    #frontpage h1 {
-        font-size: 1.25rem;
+    #frontpage_text h1 {
+        font-size: 1.5rem;
     }
-    #frontpage h2 {
-        font-size: 1rem;
+    #frontpage_text h2 {
+        font-size: 1.1rem;
+    }
+
+    #frontpage_text {
+        padding-top: 20px;
     }
 }
