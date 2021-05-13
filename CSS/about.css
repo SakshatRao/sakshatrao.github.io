@@ -1,11 +1,9 @@
-.about_info {
+.about_boxes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: stretch;
     text-align: center;
-    width: 90%;
-    height: 100%;
     margin: auto;
 }
 
@@ -16,11 +14,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding: 5px;
     flex: 1;
-    height: 100%;
 }
 
 .about_box_box img {
@@ -37,10 +34,11 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
 
     /* Changing orientation of boxes */
-    .about_info {
+    .about_boxes {
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        justify-content: stretch;
         height: 100%;   
     }
 
@@ -48,9 +46,13 @@
     .about_box {
         flex-direction: column;
         margin: 0 10px;
-        height: 100%;
         padding: 5px;
         flex: 1;
+    }
+
+    .about_box_box h5 {
+        margin: 10px;
+        padding: 0px;
     }
 
     .about_box_box img {
@@ -72,10 +74,11 @@
     }
 
     /* Changing orientation of boxes */
-    .about_info {
+    .about_boxes {
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        justify-content: stretch;
         height: 100%;   
     }
 
@@ -83,9 +86,13 @@
     .about_box {
         flex-direction: column;
         margin: 0 10px;
-        height: 100%;
-        padding: 0 10px;
+        padding: 10px;
         flex: 1;
+    }
+
+    .about_box_box h5 {
+        margin: 10px;
+        padding: 0px;
     }
 
     .about_box_box img {
@@ -102,7 +109,7 @@
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     /* Changing orientation of boxes */
-    .about_info {
+    .about_boxes {
         display: flex;
         flex-direction: row;
         align-items: stretch;
@@ -113,9 +120,13 @@
     .about_box {
         flex-direction: column;
         margin: 0 10px;
-        height: 100%;
         padding: 5px;
         flex: 1;
+    }
+
+    .about_box_box h5 {
+        margin: 5px;
+        padding: 0px;
     }
 
     .about_box_box img {

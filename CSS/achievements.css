@@ -21,29 +21,42 @@
     justify-content: center;
 }
 
+.achievement_title {
+    width: 25%;
+}
+
+.achievement_name {
+    width: 60%;
+}
+
 .achievement_image {
     display: none;
 }
 
 .achievement_name {
     padding: 0 5px;
+    margin: 10px 0;
 }
 
 .achievement_title, .achievement_button {
     margin: 0 10px;
 }
 
+.achievement_button {
+    width: 15%;
+}
+
 .achievement_button p {
-    padding: 0 5px;
+    padding: 3px;
     font-size: 0.6rem;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .achievement_button {
-    background-color: cornflowerblue;
     text-decoration: none;
     color: black;
-    border: 1px solid black;
-    border-radius: 5px;
 }
 
 .achievement_buttons, .achievement_button2 {
@@ -68,7 +81,10 @@
     }
 
     .achievement_text {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         flex: 1;
     }
@@ -91,6 +107,10 @@
     .achievement_title, .achievement_button {
         padding: 2px 5px;
         margin: 0;
+    }
+
+    .achievement_title, .achievement_name, .achievement_buttons {
+        width: 100% !important;
     }
 
     .achievement_button {
@@ -118,7 +138,7 @@
     }
 
     .achievement_button2 p {
-        padding: 0 5px;
+        padding: 3px;
         margin: 0;
     }
 }
@@ -145,7 +165,10 @@
     }
 
     .achievement_text {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         flex: 1;
     }
@@ -165,6 +188,10 @@
         padding: 5px 5px;
         margin: 0;
     }
+
+    .achievement_title, .achievement_name, .achievement_buttons {
+        width: 100% !important;
+    }
     
     .achievement_title, .achievement_button {
         padding: 2px 5px;
@@ -178,7 +205,8 @@
     .achievement_buttons {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        width: 70% !important;
+        justify-content: center;
         align-items: center;
     }
 
@@ -196,7 +224,7 @@
     }
 
     .achievement_button2 p {
-        padding: 0 5px;
+        padding: 3px;
         margin: 0;
     }
 }
@@ -204,7 +232,7 @@
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     #achievements {
-        width: 75%;
+        width: 60%;
     }
 
     .achievement_title, .achievement_button {
@@ -212,7 +240,7 @@
     }
     
     .achievement_button p {
-        padding: 0 5px;
+        padding: 3px;
         margin: 2px 0;
         font-size: 0.4rem;
     }
