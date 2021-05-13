@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.achievements_info h4 {
+    color: var(--textColor)
+}
+
 .achievements_boxes {
     display: flex;
     flex-direction: column;
@@ -10,7 +14,8 @@
 }
 
 .achievement_box {
-    background-color: hotpink;
+    background-color: var(--cardMediumColor);
+    color: var(--textColor);
     margin: 5px auto;
     width: 100%;
 }
@@ -23,10 +28,12 @@
 
 .achievement_title {
     width: 25%;
+    color: var(--complColor);
 }
 
 .achievement_name {
     width: 60%;
+    font-weight: bold;
 }
 
 .achievement_image {
@@ -49,14 +56,15 @@
 .achievement_button p {
     padding: 3px;
     font-size: 0.6rem;
-    background-color: cornflowerblue;
-    border: 1px solid black;
+    background-color: var(--buttonColor);
+    border: 1px solid var(--bgColor);
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .achievement_button {
     text-decoration: none;
-    color: black;
+    color: var(--bgColor);
 }
 
 .achievement_buttons, .achievement_button2 {
@@ -78,6 +86,7 @@
         width: 45%;
         justify-content: center;
         margin: 10px auto;
+        border: 1px solid var(--complColor);
     }
 
     .achievement_text {
@@ -130,10 +139,10 @@
     }
     
     .achievement_button2 {
-        background-color: cornflowerblue;
+        background-color: var(--buttonColor);
         text-decoration: none;
-        color: black;
-        border: 1px solid black;
+        color: var(--bgColor);
+        border: 1px solid var(--bgColor);
         border-radius: 5px;
     }
 
@@ -146,9 +155,9 @@
 /* Desktop */
 @media screen and (min-width:1200px) {
     /* Adding background color */
-    #achievements    {
+    /* #achievements    {
         background-color: goldenrod;
-    }
+    } */
 
     .achievements_boxes {
         display: flex;
@@ -157,6 +166,7 @@
     }
 
     .achievement_box {
+        border: 1px solid var(--complColor);
         display: flex;
         flex-direction: column;
         width: 45%;
@@ -216,10 +226,10 @@
     }
     
     .achievement_button2 {
-        background-color: cornflowerblue;
+        background-color: var(--buttonColor);
         text-decoration: none;
-        color: black;
-        border: 1px solid black;
+        color: var(--bgColor);
+        border: 1px solid var(--bgColor);
         border-radius: 5px;
     }
 

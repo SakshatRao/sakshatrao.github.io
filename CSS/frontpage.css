@@ -22,7 +22,7 @@
 #frontpage_img img {
     width: 100%;
     height: auto;
-    border: 5px solid yellowgreen;
+    border: 5px solid var(--complColor);
     border-radius: 50%;
 }
 
@@ -72,7 +72,7 @@
     /* Changing color of backgrounds which appear on the sides */
     #frontpage {
         height: 100vh;
-        background-color: bisque;
+        /* background-color: bisque; */
     }
 
     #frontpage_text h1 {

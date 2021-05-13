@@ -5,7 +5,7 @@
     border-left: 10px solid black;
     border-image-slice: 1;
     border-width: 5px;
-    border-image-source: linear-gradient(to bottom left, white, gray, black);
+    border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
@@ -34,7 +34,7 @@
         border-left: 10px solid black;
         border-image-slice: 1;
         border-width: 5px;
-        border-image-source: linear-gradient(to bottom left, white, gray, black);
+        border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }

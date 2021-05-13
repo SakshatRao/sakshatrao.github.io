@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--textColor);
+}
+
+.contact_info h3 {
+    color: var(--complColor);
 }
 
 .contact_residence {
@@ -15,7 +20,7 @@
 
 .contact_residence_link {
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
 }
 
 .contact_boxes {
@@ -31,7 +36,7 @@
 
 .contact_mail_link {
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
 }
 
 .contact_mail h3, .contact_mail h5 {
@@ -70,7 +75,7 @@
 
 .contact_box_link {
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
 }
 
 
@@ -87,9 +92,9 @@
 /* Desktop */
 @media screen and (min-width:1200px) {
     /* Adding background color */
-    #contact {
+    /* #contact {
         background-color:lemonchiffon;
-    }
+    } */
 
     .contact_image img {
         width: 50%;

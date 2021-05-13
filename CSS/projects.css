@@ -8,7 +8,8 @@
 }
 
 .project_box {
-    background-color: lightskyblue;
+    background-color: var(--cardMediumColor);
+    color: var(--textColor);
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -37,6 +38,7 @@
     margin: 0 5px;
     font-weight: bold;
     width: 40%;
+    color: var(--complColor);
 }
 
 .project_descr {
@@ -54,14 +56,14 @@
 
 .project_button {
     text-decoration: none;
-    color: black;
+    color: var(--bgColor);
     padding: 0px;
     margin: 0 10% 0 0;
 }
 
 .project_button p {
-    background-color: lime;
-    border: 1px solid black;
+    background-color: var(--buttonColor);
+    border: 1px solid var(--bgColor);
     border-radius: 5px;
     padding: 5px;
     margin: 0;
@@ -90,6 +92,7 @@
         margin: 10px 10px;
         flex: 1;
         min-width: 45%;
+        border: 1px solid var(--complColor);
     }
 
     .project_box_info {
@@ -130,6 +133,7 @@
         width: 75%;
         height: auto;
         margin: 5px auto;
+        border: 1px solid var(--textColor);
     }
 
     .project_text {
@@ -141,14 +145,14 @@
     .project_extra_button {
         display: block;
         text-decoration: none;
-        color: black;
+        color: var(--bgColor);
         padding: 0px;
         margin: 0 10px;
     }
     
     .project_extra_button p {
-        background-color: lime;
-        border: 1px solid black;
+        background-color: var(--buttonColor);
+        border: 1px solid var(--bgColor);
         border-radius: 5px;
         padding: 5px;
         margin: 0;
@@ -158,9 +162,9 @@
 /* Desktop */
 @media screen and (min-width:1200px) {
     /* Adding background color */
-    #projects {
+    /* #projects {
         background-color: lightcoral;
-    }
+    } */
 
     .projects_boxes {
         display: flex;
@@ -178,8 +182,9 @@
         justify-content: space-between;
         margin: 10px 10px;
         flex: 1;
-        min-width: 30%;
+        min-width: 25%;
         padding: 10px;
+        border: 1px solid var(--complColor);
     }
 
     .project_box_info {
@@ -218,6 +223,7 @@
         width: 100%;
         height: auto;
         margin: auto 0;
+        border: 1px solid var(--textColor);
     }
 
     .project_text {
@@ -228,15 +234,15 @@
 
     .project_extra_button {
         text-decoration: none;
-        color: black;
+        color: var(--bgColor);
         display: block;
         margin: 0 10px;
         padding: 0px;
     }
     
     .project_extra_button p {
-        background-color: lime;
-        border: 1px solid black;
+        background-color: var(--buttonColor);
+        border: 1px solid var(--bgColor);
         border-radius: 5px;
         padding: 5px;
         margin: 0;

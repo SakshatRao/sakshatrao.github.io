@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+:root {
+    /* --complColor: #0FF4C6; */
+    --complColor: #0BEABD;
+    --bgColor: #292f36;
+    --textColor: #CDE6F5;
+    --cardMediumColor: #8DA7BE40;
+    --cardDarkColor: #99CBEB20;
+    --buttonColor: #88C3E7;
+}
+
 /* Style is assumed for width<768 and height>768 */
 
 a {
@@ -10,12 +20,16 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     height: auto;
-    background-color:darkgray;
+    background-color: #aaaaaa;
+    color: var(--complColor);
 }
 
 main {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: var(--bgColor);
+    box-shadow: 30px 0px 40px 30px rgba(0, 0, 0, 0.2),
+    -30px 0px 40px 30px rgba(0, 0, 0, 0.2);
 }
 
 img {

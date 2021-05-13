@@ -7,7 +7,9 @@
 
 .skill_box {
     flex: 1;
-    background-color:cyan;
+    background-color: var(--cardMediumColor);
+    color: var(--textColor);
+    border: 2px solid var(--complColor);
     display: inline-block;
     margin: 10px 0;
     width: 100%;
@@ -46,7 +48,9 @@
     }
 
     .skill_other_box {
-        background-color: cyan;
+        background-color: var(--cardMediumColor);
+        border: 2px solid var(--complColor);
+        color: var(--textColor);
         flex: 1;
         margin: 0 10px;
         padding: 5px;
@@ -55,13 +59,21 @@
     .skill_other_text {
         display: inline-block;
     }
+
+    .skills_heading2, .skills_others h3 {
+        color: var(--textColor);
+    }
 }
 
 /* Desktop */
 @media screen and (min-width:1200px) {
     /* Adding background color */
-    #skills {
+    /* #skills {
         background-color: darkkhaki;
+    } */
+
+    .skills_heading2, .skills_others h3 {
+        color: var(--textColor);
     }
 
     .skills_boxes {
@@ -90,7 +102,9 @@
     }
 
     .skill_other_box {
-        background-color: cyan;
+        background-color: var(--cardMediumColor);
+        border: 2px solid var(--complColor);
+        color: var(--textColor);
         flex: 1;
         margin: 0 10px;
         padding: 5px;
@@ -123,5 +137,9 @@
 
     #skills p {
         font-size: 0.5rem;
+    }
+
+    .skills_heading2, .skills_others h3 {
+        color: var(--textColor);
     }
 }
