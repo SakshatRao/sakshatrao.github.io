@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.projects_info h4 {
+    color: var(--textColor)
+}
+
 .projects_boxes {
     display: flex;
     flex-direction: column;
@@ -56,7 +60,7 @@
 
 .project_button {
     text-decoration: none;
-    color: var(--bgColor);
+    color: black;
     padding: 0px;
     margin: 0 10% 0 0;
 }
@@ -67,6 +71,7 @@
     border-radius: 5px;
     padding: 5px;
     margin: 0;
+    font-weight: bold;
 }
 
 .project_extra_button {
@@ -172,7 +177,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        width: 100%;
+        width: 75%;
         margin: 0 auto;
     }
 
@@ -182,7 +187,7 @@
         justify-content: space-between;
         margin: 10px 10px;
         flex: 1;
-        min-width: 25%;
+        min-width: 45%;
         padding: 10px;
         border: 1px solid var(--complColor);
     }
@@ -234,7 +239,7 @@
 
     .project_extra_button {
         text-decoration: none;
-        color: var(--bgColor);
+        color: black;
         display: block;
         margin: 0 10px;
         padding: 0px;
@@ -246,6 +251,7 @@
         border-radius: 5px;
         padding: 5px;
         margin: 0;
+        font-weight: bold;
     }
 }
 

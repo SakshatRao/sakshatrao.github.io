@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-:root {
-    /* --complColor: #0FF4C6; */
+/* :root {
     --complColor: #0BEABD;
+    --bgColor: #292f36;
+    --textColor: #CDE6F5;
+    --cardMediumColor: #8DA7BE40;
+    --cardDarkColor: #99CBEB20;
+    --buttonColor: #88C3E7;
+} */
+
+:root {
+    --complColor: #09C39E;
     --bgColor: #292f36;
     --textColor: #CDE6F5;
     --cardMediumColor: #8DA7BE40;
@@ -20,7 +28,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     height: auto;
-    background-color: #aaaaaa;
+    background-color: var(--bgColor);
     color: var(--complColor);
 }
 
@@ -123,6 +131,10 @@ img {
     }
     .page p {
         font-size: 0.935rem;
+    }
+
+    body {
+        background-color: #bbbbbb;
     }
 }
 
