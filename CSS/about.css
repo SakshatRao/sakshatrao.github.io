@@ -41,7 +41,7 @@
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
     .about_box_box img {
-        width: 70%;
+        width: 50%;
         height: auto;
         margin: auto;
     }
@@ -51,7 +51,7 @@
     }
 
     .about_text h5 {
-        font-size: calc(1.25rem * var(--fontFactor_SmallMobile));
+        font-size: calc(1.25rem * var(--fontFactor_SmallMobile) * 0.75);
     }
 }
 

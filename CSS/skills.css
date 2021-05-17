@@ -30,7 +30,7 @@
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
     .skill_box p {
-        font-size: calc(1rem * var(--fontFactor_SmallMobile) * 1.15);
+        font-size: calc(1rem * var(--fontFactor_SmallMobile) * 1);
     }
 
     .skill_box {

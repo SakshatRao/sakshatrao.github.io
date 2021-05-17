@@ -88,7 +88,15 @@
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
     .project_title {
-        font-size: calc(1.25rem * var(--fontFactor_SmallMobile) * 0.9) !important;
+        font-size: calc(1.25rem * var(--fontFactor_SmallMobile) * 0.75) !important;
+    }
+
+    .project_descr {
+        font-size: calc(1rem * var(--fontFactor_SmallMobile) * 0.8) !important;
+    }
+
+    .project_box {
+        margin: 5px 0;
     }
 }
 
