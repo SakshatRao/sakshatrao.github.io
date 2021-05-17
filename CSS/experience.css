@@ -1,6 +1,8 @@
 .experience_timeline {
     padding: 1px 0;
     border-left: 2px solid var(--complColor);
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline_point {
@@ -8,13 +10,14 @@
     color: var(--textColor);
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .timeline_info {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .timeline_circle {
@@ -27,13 +30,13 @@
 }
 
 .timeline_date {
-    height: 100%;
     margin: auto 0;
     padding-left: 10px;
 }
 
 .timeline_text {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline_duration {
@@ -41,17 +44,30 @@
     padding-right: 10px;
 }
 
-.timeline_title {
+.timeline_title h5 {
+    height: 100%;
     font-weight: bold;
+    padding: 15px 0 10px 0;
+    margin: 0;
 }
 
 .timeline_descr {
     display: none;
 }
 
+/* Small Mobile */
+@media screen and (max-width: 374px) and (min-height: 500px) {
+    .timeline_title h5 {
+        padding: 15px 0 10px 0;
+    }
 
-/* Tablets / IPads */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+    .timeline_point {
+        margin: 10px 0;
+    }
+}
+
+/* Rotated Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
     .timeline_point {
         margin: 20px 0;
     }
@@ -61,15 +77,46 @@
     }
 }
 
-/* Desktop */
-@media screen and (min-width:1200px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+    .timeline_point {
+        margin: 20px 0;
+    }
+
+    .timeline_descr {
+        display: block;
+    }
+}
+
+/* Small Desktop */
+@media screen and (min-width:1200px) and (max-width:1899px) {
     /* Adding background color */
     /* #experience {
         background-color: cadetblue;
     } */
 
     .timeline_point {
-        margin: 20px 0;
+        margin: 10px 0;
+    }
+
+    .timeline_descr {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:1900px) {
+    /* Adding background color */
+    /* #experience {
+        background-color: cadetblue;
+    } */
+
+    .timeline_title h5 {
+        padding: 20px 0 0 0;
+    }
+
+    .timeline_point {
+        margin: 15px 0;
     }
 
     .timeline_descr {
@@ -85,6 +132,10 @@
     }
 
     .timeline_point {
-        margin: 10px 0;
+        margin: 5px 0;
+    }
+
+    .timeline_title h5 {
+        padding: 10px 0 5px 0;
     }
 }

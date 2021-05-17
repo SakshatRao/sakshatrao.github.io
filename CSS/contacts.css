@@ -78,10 +78,35 @@
     color: var(--textColor);
 }
 
+/* Small Mobile */
+@media screen and (max-width: 374px) and (min-height: 500px) {
+}
 
+/* Rotated Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
+    .contact_image img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
 
-/* Tablets / IPads */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+    .contact_image img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Small Desktop */
+@media screen and (min-width:1200px) and (max-width:1899px) {
+    /* Adding background color */
+    /* #contact {
+        background-color:lemonchiffon;
+    } */
+
     .contact_image img {
         width: 50%;
         height: auto;
@@ -90,7 +115,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1900px) {
     /* Adding background color */
     /* #contact {
         background-color:lemonchiffon;
@@ -110,11 +135,11 @@
     }
     
     .contact_residence {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .contact_mail {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .contact_boxes_heading {

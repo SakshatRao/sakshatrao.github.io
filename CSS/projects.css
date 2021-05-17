@@ -3,7 +3,9 @@
 }
 
 .projects_info h4 {
-    color: var(--textColor)
+    color: var(--textColor);
+    margin: 0;
+    padding: 10px 0;
 }
 
 .projects_boxes {
@@ -40,9 +42,10 @@
 
 .project_title {
     margin: 0 5px;
-    font-weight: bold;
+    font-weight: bolder;
     width: 40%;
     color: var(--complColor);
+    font-size: calc(1.25rem * var(--fontFactor_Mobile) * 0.85) !important;
 }
 
 .project_descr {
@@ -82,8 +85,15 @@
     display: none;
 }
 
-/* Tablets / IPads / Squarer Phones */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) {
+/* Small Mobile */
+@media screen and (max-width: 374px) and (min-height: 500px) {
+    .project_title {
+        font-size: calc(1.25rem * var(--fontFactor_SmallMobile) * 0.9) !important;
+    }
+}
+
+/* Rotated Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
 
     .projects_boxes {
         display: flex;
@@ -109,6 +119,7 @@
     .project_title {
         width: 100% !important;
         height: 50% !important;
+        font-size: calc(1.25rem * var(--fontFactor_RotTablet)) !important;
     }
 
     .project_descr {
@@ -164,8 +175,91 @@
     }
 }
 
-/* Desktop */
-@media screen and (min-width:1200px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+
+    .projects_boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project_box {
+        flex-direction: column;
+        margin: 10px 10px;
+        flex: 1;
+        min-width: 45%;
+        border: 1px solid var(--complColor);
+    }
+
+    .project_box_info {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .project_title {
+        width: 100% !important;
+        height: 50% !important;
+        font-size: calc(1.25rem * var(--fontFactor_Tablet)) !important;
+    }
+
+    .project_descr {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .project_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100% !important;
+        margin-top: 15px;
+    }
+
+    .project_button {
+        margin: 0 10px;
+    }
+
+    .project_image {
+        display: block;
+        flex: 1;
+    }
+
+    .project_image img {
+        width: 75%;
+        height: auto;
+        margin: 5px auto;
+        border: 1px solid var(--textColor);
+    }
+
+    .project_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .project_extra_button {
+        display: block;
+        text-decoration: none;
+        color: var(--bgColor);
+        padding: 0px;
+        margin: 0 10px;
+    }
+    
+    .project_extra_button p {
+        background-color: var(--buttonColor);
+        border: 1px solid var(--bgColor);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+/* Small Desktop */
+@media screen and (min-width:1200px) and (max-width:1899px) {
     /* Adding background color */
     /* #projects {
         background-color: lightcoral;
@@ -177,7 +271,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -185,9 +279,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 10px 10px;
+        margin: 10px 20px;
         flex: 1;
-        min-width: 45%;
+        min-width: 40%;
         padding: 10px;
         border: 1px solid var(--complColor);
     }
@@ -200,6 +294,7 @@
 
     .project_title {
         width: 100% !important;
+        font-size: calc(1.25rem * var(--fontFactor_SmallDesktop)) !important;
     }
 
     .project_descr {
@@ -212,7 +307,7 @@
         justify-content: space-around;
         align-items: center;
         width: 100% !important;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .project_button {
@@ -235,6 +330,102 @@
         display: inline-block;
         width: 100%;
         flex: 1;
+        margin: auto 0;
+        padding: 0 5px;
+    }
+
+    .project_extra_button {
+        text-decoration: none;
+        color: black;
+        display: block;
+        margin: 0 10px;
+        padding: 0px;
+    }
+    
+    .project_extra_button p {
+        background-color: var(--buttonColor);
+        border: 1px solid var(--bgColor);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:1900px) {
+    /* Adding background color */
+    /* #projects {
+        background-color: lightcoral;
+    } */
+
+    .projects_boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project_box, .project_box:nth-of-type(5), .project_box:nth-of-type(6) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 10px;
+        flex: 1;
+        min-width: 45%;
+        padding: 10px;
+        border: 1px solid var(--complColor);
+    }
+
+    .project_box_info {
+        display: flex;
+        flex-direction: row;
+        width: 100% !important;
+    }
+
+    .project_title {
+        width: 100% !important;
+        font-size: calc(1.25rem * var(--fontFactor_Desktop)) !important;
+    }
+
+    .project_descr {
+        width: 100% !important;
+    }
+
+    .project_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .project_button {
+        margin: 0 10px;
+    }
+
+    .project_image {
+        display: block;
+        flex: 1;
+    }
+
+    .project_image img {
+        width: 100%;
+        height: auto;
+        margin: auto 0;
+        border: 1px solid var(--textColor);
+    }
+
+    .project_text {
+        display: inline-block;
+        width: 100%;
+        flex: 1;
+        margin: auto 0;
+        padding: 0 5px;
     }
 
     .project_extra_button {
@@ -258,7 +449,19 @@
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     #projects {
-        width: 60%;
+        width: 75%;
+    }
+
+    .projects_info h4 {
+        display: none;
+    }
+
+    .project_box_info {
+        width: 90%;
+    }
+
+    .project_buttons {
+        width: 10%;
     }
 
     .project_text {
@@ -271,5 +474,9 @@
 
     .project_button p {
         padding: 3px;
+    }
+
+    .project_title {
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75) !important;
     }
 }
