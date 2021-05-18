@@ -139,16 +139,24 @@
     }
 
     .contact_mail {
-        margin-top: 5px;
+        margin-top: 3px;
     }
 
     .contact_boxes_heading {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .contact_image img {
-        width: 50%;
+        width: 30%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .contact_info h3 {
+        font-size: calc(1.75rem * var(--fontFactor_RotMobile) * 0.75);
+    }
+
+    .contact_info h5 {
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75);
     }
 }

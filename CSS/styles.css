@@ -258,4 +258,8 @@ img {
         width: 100%;
         margin: auto;
     }
+
+    .page_content {
+        height: 73vh;
+    }
 }

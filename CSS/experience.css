@@ -127,7 +127,7 @@
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     #experience {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -137,5 +137,13 @@
 
     .timeline_title h5 {
         padding: 10px 0 5px 0;
+    }
+
+    .timeline_info p {
+        font-size: calc(1rem * var(--fontFactor_RotMobile) * 0.75);
+    }
+
+    .timeline_title h5 {
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75);
     }
 }

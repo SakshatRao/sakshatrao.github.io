@@ -139,7 +139,7 @@
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     /* Reducing width of content area */
     #frontpage_img {
-        width: 100%;
+        width: 75%;
     }
 
     #frontpage_img img {
@@ -157,5 +157,9 @@
 
     #frontpage_text {
         padding-top: 20px;
+    }
+
+    #frontpage_content {
+        height: 63vh;
     }
 }

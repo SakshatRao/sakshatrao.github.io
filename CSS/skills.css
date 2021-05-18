@@ -16,7 +16,9 @@
 }
 
 .skill_box p {
-    font-size: calc(1rem * var(--fontFactor_Mobile) * 1.15);
+    font-size: calc(1rem * var(--fontFactor_Mobile) * 1);
+    margin: 0;
+    padding: 5px;
 }
 
 .skill_name, .skill_other_name {
@@ -265,7 +267,7 @@
     }
 
     .skill_box p {
-        font-size: calc(1rem * var(--fontFactor_RotMobile) * 1.2);
+        font-size: calc(1rem * var(--fontFactor_RotMobile) * 1);
     }
 
     .skills_heading2, .skills_others h3 {

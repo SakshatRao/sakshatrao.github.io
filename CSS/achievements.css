@@ -460,27 +460,31 @@
         width: 60%;
     }
 
+    .achievement_box {
+        margin: 3px auto;
+    }
+
     .achievement_title, .achievement_button {
         margin: 0 5px;
     }
     
     .achievement_button p {
-        padding: 3px;
+        padding: 2px 0;
         margin: 2px 0;
         font-weight: bold;
         font-size: calc(1rem * var(--fontFactor_RotMobile) * 0.75);
     }
 
     .achievement_name {
-        margin: 10px auto;
-        font-size: calc(1.5rem * var(--fontFactor_RotMobile) * 0.75) !important;
+        margin: 5px auto;
+        font-size: calc(1.5rem * var(--fontFactor_RotMobile) * 0.5) !important;
     }
 
     .achievements_info h3 {
-        font-size: calc(1.75rem * var(--fontFactor_RotMobile) * 0.8);
+        font-size: calc(1.75rem * var(--fontFactor_RotMobile) * 0.6) !important;
     }
 
     .achievement_title {
-        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.8) !important;
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.6) !important;
     }
 }

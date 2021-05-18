@@ -13,25 +13,24 @@
     border: 2px solid var(--complColor);
     color: var(--textColor);
     margin: 5px 0;
-    padding: 5px 0;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 5px;
     flex: 1;
 }
 
 .about_box_box img {
-    width: 75%;
+    width: 60%;
     height: auto;
     margin: auto;
     border: 1px solid var(--textColor);
 }
 
 .about_text h5 {
-    font-size: calc(1.25rem * var(--fontFactor_Mobile) * 0.9);
+    font-size: calc(1.25rem * var(--fontFactor_Mobile) * 0.8);
 }
 
 .about_text2 {
@@ -225,18 +224,18 @@
     .about_box {
         flex-direction: column;
         margin: 0 10px;
-        padding: 5px;
+        padding: 3px;
         flex: 1;
     }
 
     .about_box_box h5 {
         margin: 5px;
         padding: 0px;
-        font-size: calc(1.25rem * var(--fontFactor_RotMobile));
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75) !important;
     }
 
     .about_box_box img {
-        width: 60%;
+        width: 50%;
         height: auto;
         margin: auto;
     }

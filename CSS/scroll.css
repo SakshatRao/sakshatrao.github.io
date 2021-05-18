@@ -82,8 +82,8 @@
     .scroll_button {
         width: 17px;
         height: 17px;
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
         border-width: 2px;
     }
 }
