@@ -99,42 +99,50 @@
     .project_box {
         margin: 5px 0;
     }
+    .project_button p {
+        font-size: calc(1rem * var(--fontFactor_SmallMobile) * 0.8) !important;
+    }
 }
 
 /* Rotated Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
 
     .projects_boxes {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: stretch;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .project_box {
+        display: flex;
         flex-direction: column;
-        margin: 10px 10px;
+        justify-content: space-between;
+        margin: 10px 20px;
         flex: 1;
-        min-width: 45%;
+        min-width: 40%;
+        padding: 10px;
         border: 1px solid var(--complColor);
     }
 
     .project_box_info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100% !important;
     }
 
     .project_title {
         width: 100% !important;
-        height: 50% !important;
         font-size: calc(1.25rem * var(--fontFactor_RotTablet)) !important;
+        margin: 0 0 5px 0;
     }
 
     .project_descr {
         width: 100% !important;
-        height: 50% !important;
-        font-size: calc(1rem * var(--fontFactor_RotTablet)) !important;
+        font-size: calc(1rem * var(--fontFactor_RotTablet) * 0.9) !important;
     }
 
     .project_buttons {
@@ -143,7 +151,7 @@
         justify-content: space-around;
         align-items: center;
         width: 100% !important;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .project_button {
@@ -156,9 +164,9 @@
     }
 
     .project_image img {
-        width: 75%;
+        width: 80%;
         height: auto;
-        margin: 5px auto;
+        margin: auto 0;
         border: 1px solid var(--textColor);
     }
 
@@ -166,14 +174,16 @@
         display: inline-block;
         width: 100%;
         flex: 1;
+        margin: auto 0;
+        padding: 0 5px;
     }
 
     .project_extra_button {
-        display: block;
         text-decoration: none;
-        color: var(--bgColor);
-        padding: 0px;
+        color: black;
+        display: block;
         margin: 0 10px;
+        padding: 0px;
     }
     
     .project_extra_button p {
@@ -182,11 +192,12 @@
         border-radius: 5px;
         padding: 5px;
         margin: 0;
+        font-weight: bold;
     }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
 
     .projects_boxes {
         display: flex;
@@ -199,8 +210,9 @@
         flex-direction: column;
         margin: 10px 10px;
         flex: 1;
-        min-width: 45%;
+        min-width: 40%;
         border: 1px solid var(--complColor);
+        padding: 5px;
     }
 
     .project_box_info {
@@ -212,13 +224,13 @@
     .project_title {
         width: 100% !important;
         height: 50% !important;
-        font-size: calc(1.25rem * var(--fontFactor_Tablet)) !important;
+        font-size: calc(1.25rem * var(--fontFactor_Tablet) * 0.9) !important;
     }
 
     .project_descr {
         width: 100% !important;
         height: 50% !important;
-        font-size: calc(1rem * var(--fontFactor_Tablet)) !important;
+        font-size: calc(1rem * var(--fontFactor_Tablet) * 0.9) !important;
     }
 
     .project_buttons {
@@ -252,20 +264,33 @@
         flex: 1;
     }
 
+    .project_button {
+        padding: 0px;
+        margin: 0 10px;
+    }
+
     .project_extra_button {
         display: block;
         text-decoration: none;
-        color: var(--bgColor);
+        color: black;
         padding: 0px;
         margin: 0 10px;
+    }
+
+    .project_button p {
+        padding: 3px;
+        margin: 0;
+        font-size: calc(1rem * var(--fontFactor_Tablet) * 0.85) !important;
     }
     
     .project_extra_button p {
         background-color: var(--buttonColor);
         border: 1px solid var(--bgColor);
         border-radius: 5px;
-        padding: 5px;
+        padding: 3px;
         margin: 0;
+        font-weight: bold;
+        font-size: calc(1rem * var(--fontFactor_Tablet) * 0.85) !important;
     }
 }
 

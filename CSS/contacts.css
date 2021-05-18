@@ -83,18 +83,30 @@
 }
 
 /* Rotated Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
     .contact_image img {
-        width: 50%;
+        width: 30%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .contact_residence {
+        margin-top: 25px;
+    }
+
+    .contact_mail {
+        margin-top: 25px;
+    }
+
+    .contact_boxes_heading {
+        margin-top: 35px;
     }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
     .contact_image img {
-        width: 50%;
+        width: 70%;
         height: auto;
         margin: 0 auto;
     }

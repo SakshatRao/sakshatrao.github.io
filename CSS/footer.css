@@ -8,11 +8,11 @@
 }
 
 /* Rotated Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
 }
 
 /* Small Desktop */

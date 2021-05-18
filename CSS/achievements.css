@@ -88,7 +88,7 @@
 }
 
 /* Rotated Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 999px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
     .achievements_boxes {
         display: flex;
         flex-direction: row;
@@ -100,7 +100,7 @@
         flex-direction: column;
         width: 45%;
         justify-content: center;
-        margin: 10px auto;
+        margin: 5px auto;
         border: 1px solid var(--complColor);
     }
 
@@ -119,14 +119,15 @@
     }
 
     .achievement_image img {
-        width: 100%;
+        width: 50%;
         height: auto;
+        margin: 0 auto;
     }
 
     .achievement_name {
-        padding: 5px 5px;
+        padding: 0;
         margin: 0;
-        font-size: calc(1.5rem * var(--fontFactor_RotTablet)) !important;
+        font-size: calc(1.5rem * var(--fontFactor_RotTablet) * 0.8) !important;
     }
     
     .achievement_title, .achievement_button {
@@ -174,7 +175,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-height: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
     .achievements_boxes {
         display: flex;
         flex-direction: row;
@@ -187,6 +188,7 @@
         width: 45%;
         justify-content: center;
         margin: 10px auto;
+        padding: 5px;
         border: 1px solid var(--complColor);
     }
 
@@ -211,8 +213,12 @@
 
     .achievement_name {
         padding: 5px 5px;
-        margin: 0;
-        font-size: calc(1.5rem * var(--fontFactor_Tablet)) !important;
+        margin: 0 0 5px 0;
+        font-size: calc(1.5rem * var(--fontFactor_Tablet) * 0.75) !important;
+    }
+
+    .achievement_title {
+        font-size: calc(1.25rem * var(--fontFactor_Tablet) * 1) !important;
     }
     
     .achievement_title, .achievement_button {
@@ -469,10 +475,10 @@
     }
     
     .achievement_button p {
+        width: 75%;
         padding: 2px 0;
-        margin: 2px 0;
         font-weight: bold;
-        font-size: calc(1rem * var(--fontFactor_RotMobile) * 0.75);
+        font-size: calc(1rem * var(--fontFactor_RotMobile) * 0.65) !important;
     }
 
     .achievement_name {
