@@ -30,6 +30,7 @@
 }
 
 .timeline_date {
+    text-align: left;
     margin: auto 0;
     padding-left: 10px;
 }
@@ -40,6 +41,7 @@
 }
 
 .timeline_duration {
+    text-align: right;
     margin: auto 0;
     padding-right: 10px;
 }
@@ -94,6 +96,10 @@
     .timeline_descr {
         display: block;
     }
+    
+    .timeline_text {
+        width: 75%;
+    }
 }
 
 /* Small Desktop */
@@ -109,6 +115,18 @@
 
     .timeline_descr {
         display: block;
+    }
+
+    .timeline_date {
+        width: 10%;
+    }
+
+    .timeline_text {
+        width: 75%;
+    }
+
+    .timeline_duration {
+        width: 15%;
     }
 }
 
@@ -129,6 +147,18 @@
 
     .timeline_descr {
         display: block;
+    }
+
+    .timeline_date {
+        width: 10%;
+    }
+
+    .timeline_text {
+        width: 75%;
+    }
+
+    .timeline_duration {
+        width: 15%;
     }
 }
 

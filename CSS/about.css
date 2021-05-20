@@ -10,7 +10,7 @@
 .about_box {
     /* background-color: #8DA7BE40; */
     background-color: var(--cardMediumColor);
-    border: 2px solid var(--complColor);
+    border: 1px solid var(--complColor);
     color: var(--textColor);
     margin: 5px 0;
     padding: 5px;
@@ -25,7 +25,7 @@
 .about_box_box img {
     width: 60%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid var(--textColor);
 }
 
@@ -238,6 +238,7 @@
         width: 50%;
         height: auto;
         margin: auto;
+        border: none;
     }
 
     /* .about_text2 {

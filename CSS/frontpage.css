@@ -15,7 +15,7 @@
 }
 
 #frontpage_img {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -42,6 +42,9 @@
 
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
+    #frontpage_img {
+        width: 50%;
+    }
 }
 
 /* Rotated Tablet */
@@ -64,7 +67,7 @@
 @media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
     /* Reducing width of content area */
     #frontpage_img {
-        width: 45%;
+        width: 35%;
     }
 
     #frontpage_text h1 {
@@ -85,7 +88,7 @@
     }
 
     #frontpage_img {
-        width: 40%;
+        width: 30%;
     }
 
     /* Fitting frontpage to entire height */
@@ -113,7 +116,7 @@
     }
 
     #frontpage_img {
-        width: 40%;
+        width: 30%;
     }
 
     /* Fitting frontpage to entire height */

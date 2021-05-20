@@ -9,7 +9,8 @@
     flex: 1;
     background-color: var(--cardMediumColor);
     color: var(--textColor);
-    border: 2px solid var(--complColor);
+    /* border: 2px solid var(--complColor); */
+    border: none;
     display: inline-block;
     margin: 5px 0;
     width: 100%;
@@ -23,6 +24,8 @@
 
 .skill_name, .skill_other_name {
     font-weight: bold;
+    color: var(--complColor);
+    font-size: calc(1rem * var(--fontFactor_RotMobile) * 1.5);
 }
 
 .skill_detail1, .skill_detail2, .skills_others, .skills_heading2 {
@@ -37,6 +40,12 @@
 
     .skill_box {
         margin: 5px 0;
+        border: none;
+    }
+
+    .skill_name {
+        color: var(--complColor);
+        font-size: calc(1rem * var(--fontFactor_SmallMobile) * 1.5);
     }
 }
 
@@ -72,7 +81,8 @@
 
     .skill_other_box {
         background-color: var(--cardMediumColor);
-        border: 2px solid var(--complColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
         color: var(--textColor);
         flex: 1;
         margin: 0 5px;
@@ -118,7 +128,8 @@
 
     .skill_other_box {
         background-color: var(--cardMediumColor);
-        border: 2px solid var(--complColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
         color: var(--textColor);
         flex: 1;
         margin: 0 5px;
@@ -166,6 +177,7 @@
         width: 30%;
         margin: 0 10px;
         padding: 5px;
+        border: none;
     }
 
     .skill_info1, .skill_info2 {
@@ -176,16 +188,25 @@
         display: block;
     }
 
+    .skill_name, .skill_other_name {
+        color: var(--complColor);
+        font-size: calc(1rem * var(--fontFactor_SmallDesktop) * 1.5);
+        font-weight: bold;
+    }
+
     .skills_others_boxes {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
+        width: 75%;
+        margin: 0 auto;
     }
 
     .skill_other_box {
         background-color: var(--cardMediumColor);
-        border: 2px solid var(--complColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
         color: var(--textColor);
         flex: 1;
         margin: 0 10px;
@@ -228,6 +249,13 @@
         width: 30%;
         margin: 0 10px;
         padding: 5px;
+        border: none;
+    }
+
+    .skill_name, .skill_other_name {
+        color: var(--complColor);
+        font-size: calc(1rem * var(--fontFactor_Desktop) * 1.5);
+        font-weight: bold;
     }
 
     .skill_info1, .skill_info2 {
@@ -243,11 +271,14 @@
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
+        width: 75%;
+        margin: 0 auto;
     }
 
     .skill_other_box {
         background-color: var(--cardMediumColor);
-        border: 2px solid var(--complColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
         color: var(--textColor);
         flex: 1;
         margin: 0 10px;
@@ -273,6 +304,7 @@
         width: 30%;
         margin: 0 10px;
         padding: 5px;
+        border: none;
     }
 
     .skill_box p {
