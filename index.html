@@ -3,13 +3,20 @@
 <head>
 
     <!-- Website Information -->
-    <title>Sakshat Rao - My Personal Portfolio</title>
-    <meta name='description' content="Take a quick glance at Sakshat Rao's portfolio webpage. Get to know his work, skillset & some of his memorable achievements.">
-    <meta name='keywords' content="Sakshat Rao, Sakshat, NITK Surathkal, NVIDIA">
+    <title>Sakshat Rao</title>
+    <meta name='description' content="Take a quick glance at Sakshat Rao's personal portfolio webpage. Get to know his work, experience, skillset & some of his memorable achievements.">
+    <meta name='keywords' content="Sakshat Rao, Sakshat, Rao, NITK Surathkal, NVIDIA">
     <meta name='author' content="Sakshat Rao">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sakshat Rao - My Portfolio Webpage">
+    <meta property="og:url" content="https://sakshatrao.github.io">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Take a quick glance at Sakshat Rao's personal portfolio webpage. Get to know his work, experience, skillset & some of his memorable achievements.">
+    <meta property="og:image" content="./Images/frontpage_pic.webp">
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYM0Z66DQF"></script>
@@ -21,7 +28,7 @@
     </script>
     
     <!-- Importing Styles -->
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/frontpage.css">
     <link rel="stylesheet" type="text/css" href="CSS/scroll.css">
     <link rel="stylesheet" type="text/css" href="CSS/about.css">
@@ -30,25 +37,28 @@
     <link rel="stylesheet" type="text/css" href="CSS/achievements.css">
     <link rel="stylesheet" type="text/css" href="CSS/projects.css">
     <link rel="stylesheet" type="text/css" href="CSS/contacts.css">
-    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css"> -->
+    <link rel="stylesheet" type="text/css" href="./pages.css?version=1">
 
     <!-- Adding website logo -->
-    <link rel="shortcut icon" type="image/x-icon" href="./Images/logo.png?">
-    <link rel="apple-touch-icon" sizes="180x180" href="./Images/logo.png?">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico">
+
+    <link rel="preload" as="image" href="./Images/frontpage_pic.webp">
 
 </head>
 <body>
-    <main>
+    <main itemscope itemtype="https://schema.org/Person">
 
         <!-- Frontpage -->
         <div id="frontpage">
             <div id="frontpage_content">
                 <div id="frontpage_img">
-                    <img src="./Images/frontpage_pic.jpg" alt="Sakshat Rao">
+                    <img src="./Images/frontpage_pic.webp" alt="Sakshat Rao">
                 </div>
                 <div id="frontpage_text">
                     <h2>My name is</h2>
-                    <h1>Sakshat Rao</h1>
+                    <h1 itemprop="name">Sakshat Rao</h1>
                 </div>
             </div>
             <a href="#about_content" class="scroll_button frontpage_scroll"><span></span></a>
@@ -66,18 +76,18 @@
                         <div class="about_boxes">
                             <div class="about_box">
                                 <div class='about_box_box about_text'>
-                                    <h5>I was born in the wonderful coastal town of Udupi, Karnataka and was brought up in Mumbai.</h5>
+                                    <h5>I was born in the wonderful coastal town of <span itemprop="birthPlace" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Udupi</span>, <span itemprop="containedInPlace" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Karnataka</span></span></span> and was brought up in <span itemprop="homeLocation" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Mumbai</span></span>.</h5>
                                 </div>
                                 <div class='about_box_box about_text2'>
-                                    <h5>I am fluent in English, Hindi, Kannada & my mother-tongue Tulu.</h5>
+                                    <h5>I am fluent in <span itemprop="knowsLanguage">English</span>, <span itemprop="knowsLanguage">Hindi</span>, <span itemprop="knowsLanguage">Kannada</span> & my mother-tongue <span itemprop="knowsLanguage">Tulu</span>.</h5>
                                 </div>
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/about_sakshat1.jpg" alt="Udupi Sri Krishna Matha">
+                                    <img src="./Images/about_sakshat1.webp" alt="Udupi Sri Krishna Matha">
                                 </div>
                             </div>
                             <div class="about_box">
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/about_sakshat2.jpg" alt="Playing Keyboard">
+                                    <img src="./Images/about_sakshat2.webp" alt="Sakshat Playing Keyboard">
                                 </div>
                                 <div class='about_box_box about_text'>
                                     <h5>Playing music is my most fulfilling pastime. I have played the keyboard for over 15 years and love exploring other instruments.</h5>
@@ -94,7 +104,7 @@
                                     <h5><i>"We mature in knowledge and wisdom but never leave the playground of our hearts."<br>-<small>Terri Guillemets</small></i></h5>
                                 </div>
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/about_sakshat3.jpg" alt="Me and my sister">
+                                    <img src="./Images/about_sakshat3.webp" alt="Sakshat and his sister">
                                 </div>
                             </div>
                         </div>
@@ -121,7 +131,7 @@
                                 </div>
                                 <div class="timeline_text">
                                     <div class='timeline_title'>
-                                        <h5>ASIC Engineer<br>NVIDIA</h5>
+                                        <h5><span itemprop="jobTitle">ASIC Engineer</span><br><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">NVIDIA</span></span></h5>
                                     </div>
                                     <div class='timeline_descr'>
                                         <p>I was offered a full-time job based on my internship performance and will soon start working.</p>
@@ -159,7 +169,7 @@
                                 </div>
                                 <div class="timeline_text">
                                     <div class='timeline_title'>
-                                        <h5>Started B.Tech. course<br>at NITK Surathkal</h5>
+                                        <h5>Started B.Tech. course<br><span itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="name">NITK Surathkal</span></span></h5>
                                     </div>
                                     <div class='timeline_descr'>
                                         <p>Pursued B.Tech. in Electronics & Communication Engineering and will soon graduate with a 9.45 CGPA.</p>
@@ -188,21 +198,21 @@
                         <h3 class='skills_heading2'>My main skills include</h3>
                         <div class="skills_boxes">
                             <div class="skill_box">
-                                <p class="skill_name">Deep Learning</p>
+                                <p class="skill_name" itemprop="knowsAbout">Deep Learning</p>
                                 <p class="skill_info1">My main interests are in Healthcare AI and Natural Language Understanding</p>
                                 <p class="skill_info2">I have mainly used PyTorch & Keras for training models</p>
                                 <p class="skill_detail1">Coming from a family of doctors, one of my main interests is in Healthcare AI. I have worked on a few Medical Diagnosis and Segmentation projects. Among my other interests are Natural Language Understanding and Time Series Forecasting.</p>
                                 <p class="skill_detail2">I am very proficient with coding in Python. I have mainly used PyTorch & Keras for building and training neural networks.</p>
                             </div>
                             <div class="skill_box">
-                                <p class="skill_name">Embedded Design</p>
+                                <p class="skill_name" itemprop="knowsAbout">Embedded Design</p>
                                 <p class="skill_info1">I have worked on embedded coding, driver development & FPGA design</p>
                                 <p class="skill_info2">I have experience in embedded C & SystemVerilog</p>
                                 <p class="skill_detail1">One of my goals is to integrate hardware and software together to create more value. I have worked on embedded coding, driver development, RTOS integration & IoT design. I also have experience working on FPGA design and development.</p>
                                 <p class="skill_detail2">I am proficient with using embedded C. I have also used SystemVerilog for FPGA design and functional & formal verification.</p>
                             </div>
                             <div class="skill_box">
-                                <p class="skill_name">Data Analysis</p>
+                                <p class="skill_name" itemprop="knowsAbout">Data Analysis</p>
                                 <p class="skill_info1">I enjoy analyzing datasets and visualizing interesting insights neatly</p>
                                 <p class="skill_info2">I have worked in Python & R for analysis & visualizations</p>
                                 <p class="skill_detail1">I enjoy being creative while analyzing datasets and visualizing interesting insights. I have worked with different techniques like cluster analysis, hypothesis testing, feature importances and PCA to extract relevant information out of data.</p>
@@ -214,8 +224,8 @@
                             <div class="skills_others_boxes">
                                 <div class="skill_other_box">
                                     <div class="skill_other_text">
-                                        <p class='skill_other_name'>Web Development</p>
-                                        <p class='skill_other_info'>I have basic knowledge about frontend and backend. I have developed static websites like this website using HTML, CSS and JavaScript and also a few dynamic websites using Django.</p>
+                                        <p class='skill_other_name' itemprop="knowsAbout">Web Development</p>
+                                        <p class='skill_other_info' itemprop="knowsAbout">I have basic knowledge about frontend and backend. I have developed static websites like this website using HTML, CSS and JavaScript and also a few dynamic websites using Django.</p>
                                     </div>
                                 </div>
                                 <div class="skill_other_box">
@@ -245,42 +255,45 @@
                         <div class='achievements_boxes'>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/achievements_sakshat1.png" alt="Wharton People Analytics Case Competition">
+                                    <img src="./Images/achievements_sakshat1.webp" alt="Wharton People Analytics Case Competition">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>Winning Team</h5>
-                                    <h4 class='achievement_name'>Wharton People Analytics<br>Case Competition 2021</h4>
-                                    <a href="https://wpa.wharton.upenn.edu/2021-conference-competition/" class='achievement_button' target="_blank">
+                                    <h4 class='achievement_name' itemprop="award">Wharton People Analytics<br>Case Competition 2021</h4>
+                                    <a href="https://wpa.wharton.upenn.edu/2021-conference-competition/" class='achievement_button' target="_blank" rel="noopener noreferrer">
                                         <p>Know More</p>
                                     </a>
                                     <div class="achievement_buttons">
-                                        <a href="https://wpa.wharton.upenn.edu/2021-conference-competition/" class='achievement_button2' target="_blank">
+                                        <a href="https://wpa.wharton.upenn.edu/2021-conference-competition/" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Homepage</p>
                                         </a>
-                                        <a href="https://youtu.be/kGjOKEOrfig?t=1153" class='achievement_button2' target="_blank">
-                                            <p>Global Finals Presentation</p>
+                                        <a href="https://youtu.be/kGjOKEOrfig?t=1153" class='achievement_button2' target="_blank" rel="noopener noreferrer">
+                                            <p>Global Finals</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=zcZ6XvGnbms" class='achievement_button2' target="_blank" rel="noopener noreferrer">
+                                            <p>Our Proposal</p>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/achievements_sakshat2.png" alt="ASEAN-India Hackathon">
+                                    <img src="./Images/achievements_sakshat2.webp" alt="ASEAN-India Hackathon">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'> Winning Team </h5>
-                                    <h4 class='achievement_name'>ASEAN-India Hackathon 2021</h4>
-                                    <a href="https://india-asean.mic.gov.in/" class='achievement_button' target="_blank">
+                                    <h4 class='achievement_name' itemprop="award">ASEAN-India Hackathon 2021</h4>
+                                    <a href="https://india-asean.mic.gov.in/" class='achievement_button' target="_blank" rel="noopener noreferrer">
                                         <p>Know More</p>
                                     </a>
                                     <div class="achievement_buttons">
-                                        <a href="https://india-asean.mic.gov.in/" class='achievement_button2' target="_blank">
+                                        <a href="https://india-asean.mic.gov.in/" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Homepage</p>
                                         </a>
-                                        <a href="https://drive.google.com/file/d/11oRN6cPg5a4JZJ6u5CCpLMwRVZYTCpLz/view?usp=sharing" class='achievement_button2' target="_blank">
+                                        <a href="https://drive.google.com/file/d/11oRN6cPg5a4JZJ6u5CCpLMwRVZYTCpLz/view?usp=sharing" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Our Proposal</p>
                                         </a>
-                                        <a href="https://github.com/kmkrofficial/ASN_PS10_TEAM10" class='achievement_button2' target="_blank">
+                                        <a href="https://github.com/kmkrofficial/ASN_PS10_TEAM10" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Code</p>
                                         </a>
                                     </div>
@@ -288,22 +301,22 @@
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/achievements_sakshat3.png" alt="Smart India Hackathon">
+                                    <img src="./Images/achievements_sakshat3.webp" alt="Smart India Hackathon">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>  Winning Team  </h5>
-                                    <h4 class='achievement_name'>Smart India Hackathon 2020</h4>
-                                    <a href="https://www.sih.gov.in/" class='achievement_button' target="_blank">
+                                    <h4 class='achievement_name' itemprop="award">Smart India Hackathon 2020</h4>
+                                    <a href="https://www.sih.gov.in/" class='achievement_button' target="_blank" rel="noopener noreferrer">
                                         <p>Know More</p>
                                     </a>
                                     <div class="achievement_buttons">
-                                        <a href="https://www.sih.gov.in/" class='achievement_button2' target="_blank">
+                                        <a href="https://www.sih.gov.in/" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Homepage</p>
                                         </a>
-                                        <a href="https://cotton-forecast-sih.herokuapp.com" class='achievement_button2' target="_blank">
-                                            <p>Our Proposed Solution</p>
+                                        <a href="https://cotton-forecast-sih.herokuapp.com" class='achievement_button2' target="_blank" rel="noopener noreferrer">
+                                            <p>Our Proposal</p>
                                         </a>
-                                        <a href="https://github.com/SaurabhAgarwala/CottonHub" class='achievement_button2' target="_blank">
+                                        <a href="https://github.com/SaurabhAgarwala/CottonHub" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Code</p>
                                         </a>
                                     </div>
@@ -311,19 +324,19 @@
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/achievements_sakshat4.png" alt="Swadeshi Microprocessor Challenge">
+                                    <img src="./Images/achievements_sakshat4.webp" alt="Swadeshi Microprocessor Challenge">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>Semi-finalist Team</h5>
-                                    <h4 class='achievement_name'>Swadeshi Microprocessor Challenge 2020</h4>
-                                    <a href="https://innovate.mygov.in/swadeshi-microprocessor-challenge/" class='achievement_button' target="_blank">
+                                    <h4 class='achievement_name' itemprop="award">Swadeshi Microprocessor Challenge 2020</h4>
+                                    <a href="https://innovate.mygov.in/swadeshi-microprocessor-challenge/" class='achievement_button' target="_blank" rel="noopener noreferrer">
                                         <p>Know More</p>
                                     </a>
                                     <div class="achievement_buttons">
-                                        <a href="https://innovate.mygov.in/swadeshi-microprocessor-challenge/" class='achievement_button2' target="_blank">
+                                        <a href="https://innovate.mygov.in/swadeshi-microprocessor-challenge/" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Homepage</p>
                                         </a>
-                                        <a href="https://www.youtube.com/watch?v=f_SxFl0m42Y" class='achievement_button2' target="_blank">
+                                        <a href="https://www.youtube.com/watch?v=f_SxFl0m42Y" class='achievement_button2' target="_blank" rel="noopener noreferrer">
                                             <p>Our Proposal</p>
                                         </a>
                                     </div>
@@ -350,7 +363,7 @@
                             <div class="project_box">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat1.png" alt="Smart Hospital">
+                                        <img src="./Images/project_sakshat1.webp" alt="Sakshat - Smart Hospital">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Hospital Operation Management System</h5>
@@ -358,13 +371,13 @@
                                     </div>
                                 </div>
                                 <div class='project_buttons'>
-                                    <a href="https://www.youtube.com/watch?v=sNxa3SpIbTA" class='project_button' target="_blank">
+                                    <a href="https://www.youtube.com/watch?v=sNxa3SpIbTA" class='project_button' target="_blank" rel="noopener noreferrer">
                                         <p>Video</p>
                                     </a>
-                                    <a href="https://smart-hospital-server.herokuapp.com/" class='project_extra_button' target="_blank">
+                                    <a href="https://smart-hospital-server.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
                                         <p>Website</p>
                                     </a>
-                                    <a href="https://github.com/SakshatRao/SmartHospital" class='project_extra_button' target="_blank">
+                                    <a href="https://github.com/SakshatRao/SmartHospital" class='project_extra_button' target="_blank" rel="noopener noreferrer">
                                         <p>Code</p>
                                     </a>
                                 </div>
@@ -372,7 +385,7 @@
                             <div class="project_box">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat3.png" alt="Kaggle Data Analysis">
+                                        <img src="./Images/project_sakshat3.webp" alt="Sakshat - Kaggle Data Analysis">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Data Analysis on Kaggle</h5>
@@ -380,7 +393,7 @@
                                     </div>
                                 </div>
                                 <div class='project_buttons'>
-                                    <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank">
+                                    <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank" rel="noopener noreferrer">
                                         <p>Kaggle</p>
                                     </a>
                                 </div>
@@ -388,29 +401,7 @@
                             <div class="project_box">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat2.jpg" alt="Cube Highways Hackathon">
-                                    </div>
-                                    <div class="project_text">
-                                        <h5 class='project_title'>AI-boosted Online Ordering for CubeStops</h5>
-                                        <p class='project_descr'>Designing a smart virtual menu as part of the Cube Highways Hackathon 2021</p>
-                                    </div>
-                                </div>
-                                <div class='project_buttons'>
-                                    <a href="https://www.youtube.com/watch?v=6KZ1Z1YzDso" class='project_button' target="_blank">
-                                        <p>Video</p>
-                                    </a>
-                                    <a href="https://online-ordering-cubestop.herokuapp.com/" class='project_extra_button' target="_blank">
-                                        <p>Website</p>
-                                    </a>
-                                    <a href="https://github.com/SakshatRao/CubeHighwayHackathonWebApp" class='project_extra_button' target="_blank">
-                                        <p>Code</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project_box">
-                                <div class='project_box_info'>
-                                    <div class="project_image">
-                                        <img src="./Images/project_sakshat6.png" alt="Emotion Classification">
+                                        <img src="./Images/project_sakshat6.webp" alt="Sakshat - Emotion Classification">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Emotion Classification through Audio Signals</h5>
@@ -418,7 +409,29 @@
                                     </div>
                                 </div>
                                 <div class='project_buttons'>
-                                    <a href="https://github.com/SakshatRao/SpeechProcessingProject" class='project_button' target="_blank">
+                                    <a href="https://github.com/SakshatRao/SpeechProcessingProject" class='project_button' target="_blank" rel="noopener noreferrer">
+                                        <p>Code</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project_box">
+                                <div class='project_box_info'>
+                                    <div class="project_image">
+                                        <img src="./Images/project_sakshat2.webp" alt="Sakshat - Cube Highways Hackathon">
+                                    </div>
+                                    <div class="project_text">
+                                        <h5 class='project_title'>AI-boosted Online Ordering for CubeStops</h5>
+                                        <p class='project_descr'>Designing a smart virtual menu as part of the Cube Highways Hackathon 2021</p>
+                                    </div>
+                                </div>
+                                <div class='project_buttons'>
+                                    <a href="https://www.youtube.com/watch?v=6KZ1Z1YzDso" class='project_button' target="_blank" rel="noopener noreferrer">
+                                        <p>Video</p>
+                                    </a>
+                                    <a href="https://online-ordering-cubestop.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
+                                        <p>Website</p>
+                                    </a>
+                                    <a href="https://github.com/SakshatRao/CubeHighwayHackathonWebApp" class='project_extra_button' target="_blank" rel="noopener noreferrer">
                                         <p>Code</p>
                                     </a>
                                 </div>
@@ -441,52 +454,62 @@
                     <div class="contact_info">
                         <div class="contact_residence">
                             <h3>Current Residence</h3>
-                            <a href="https://www.google.co.in/maps/place/Mumbai,+Maharashtra/@19.0821978,72.741102,11z/data=!3m1!4b1!4m5!3m4!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559" target="_blank" class='contact_residence_link'>
+                            <a href="https://www.google.co.in/maps/place/Mumbai,+Maharashtra/@19.0821978,72.741102,11z/data=!3m1!4b1!4m5!3m4!1s0x3be7c6306644edc1:0x5da4ed8f8d648c69!8m2!3d19.0759837!4d72.8776559" class='contact_residence_link' target="_blank" rel="noopener noreferrer">
                                 <div>
-                                    <h5>Mumbai, Maharashtra</h5>
+                                    <h5 itemprop="address">Mumbai, Maharashtra</h5>
                                 </div>
                             </a>
                         </div>
                         <div class="contact_mail">
                             <h3>Mail</h3>
-                            <a href="mailto:sakshatrao99@gmail.com" class='contact_mail_link' target="_blank">
+                            <a href="mailto:sakshatrao99@gmail.com" class='contact_mail_link' target="_blank" rel="noopener noreferrer">
                                 <div>
-                                    <h5>sakshatrao99@gmail.com</h5>
+                                    <h5 itemprop="email">sakshatrao99@gmail.com</h5>
                                 </div>
                             </a>
                         </div>
                         <h3 class='contact_boxes_heading'>Find Me On</h3>
                         <div class="contact_boxes">
-                            <a href="https://www.linkedin.com/in/sakshatrao99/" class='contact_box_link' target="_blank">
+                            <a href="https://www.linkedin.com/in/sakshatrao99/" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
                                     <div class="contact_image">
-                                        <img src="./Images/linkedin_logo.png" alt="sakshatrao99 Linkedin">
+                                        <img src="./Images/linkedin_logo.webp" alt="Linkedin - Sakshat Rao">
                                     </div>
                                     <div class="contact_name">
                                         <p>/sakshatrao99</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://github.com/SakshatRao" class='contact_box_link' target="_blank">
+                            <a href="https://github.com/SakshatRao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
                                     <div class="contact_image">
-                                        <img src="./Images/github_logo.png" alt="SakshatRao Github">
+                                        <img src="./Images/github_logo.webp" alt="Github - Sakshat Rao">
                                     </div>
                                     <div class="contact_name">
                                         <p>/SakshatRao</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://www.kaggle.com/sakshatrao" class='contact_box_link' target="_blank">
+                            <a href="https://www.kaggle.com/sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
                                     <div class="contact_image">
-                                        <img src="./Images/kaggle_logo.png" alt="sakshatrao Kaggle">
+                                        <img src="./Images/kaggle_logo.webp" alt="Kaggle - Sakshat Rao">
                                     </div>
                                     <div class="contact_name">
                                         <p>/sakshatrao</p>
                                     </div>
                                 </div>
                             </a>
+                            <!-- <a href="https://www.youtube.com/channel/UCLNyeGpbhdH5chNolvsAGsw" class='contact_box_link' target="_blank" rel="noopener noreferrer">
+                                <div class="contact_box">
+                                    <div class="contact_image">
+                                        <img src="./Images/youtube_logo.webp" alt="Youtube - Sakshat Rao">
+                                    </div>
+                                    <div class="contact_name">
+                                        <p>YT</p>
+                                    </div>
+                                </div>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -503,7 +526,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
-    <script type='text/javascript' src="JS/scroll.js"></script>
+    <script type='text/javascript' src="./scroll.js"></script>
 
 </body>
 </html>
