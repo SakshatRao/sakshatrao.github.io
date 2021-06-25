@@ -1,0 +1,174 @@
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.contact_info h3 {
+    color: var(--complColor);
+}
+
+.contact_residence {
+    margin-top: 50px;
+}
+
+.contact_residence h3, .contact_residence h5 {
+    margin: 5px;
+}
+
+.contact_residence_link {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.contact_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_mail {
+    margin-top: 50px;
+}
+
+.contact_mail_link {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.contact_mail h3, .contact_mail h5 {
+    margin: 5px;
+}
+
+.contact_boxes_heading {
+    margin-top: 75px;
+}
+
+.contact_box_link {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_image img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.contact_image {
+    flex: 1;
+}
+
+.contact_name {
+    flex: 1;
+}
+
+.contact_box_link {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+/* Small Mobile */
+@media screen and (max-width: 374px) and (min-height: 500px) {
+}
+
+/* Rotated Tablet */
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
+    .contact_image img {
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contact_residence {
+        margin-top: 25px;
+    }
+
+    .contact_mail {
+        margin-top: 25px;
+    }
+
+    .contact_boxes_heading {
+        margin-top: 35px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
+    .contact_image img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Small Desktop */
+@media screen and (min-width:1200px) and (max-width:1899px) {
+    /* Adding background color */
+    /* #contact {
+        background-color:lemonchiffon;
+    } */
+
+    .contact_image img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:1900px) {
+    /* Adding background color */
+    /* #contact {
+        background-color:lemonchiffon;
+    } */
+
+    .contact_image img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Rotated mobile */
+@media screen and (max-height: 499px) and (max-width: 1199px) {
+    #contact {
+        width: 75%;
+    }
+    
+    .contact_residence {
+        margin-top: 0px;
+    }
+
+    .contact_mail {
+        margin-top: 3px;
+    }
+
+    .contact_boxes_heading {
+        margin-top: 10px;
+    }
+
+    .contact_image img {
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contact_info h3 {
+        font-size: calc(1.75rem * var(--fontFactor_RotMobile) * 0.75);
+    }
+
+    .contact_info h5 {
+        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75);
+    }
+}

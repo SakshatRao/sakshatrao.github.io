@@ -28,17 +28,16 @@
     </script>
     
     <!-- Importing Styles -->
-    <!-- <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="CSS/frontpage.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css?version=4">
+    <link rel="stylesheet" type="text/css" href="CSS/frontpage.css?version=3">
     <link rel="stylesheet" type="text/css" href="CSS/scroll.css?version=1">
     <link rel="stylesheet" type="text/css" href="CSS/about.css?version=1">
-    <link rel="stylesheet" type="text/css" href="CSS/experience.css">
+    <link rel="stylesheet" type="text/css" href="CSS/experience.css?version=1">
     <link rel="stylesheet" type="text/css" href="CSS/skills.css">
     <link rel="stylesheet" type="text/css" href="CSS/achievements.css?version=1">
-    <link rel="stylesheet" type="text/css" href="CSS/projects.css">
+    <link rel="stylesheet" type="text/css" href="CSS/projects.css?version=1">
     <link rel="stylesheet" type="text/css" href="CSS/contacts.css">
-    <link rel="stylesheet" type="text/css" href="CSS/footer.css"> -->
-    <link rel="stylesheet" type="text/css" href="./pages.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
 
     <!-- Adding website logo -->
     <link rel="shortcut icon" type="image/x-icon" href="https://sakshatrao.github.io/favicon.ico">
@@ -57,8 +56,8 @@
                     <img src="./Images/frontpage_pic.webp" alt="Sakshat Rao">
                 </div>
                 <div id="frontpage_text">
-                    <h2>My name is</h2>
-                    <h1 itemprop="name">Sakshat Rao</h1>
+                    <h2 class='frontpage_text1'>My name is</h2>
+                    <h1 class='frontpage_text2 rainbow' itemprop="name">Sakshat Rao</h1>
                 </div>
             </div>
             <a href="#about_content" class="scroll_button frontpage_scroll"><span></span></a>
@@ -69,7 +68,7 @@
         <div class='page' id="about">
             <div class="page_content" id='about_content'>
                 <div class="page_title">
-                    <h2>About Me</h2>
+                    <h2 class='rainbow'>About Me</h2>
                 </div>
                 <div class="page_info">
                     <div class="about_info">
@@ -110,6 +109,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class='know_more'>
+                    <a href="./Pages/template.html"><h5>Know More</h5></a>
+                </div> -->
             </div>
             <a href="#experience_content" class="scroll_button"><span></span></a>
             <a href="#experience" class="scroll_button_2"><span></span></a>
@@ -119,11 +121,11 @@
         <div class='page' id="experience">
             <div class="page_content" id='experience_content'>
                 <div class="page_title">
-                    <h2>Experience & Education</h2>
+                    <h2 class='rainbow'>Experience & Education</h2>
                 </div>
                 <div class="page_info">
                     <div class="experience_timeline">
-                        <div class="timeline_point">
+                        <div class="timeline_point timeline_point1">
                             <span class='timeline_circle'></span>
                             <div class="timeline_info">
                                 <div class="timeline_date">
@@ -142,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="timeline_point">
+                        <div class="timeline_point timeline_point2">
                             <span class='timeline_circle'></span>
                             <div class="timeline_info">
                                 <div class="timeline_date">
@@ -161,7 +163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="timeline_point">
+                        <div class="timeline_point timeline_point3">
                             <span class='timeline_circle'></span>
                             <div class="timeline_info">
                                 <div class="timeline_date">
@@ -182,6 +184,12 @@
                         </div>
                     </div>
                 </div>
+                <div class='know_more'>
+                    <a class='tooltip' href="./Pages/experience.html">
+                        <p>i</p>
+                        <span class='tooltiptext'>Know More Details</span>
+                    </a>
+                </div>
             </div>
             <a href="#skills_content" class="scroll_button"><span></span></a>
             <a href="#skills" class="scroll_button_2"><span></span></a>
@@ -191,7 +199,7 @@
         <div class='page' id="skills">
             <div class="page_content" id='skills_content'>
                 <div class="page_title">
-                    <h2 class='skills_heading'>Technical Skills</h2>
+                    <h2 class='skills_heading rainbow'>Technical Skills</h2>
                 </div>
                 <div class="page_info">
                     <div class="skills_info">
@@ -238,6 +246,12 @@
                         </div>
                     </div>
                 </div>
+                <div class='know_more'>
+                    <a class='tooltip' href="./Pages/skills.html">
+                        <p>i</p>
+                        <span class='tooltiptext'>View All Skills</span>
+                    </a>
+                </div>
             </div>
             <a href="#achievements_content" class="scroll_button"><span></span></a>
             <a href="#achievements" class="scroll_button_2"><span></span></a>
@@ -247,7 +261,7 @@
         <div class='page' id="achievements">
             <div class="page_content" id='achievements_content'>
                 <div class="page_title">
-                    <h2>Achievements</h2>
+                    <h2 class='rainbow'>Achievements</h2>
                 </div>
                 <div class="page_info">
                     <div class="achievements_info">
@@ -345,6 +359,12 @@
                         </div>
                     </div>
                 </div>
+                <div class='know_more'>
+                    <a class='tooltip' href="./Pages/achievements.html">
+                        <p>i</p>
+                        <span class='tooltiptext'>View All Achievements</span>
+                    </a>
+                </div>
             </div>
             <a href="#projects_content" class="scroll_button"><span></span></a>
             <a href="#projects" class="scroll_button_2"><span></span></a>
@@ -354,90 +374,96 @@
         <div class='page' id="projects">
             <div class="page_content" id='projects_content'>
                 <div class="page_title">
-                    <h2>Projects</h2>
+                    <h2 class='rainbow'>Projects</h2>
                 </div>
                 <div class="page_info">
                     <div class="projects_info">
                         <h5>These are few of my academic and personal projects that I have worked on</h5>
                         <div class="projects_boxes">
-                            <div class="project_box">
+                            <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat1.webp" alt="Sakshat - Smart Hospital">
+                                        <img src="./Images/project1.png" alt="Sakshat - Smart Hospital">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Hospital Operation Management System</h5>
                                         <p class='project_descr'>Remote and continuous Patient Health Monitoring integrated to a web server</p>
+                                        <div class='project_buttons'>
+                                            <a href="https://www.youtube.com/watch?v=sNxa3SpIbTA" class='project_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Demo</p>
+                                            </a>
+                                            <a href="https://smart-hospital-server.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Website</p>
+                                            </a>
+                                            <a href="https://github.com/SakshatRao/SmartHospital" class='project_extra_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Code</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class='project_buttons'>
-                                    <a href="https://www.youtube.com/watch?v=sNxa3SpIbTA" class='project_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Demo</p>
-                                    </a>
-                                    <a href="https://smart-hospital-server.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Website</p>
-                                    </a>
-                                    <a href="https://github.com/SakshatRao/SmartHospital" class='project_extra_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Source Code</p>
-                                    </a>
-                                </div>
                             </div>
-                            <div class="project_box">
+                            <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat3.webp" alt="Sakshat - Kaggle Data Analysis">
+                                        <img src="./Images/project2.png" alt="Sakshat - Kaggle Data Analysis">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Data Analysis on Kaggle Datasets</h5>
-                                        <p class='project_descr'>Some of my interesting data analysis and visualizations done on different Kaggle datasets</p>
+                                        <p class='project_descr'>Some of my interesting analysis and visualizations done on Kaggle datasets</p>
+                                        <div class='project_buttons'>
+                                            <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Kaggle</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class='project_buttons'>
-                                    <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Kaggle</p>
-                                    </a>
-                                </div>
                             </div>
-                            <div class="project_box">
+                            <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat6.webp" alt="Sakshat - Emotion Classification">
+                                        <img src="./Images/project3.png" alt="Sakshat - Emotion Classification">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Emotion Classification through Audio Signals</h5>
                                         <p class='project_descr'>Using temporal & frequency features from the audio to train Conv-LSTMs</p>
+                                        <div class='project_buttons'>
+                                            <a href="https://github.com/SakshatRao/SpeechProcessingProject" class='project_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Code</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class='project_buttons'>
-                                    <a href="https://github.com/SakshatRao/SpeechProcessingProject" class='project_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Code</p>
-                                    </a>
-                                </div>
                             </div>
-                            <div class="project_box">
+                            <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/project_sakshat2.webp" alt="Sakshat - Cube Highways Hackathon">
+                                        <img src="./Images/project4.png" alt="Sakshat - Cube Highways Hackathon">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>AI-boosted Online Ordering for CubeStops</h5>
                                         <p class='project_descr'>Designing a smart virtual menu as part of the Cube Highways Hackathon 2021</p>
+                                        <div class='project_buttons'>
+                                            <a href="https://www.youtube.com/watch?v=6KZ1Z1YzDso" class='project_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Demo</p>
+                                            </a>
+                                            <a href="https://online-ordering-cubestop.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Website</p>
+                                            </a>
+                                            <a href="https://github.com/SakshatRao/CubeHighwayHackathonWebApp" class='project_extra_button' target="_blank" rel="noopener noreferrer">
+                                                <p>Code</p>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class='project_buttons'>
-                                    <a href="https://www.youtube.com/watch?v=6KZ1Z1YzDso" class='project_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Demo</p>
-                                    </a>
-                                    <a href="https://online-ordering-cubestop.herokuapp.com/" class='project_extra_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Website</p>
-                                    </a>
-                                    <a href="https://github.com/SakshatRao/CubeHighwayHackathonWebApp" class='project_extra_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Source Code</p>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class='know_more'>
+                    <a class='tooltip' href="./Pages/projects.html">
+                        <p>i</p>
+                        <span class='tooltiptext'>View All Projects</span>
+                    </a>
                 </div>
             </div>
             <a href="#contact_content" class="scroll_button"><span></span></a>
@@ -448,7 +474,7 @@
         <div class='page' id="contact">
             <div class="page_content" id='contact_content'>
                 <div class="page_title">
-                    <h2>Contact</h2>
+                    <h2 class='rainbow'>Contact</h2>
                 </div>
                 <div class="page_info">
                     <div class="contact_info">
@@ -527,6 +553,7 @@
         crossorigin="anonymous">
     </script>
     <script type='text/javascript' src="./scroll.js"></script>
+    <script type='text/javascript' src="./animations.js"></script>
 
 </body>
 </html>

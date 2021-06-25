@@ -1,0 +1,164 @@
+.scroll_button {
+    width: 34px;
+    height: 34px;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 3s infinite;
+    animation: sdb07 3s infinite;
+}
+
+@-webkit-keyframes sdb07 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+
+.scroll_button_2 {
+    display: none;
+}
+
+/* Small Mobile */
+@media screen and (max-width: 374px) and (min-height: 500px) {
+    .scroll_button {
+        width: 20px;
+        height: 20px;
+        border-bottom: 6px solid black;
+        border-left: 6px solid black;
+        border-width: 4px;
+    }
+}
+
+/* Rotated Tablet */
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
+}
+
+/* Small Desktop */
+@media screen and (min-width:1200px) and (max-width:1899px) {
+    /* Disabling scroll to top of page */
+    .scroll_button {
+        display: none;
+    }
+
+    /* Enabling scroll to top of content */
+    .scroll_button_2 {
+        display: inline;
+        width: 34px;
+        height: 34px;
+        border-bottom: 10px solid black;
+        border-left: 10px solid black;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb07 3s infinite;
+        animation: sdb07 3s infinite;
+    }
+
+    @-webkit-keyframes sdb07 {
+        0% {
+          -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+          -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+          -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+      }
+      @keyframes sdb07 {
+        0% {
+          transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+          transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+          transform: rotate(-45deg) translate(0, 0);
+        }
+      }
+}
+
+/* Desktop */
+@media screen and (min-width:1900px) {
+    /* Disabling scroll to top of page */
+    .scroll_button {
+        display: none;
+    }
+
+    /* Enabling scroll to top of content */
+    .scroll_button_2 {
+        display: inline;
+        width: 34px;
+        height: 34px;
+        border-bottom: 10px solid black;
+        border-left: 10px solid black;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb07 3s infinite;
+        animation: sdb07 3s infinite;
+    }
+
+    @-webkit-keyframes sdb07 {
+        0% {
+          -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+          -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+          -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+      }
+      @keyframes sdb07 {
+        0% {
+          transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+          transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+          transform: rotate(-45deg) translate(0, 0);
+        }
+      }
+}
+
+/* Rotated mobile */
+@media screen and (max-height: 499px) and (max-width: 1199px) {
+    .scroll_button {
+        width: 17px;
+        height: 17px;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+        border-width: 2px;
+    }
+}
