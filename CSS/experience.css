@@ -13,7 +13,7 @@
     margin: 10px 0;
 }
 
-@keyframes experience_box1_animation_effect {
+/* @keyframes experience_box1_animation_effect {
 	0% {
 		transform: scale(1, 0);
 	}
@@ -59,26 +59,26 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .experience_box1_animation {
+    .experience_box1_animation1 {
         animation: experience_box1_animation_effect 2s 1;
         animation-timing-function: ease;
     }
 
-    .experience_box2_animation {
+    .experience_box2_animation1 {
         animation: experience_box2_animation_effect 2s 1;
         animation-timing-function: ease;
     }
 
-    .experience_box3_animation {
+    .experience_box3_animation1 {
         animation: experience_box3_animation_effect 2s 1;
         animation-timing-function: ease;
     }
 
-    .experience_button_animation {
+    .experience_button_animation1 {
         animation: experience_button_animation_effect 2s 1;
         animation-timing-function: ease;
     }
-}
+} */
 
 .timeline_info {
     display: flex;

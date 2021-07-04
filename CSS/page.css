@@ -1,3 +1,8 @@
+.linkedin_link {
+    color: var(--buttonColor);
+    text-decoration: none;
+}
+
 .page_title {
     text-align: center;
     padding-top: 25px;
@@ -79,6 +84,11 @@
 .notebook_link {
     text-align: center;
     margin: 0 auto;
+}
+
+.notebook_link a {
+    text-decoration: none;
+    color: var(--buttonColor);
 }
 
 .skill_levels {

@@ -19,7 +19,7 @@
     margin: 0 auto;
 }
 
-@keyframes img_entry {
+/* @keyframes img_entry {
 	0% {
 		transform: scale(0, 0);
 	}
@@ -64,7 +64,7 @@
     .frontpage_text2_animation2 {
         animation: text2_entry 2.5s 1;
     }
-}
+} */
 
 #frontpage_img img {
     width: 100%;
