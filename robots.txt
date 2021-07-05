@@ -1,1 +1,5 @@
+User-agent: *
+
+Disallow: /Jupyter_Notebooks/the-global-greats-nobel-laureates-r.html /Jupyter_Notebooks/olympics-the-pinnacle-of-sports-python.html /Jupyter_Notebooks/fifa-19-stats-amazing-facts-python.html /Jupyter_Notebooks/investigating-ufo-sighting-reports-python.html
+
 Sitemap: https://sakshatrao.github.io/sitemap.xml
