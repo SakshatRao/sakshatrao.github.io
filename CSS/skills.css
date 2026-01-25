@@ -14,15 +14,29 @@
     display: inline-block;
     margin: 5px 0;
     width: 100%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
 .skill_box p:nth-child(n+2) {
     font-size: calc(1rem * var(--fontFactor_Mobile) * 1);
 }
 
+.skill_box:hover {
+    transform: translateY(-1px);
+}
+
+.skill_box:hover .skill_name {
+    color: rgba(6, 182, 212, 0.8);
+    text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
+}
+
 .skill_box p, .skill_other_box p {
     margin: 0;
     padding: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .skill_name, .skill_other_name {
@@ -89,6 +103,18 @@
         flex: 1;
         margin: 0 5px;
         padding: 3px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill_other_box:hover {
+        transform: translateY(-1px);
+    }
+
+    .skill_other_box:hover .skill_other_name {
+        color: rgba(6, 182, 212, 0.8);
+        text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
     }
 
     .skill_other_text {
@@ -136,6 +162,18 @@
         flex: 1;
         margin: 0 5px;
         padding: 5px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill_other_box:hover {
+        transform: translateY(-1px);
+    }
+
+    .skill_other_box:hover .skill_other_name {
+        color: rgba(6, 182, 212, 0.8);
+        text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
     }
 
     .skill_other_text {
@@ -171,7 +209,7 @@
         color: var(--textColor);
         margin: 0;
         padding: 20px 0 5px 0;
-        font-size: calc(1.75rem * var(--fontFactor_SmallDesktop) * 0.9) !important;
+        font-size: calc(1.75rem * var(--fontFactor_SmallDesktop) * 0.8) !important;
     }
 
     .skills_boxes {
@@ -223,6 +261,28 @@
 
     .skill_box p:nth-child(n+2), .skill_other_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_SmallDesktop) * 1.1);
+    }
+
+    .skill_other_box {
+        background-color: var(--cardMediumColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
+        color: var(--textColor);
+        flex: 1;
+        margin: 0 10px;
+        padding: 5px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill_other_box:hover {
+        transform: translateY(-1px);
+    }
+
+    .skill_other_box:hover .skill_other_name {
+        color: rgba(6, 182, 212, 0.8);
+        text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
     }
 }
 
@@ -296,6 +356,28 @@
 
     .skill_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_Desktop));
+    }
+
+    .skill_other_box {
+        background-color: var(--cardMediumColor);
+        /* border: 2px solid var(--complColor); */
+        border: none;
+        color: var(--textColor);
+        flex: 1;
+        margin: 0 10px;
+        padding: 5px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill_other_box:hover {
+        transform: translateY(-1px);
+    }
+
+    .skill_other_box:hover .skill_other_name {
+        color: rgba(6, 182, 212, 0.8);
+        text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
     }
 }
 

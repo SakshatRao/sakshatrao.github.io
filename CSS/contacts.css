@@ -1,55 +1,100 @@
+/* ============================================
+   CONTACTS SECTION - Modern Glassmorphism Design
+   ============================================ */
+
 .contact_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--textColor);
+    color: var(--text-primary);
+    gap: 16px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.contact_info h3 {
-    color: var(--complColor);
+/* ============================================
+   Residence & Mail Cards
+   ============================================ */
+
+.contact_residence,
+.contact_mail {
+    margin: 0;
+    width: 100%;
+    max-width: 340px;
 }
 
-.contact_residence {
-    margin-top: 50px;
+.contact_card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.05) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 0.3s ease;
 }
 
-.contact_residence h3, .contact_residence h5 {
-    margin: 5px;
+.contact_card i {
+    font-size: 1.2rem;
+    color: var(--primary-light);
+    width: 24px;
+    text-align: center;
 }
 
-.contact_residence_link {
-    text-decoration: none;
-    color: var(--textColor);
+.contact_card h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+
+/* ============================================
+   "Find Me On" Section
+   ============================================ */
+
+.contact_boxes_heading {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--text-muted);
+    margin: 20px 0 8px 0 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact_boxes_heading::before,
+.contact_boxes_heading::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    max-width: 60px;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.4));
+}
+
+.contact_boxes_heading::after {
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.4), transparent);
 }
 
 .contact_boxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact_mail {
-    margin-top: 50px;
-}
-
-.contact_mail_link {
-    text-decoration: none;
-    color: var(--textColor);
-}
-
-.contact_mail h3, .contact_mail h5 {
-    margin: 5px;
-}
-
-.contact_boxes_heading {
-    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
 }
 
 .contact_box_link {
-    flex: 1;
-    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: block;
 }
 
 .contact_box {
@@ -57,118 +102,342 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 14px 10px;
+    background: linear-gradient(145deg, rgba(30, 30, 63, 0.6) 0%, rgba(22, 33, 62, 0.4) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact_image img {
-    width: 100%;
-    height: auto;
-    margin: auto;
+/* Subtle gradient overlay on hover */
+.contact_box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: 0;
 }
 
-.contact_image {
-    flex: 1;
+.contact_box:hover {
+    transform: translateY(-6px);
+    border-color: transparent;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(99, 102, 241, 0.15);
 }
 
-.contact_name {
-    flex: 1;
+.contact_box:hover::before {
+    opacity: 0.12;
 }
 
-.contact_box_link {
-    text-decoration: none;
-    color: var(--textColor);
+/* Contact Images - directly in contact_box */
+.contact_box img {
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: all 0.35s ease;
 }
+
+.contact_box:hover img {
+    filter: brightness(1.15);
+    transform: scale(1.08);
+}
+
+
+/* ============================================
+   Platform-specific accent colors on hover
+   ============================================ */
+
+/* LinkedIn */
+.contact_box_link[href*="linkedin"] .contact_box:hover {
+    border-color: rgba(10, 102, 194, 0.4);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(10, 102, 194, 0.25);
+}
+.contact_box_link[href*="linkedin"] .contact_box:hover::before {
+    background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+
+/* GitHub */
+.contact_box_link[href*="github"] .contact_box:hover {
+    border-color: rgba(110, 84, 148, 0.4);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(110, 84, 148, 0.25);
+}
+.contact_box_link[href*="github"] .contact_box:hover::before {
+    background: linear-gradient(135deg, #6e5494 0%, #24292e 100%);
+}
+
+/* Kaggle */
+.contact_box_link[href*="kaggle"] .contact_box:hover {
+    border-color: rgba(32, 190, 255, 0.4);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(32, 190, 255, 0.25);
+}
+.contact_box_link[href*="kaggle"] .contact_box:hover::before {
+    background: linear-gradient(135deg, #20beff 0%, #00a3e0 100%);
+}
+
+/* YouTube */
+.contact_box_link[href*="youtube"] .contact_box:hover {
+    border-color: rgba(255, 0, 0, 0.35);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(255, 0, 0, 0.2);
+}
+.contact_box_link[href*="youtube"] .contact_box:hover::before {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
+    .contact_info {
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .contact_boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .contact_box {
+        padding: 12px 8px;
+    }
+
+    .contact_box img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact_card {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .contact_card i {
+        font-size: 1rem;
+    }
+
+    .contact_card h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile (default) - 2x2 grid */
+@media screen and (max-width: 599px) and (min-height: 500px) {
+    .contact_boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 260px;
+    }
+
+    .contact_box {
+        padding: 14px 10px;
+    }
+
+    .contact_boxes_heading {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .contact_boxes_heading::before,
+    .contact_boxes_heading::after {
+        max-width: 40px;
+    }
 }
 
 /* Rotated Tablet */
 @media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
-    .contact_image img {
-        width: 30%;
-        height: auto;
-        margin: 0 auto;
+    .contact_info {
+        gap: 14px;
     }
 
-    .contact_residence {
-        margin-top: 25px;
-    }
-
+    .contact_residence,
     .contact_mail {
-        margin-top: 25px;
+        max-width: 300px;
+    }
+
+    .contact_card {
+        padding: 12px 16px;
+    }
+
+    .contact_boxes {
+        gap: 12px;
+        max-width: 380px;
+    }
+
+    .contact_box {
+        padding: 12px 8px;
+    }
+
+    .contact_box img {
+        width: 38px;
+        height: 38px;
     }
 
     .contact_boxes_heading {
-        margin-top: 35px;
+        margin: 14px 0 6px 0 !important;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
-    .contact_image img {
-        width: 70%;
-        height: auto;
-        margin: 0 auto;
+    .contact_boxes {
+        gap: 16px;
+        max-width: 400px;
+    }
+
+    .contact_box {
+        padding: 16px 12px;
+    }
+
+    .contact_box img {
+        width: 48px;
+        height: 48px;
     }
 }
 
 /* Small Desktop */
-@media screen and (min-width:1200px) and (max-width:1899px) {
-    /* Adding background color */
-    /* #contact {
-        background-color:lemonchiffon;
-    } */
+@media screen and (min-width: 1200px) and (max-width: 1899px) {
+    .contact_info {
+        gap: 18px;
+    }
 
-    .contact_image img {
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
+    .contact_residence,
+    .contact_mail {
+        max-width: 360px;
+    }
+
+    .contact_card {
+        padding: 16px 20px;
+    }
+
+    .contact_boxes {
+        gap: 16px;
+    }
+
+    .contact_box {
+        padding: 16px 12px;
+    }
+
+    .contact_box img {
+        width: 46px;
+        height: 46px;
     }
 }
 
 /* Desktop */
-@media screen and (min-width:1900px) {
-    /* Adding background color */
-    /* #contact {
-        background-color:lemonchiffon;
-    } */
-
-    .contact_image img {
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
+@media screen and (min-width: 1900px) {
+    .contact_info {
+        gap: 22px;
+        max-width: 900px;
     }
+
+    .contact_residence,
+    .contact_mail {
+        max-width: 380px;
+    }
+
+    .contact_card {
+        padding: 18px 24px;
+        border-radius: 14px;
+    }
+
+    .contact_card i {
+        font-size: 1.3rem;
+    }
+
+    .contact_card h5 {
+        font-size: 1.1rem;
+    }
+
+    .contact_boxes {
+        gap: 18px;
+        max-width: 480px;
+    }
+
+    .contact_box {
+        padding: 18px 14px;
+        border-radius: 14px;
+    }
+
+    .contact_box img {
+        width: 52px;
+        height: 52px;
+    }
+
 }
 
-/* Rotated mobile */
+/* Rotated Mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     #contact {
-        width: 75%;
-    }
-    
-    .contact_residence {
-        margin-top: 0px;
+        width: 85%;
     }
 
+    .contact_info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .contact_residence,
     .contact_mail {
-        margin-top: 3px;
+        flex: 0 0 auto;
+        max-width: 180px;
+    }
+
+    .contact_card {
+        padding: 8px 12px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+
+    .contact_card i {
+        font-size: 0.9rem;
+    }
+
+    .contact_card h5 {
+        font-size: 0.75rem;
     }
 
     .contact_boxes_heading {
-        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.6rem;
+        margin: 6px 0 4px 0 !important;
+        justify-content: center;
     }
 
-    .contact_image img {
-        width: 30%;
-        height: auto;
-        margin: 0 auto;
+    .contact_boxes {
+        gap: 8px;
+        max-width: 100%;
     }
 
-    .contact_info h3 {
-        font-size: calc(1.75rem * var(--fontFactor_RotMobile) * 0.75);
+    .contact_box {
+        padding: 8px 6px;
+        border-radius: 8px;
     }
 
-    .contact_info h5 {
-        font-size: calc(1.25rem * var(--fontFactor_RotMobile) * 0.75);
+    .contact_box img {
+        width: 26px;
+        height: 26px;
     }
+
 }

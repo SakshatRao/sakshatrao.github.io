@@ -1,39 +1,49 @@
 .scroll_button {
-    width: 34px;
-    height: 34px;
-    border-bottom: 10px solid black;
-    border-left: 10px solid black;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb07 3s infinite;
-    animation: sdb07 3s infinite;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: scrollPulse 2s infinite;
 }
 
-@-webkit-keyframes sdb07 {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
+.scroll_button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #6366f1;
+    border-right: 2px solid #6366f1;
+    transform: translate(-50%, -60%) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.scroll_button:hover {
+    background: rgba(34, 211, 238, 0.2);
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.2);
+}
+
+.scroll_button:hover::before {
+    border-color: #06b6d4;
+    transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
+}
+
+@keyframes scrollPulse {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1);
     }
-    20% {
-      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
     }
-    40% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-    }
-  }
-  @keyframes sdb07 {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-    }
-    20% {
-      transform: rotate(-45deg) translate(-10px, 10px);
-    }
-    40% {
-      transform: rotate(-45deg) translate(0, 0);
-    }
-  }
+}
 
 .scroll_button_2 {
     display: none;
@@ -42,11 +52,13 @@
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
     .scroll_button {
-        width: 20px;
-        height: 20px;
-        border-bottom: 6px solid black;
-        border-left: 6px solid black;
-        border-width: 4px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .scroll_button::before {
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -68,41 +80,40 @@
     /* Enabling scroll to top of content */
     .scroll_button_2 {
         display: inline;
-        width: 34px;
-        height: 34px;
-        border-bottom: 10px solid black;
-        border-left: 10px solid black;
-        border-image-slice: 1;
-        border-width: 5px;
-        border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-animation: sdb07 3s infinite;
-        animation: sdb07 3s infinite;
+        width: 36px;
+        height: 36px;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.3s ease;
+        animation: scrollPulse 2s infinite;
+    }
+    
+    .scroll_button_2::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-bottom: 2px solid #6366f1;
+        border-right: 2px solid #6366f1;
+        transform: translate(-50%, -60%) rotate(45deg);
+        transition: all 0.3s ease;
+    }
+    
+    .scroll_button_2:hover {
+        background: rgba(34, 211, 238, 0.2);
+        transform: scale(1.1);
+    }
+    
+    .scroll_button_2:hover::before {
+        border-color: #06b6d4;
+        transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
     }
 
-    @-webkit-keyframes sdb07 {
-        0% {
-          -webkit-transform: rotate(-45deg) translate(0, 0);
-        }
-        20% {
-          -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-        }
-        40% {
-          -webkit-transform: rotate(-45deg) translate(0, 0);
-        }
-      }
-      @keyframes sdb07 {
-        0% {
-          transform: rotate(-45deg) translate(0, 0);
-        }
-        20% {
-          transform: rotate(-45deg) translate(-10px, 10px);
-        }
-        40% {
-          transform: rotate(-45deg) translate(0, 0);
-        }
-      }
 }
 
 /* Desktop */
@@ -115,50 +126,51 @@
     /* Enabling scroll to top of content */
     .scroll_button_2 {
         display: inline;
-        width: 34px;
-        height: 34px;
-        border-bottom: 10px solid black;
-        border-left: 10px solid black;
-        border-image-slice: 1;
-        border-width: 5px;
-        border-image-source: linear-gradient(to bottom left, #D8FDF7, #D8FDF7, #4F5B69, #738396, #c5ccd3);
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-animation: sdb07 3s infinite;
-        animation: sdb07 3s infinite;
+        width: 36px;
+        height: 36px;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.3s ease;
+        animation: scrollPulse 2s infinite;
+    }
+    
+    .scroll_button_2::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-bottom: 2px solid #6366f1;
+        border-right: 2px solid #6366f1;
+        transform: translate(-50%, -60%) rotate(45deg);
+        transition: all 0.3s ease;
+    }
+    
+    .scroll_button_2:hover {
+        background: rgba(34, 211, 238, 0.2);
+        transform: scale(1.1);
+    }
+    
+    .scroll_button_2:hover::before {
+        border-color: #06b6d4;
+        transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
     }
 
-    @-webkit-keyframes sdb07 {
-        0% {
-          -webkit-transform: rotate(-45deg) translate(0, 0);
-        }
-        20% {
-          -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-        }
-        40% {
-          -webkit-transform: rotate(-45deg) translate(0, 0);
-        }
-      }
-      @keyframes sdb07 {
-        0% {
-          transform: rotate(-45deg) translate(0, 0);
-        }
-        20% {
-          transform: rotate(-45deg) translate(-10px, 10px);
-        }
-        40% {
-          transform: rotate(-45deg) translate(0, 0);
-        }
-      }
 }
 
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
     .scroll_button {
-        width: 17px;
-        height: 17px;
-        border-bottom: 4px solid black;
-        border-left: 4px solid black;
-        border-width: 2px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .scroll_button::before {
+        width: 6px;
+        height: 6px;
     }
 }

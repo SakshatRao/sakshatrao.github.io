@@ -6,11 +6,71 @@
 }
 
 .timeline_point {
-    background-color: var(--cardDarkColor);
+    background: linear-gradient(135deg, var(--glass-bg), rgba(26, 26, 46, 0.85));
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
     color: var(--textColor);
     display: flex;
     align-items: center;
     margin: 10px 0;
+    min-height: 80px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.timeline_point::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.15), transparent);
+    transition: left 0.6s ease;
+}
+
+.timeline_point::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(6, 182, 212, 0.3));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.timeline_point:hover {
+    transform: translateY(-3px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(99, 102, 241, 0.3),
+        0 0 30px rgba(6, 182, 212, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.timeline_point:hover::before {
+    left: 100%;
+}
+
+.timeline_point:hover::after {
+    opacity: 1;
+}
+
+.timeline_point:hover .timeline_circle {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    box-shadow: 
+        0 0 20px rgba(6, 182, 212, 0.6),
+        0 0 40px rgba(6, 182, 212, 0.3);
 }
 
 /* @keyframes experience_box1_animation_effect {
@@ -83,8 +143,9 @@
 .timeline_info {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
+    position: relative;
 }
 
 .timeline_circle {
@@ -94,34 +155,59 @@
     border: 2px solid var(--complColor);
     border-radius: 50%;
     background-color: black;
+    transition: all 0.4s ease;
+    z-index: 2;
 }
 
 .timeline_date {
     text-align: left;
-    margin: auto 0;
+    display: flex;
+    align-items: center;
     padding-left: 10px;
+    flex-shrink: 0;
+    min-width: 60px;
+    height: 100%;
 }
 
 .timeline_text {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    z-index: 1;
 }
 
-.timeline_duration {
-    text-align: right;
-    margin: auto 0;
-    padding-right: 10px;
-}
 
 .timeline_title h5 {
     height: 100%;
-    font-weight: bold;
+    font-weight: 600;
     padding: 15px 0 10px 0;
     margin: 0;
+    transition: all 0.4s ease;
+    letter-spacing: 0.025em;
+}
+
+.timeline_point:hover .timeline_title h5 {
+    color: var(--accent-light);
+    text-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
 }
 
 .timeline_descr {
     display: none;
+    transition: all 0.4s ease;
+}
+
+.timeline_descr p {
+    transition: all 0.4s ease;
+}
+
+.timeline_point:hover .timeline_descr p {
+    color: var(--text-primary);
 }
 
 /* Small Mobile */
@@ -158,14 +244,19 @@
 @media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
     .timeline_point {
         margin: 20px 0;
+        min-height: 100px;
     }
 
     .timeline_descr {
         display: block;
     }
     
+    .timeline_date {
+        min-width: 80px;
+    }
+    
     .timeline_text {
-        width: 75%;
+        width: calc(100% - 100px);
     }
 }
 
@@ -178,6 +269,7 @@
 
     .timeline_point {
         margin: 10px 0;
+        min-height: 120px;
     }
 
     .timeline_descr {
@@ -185,15 +277,11 @@
     }
 
     .timeline_date {
-        width: 10%;
+        min-width: 100px;
     }
-
+    
     .timeline_text {
-        width: 75%;
-    }
-
-    .timeline_duration {
-        width: 15%;
+        width: calc(100% - 120px);
     }
 }
 
@@ -210,6 +298,7 @@
 
     .timeline_point {
         margin: 15px 0;
+        min-height: 140px;
     }
 
     .timeline_descr {
@@ -217,15 +306,11 @@
     }
 
     .timeline_date {
-        width: 10%;
+        min-width: 120px;
     }
-
+    
     .timeline_text {
-        width: 75%;
-    }
-
-    .timeline_duration {
-        width: 15%;
+        width: calc(100% - 140px);
     }
 }
 
