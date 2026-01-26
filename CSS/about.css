@@ -56,13 +56,12 @@
 } */
 
 .about_box {
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
     color: var(--text-primary);
     margin: 8px 0;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,6 +71,14 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+/* Enable backdrop-filter only on larger screens for performance */
+@media screen and (min-width: 1200px) {
+    .about_box {
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+    }
 }
 
 .about_box::before {

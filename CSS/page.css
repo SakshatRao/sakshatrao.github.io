@@ -610,7 +610,7 @@
 .poetry_redirect {
     display: flex;
     justify-content: center;
-    margin: 24px 0;
+    margin: 24px 0 0 0;
 }
 
 .poetry_link {

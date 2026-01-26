@@ -1,5 +1,6 @@
 #frontpage {
     height: 90vh;
+    height: 90svh; /* Modern browsers: stable viewport height */
     width: 100%;
     display: flex;
     align-items: center;
