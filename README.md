@@ -1,3 +1,10 @@
-# My Personal Website
+# Sakshat Rao
 
-## Get to know who I am and what I do at my personal website - sakshatrao.github.io
+**Verification Engineer @ NVIDIA | NITK Surathkal Alumnus**
+
+[![Website](https://img.shields.io/badge/Portfolio-sakshatrao.github.io-blue?style=flat-square&logo=github)](https://sakshatrao.github.io)
+
+## About
+
+Personal portfolio website showcasing my professional journey, technical skills, projects, and achievements.
+
