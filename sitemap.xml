@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -9,42 +10,106 @@
 
 <url>
   <loc>https://sakshatrao.github.io/</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>1.00</priority>
+  <!-- Profile Image -->
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Frontpage/sakshat_frontpage.webp</image:loc>
+    <image:title>Sakshat Rao - Verification Engineer at NVIDIA</image:title>
+    <image:caption>Sakshat Rao portfolio profile photo - NITK Surathkal alumnus and NVIDIA engineer</image:caption>
+  </image:image>
+  <!-- About Section Images -->
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/About/udupi.webp</image:loc>
+    <image:title>Udupi Sri Krishna Matha Temple</image:title>
+    <image:caption>Udupi Sri Krishna Matha temple in Karnataka, India - Sakshat Rao birthplace</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/About/keyboard.webp</image:loc>
+    <image:title>Sakshat Rao Playing Keyboard</image:title>
+    <image:caption>Sakshat Rao playing keyboard - 15+ years of musical experience</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/About/siblings.webp</image:loc>
+    <image:title>Sakshat Rao Family Photo</image:title>
+    <image:caption>Sakshat Rao with siblings - family photo</image:caption>
+  </image:image>
+  <!-- Achievement Images -->
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Achievements/wharton.webp</image:loc>
+    <image:title>Wharton People Analytics Case Competition 2021 Winner</image:title>
+    <image:caption>Sakshat Rao - Winner at Wharton People Analytics Case Competition 2021</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Achievements/asean_india.webp</image:loc>
+    <image:title>ASEAN-India Hackathon 2021 Winner</image:title>
+    <image:caption>Sakshat Rao - Winner at ASEAN-India Hackathon 2021</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Achievements/sih.webp</image:loc>
+    <image:title>Smart India Hackathon 2020 Winner</image:title>
+    <image:caption>Sakshat Rao - Winner at Smart India Hackathon 2020</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Achievements/r2_data_labs_hackathon.png</image:loc>
+    <image:title>R2 Data Labs Hackathon 2023 Winner</image:title>
+    <image:caption>Sakshat Rao - Winner at R2 Data Labs Hackathon 2023 by Rolls-Royce</image:caption>
+  </image:image>
+  <!-- Project Images -->
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Projects/hospital_operation_management_system.webp</image:loc>
+    <image:title>Smart Hospital IoT Project</image:title>
+    <image:caption>Smart Hospital IoT Project by Sakshat Rao - Automated Patient Health Monitoring System</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Projects/ai_boosted_online_ordering.webp</image:loc>
+    <image:title>AI-boosted Online Ordering System</image:title>
+    <image:caption>AI-boosted Online Ordering System by Sakshat Rao - CubeStops Virtual Menu</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Projects/rurban_traveller_cover.png</image:loc>
+    <image:title>Signalytics Traffic Signal Simulation</image:title>
+    <image:caption>Signalytics Project by Sakshat Rao - Traffic Signal Scheduling Simulation Tool</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>https://sakshatrao.github.io/Images/Projects/kaggle_data_analysis.webp</image:loc>
+    <image:title>Kaggle Data Analysis</image:title>
+    <image:caption>Kaggle Data Analysis by Sakshat Rao - Data Visualizations and Insights</image:caption>
+  </image:image>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/personal.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/experience.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/skills.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/achievements.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/projects.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/index.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sakshatrao.github.io/analysis.html</loc>
-  <lastmod>2021-11-27T13:19:47+00:00</lastmod>
+  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

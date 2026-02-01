@@ -11,6 +11,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sakshatrao.github.io/" />
+
     <!-- Open Graph -->
     <meta property="og:title" content="Sakshat Rao - Personal Portfolio Website" />
     <meta property="og:url" content="https://sakshatrao.github.io" />
@@ -19,6 +22,96 @@
     <meta property="og:image" content="https://sakshatrao.github.io/Images/Frontpage/opengraph_frontpage.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sakshat Rao - Personal Portfolio Website" />
+    <meta name="twitter:description" content="Take a quick glance at Sakshat Rao's personal portfolio webpage. Get to know his work & skillset through some of his interesting projects & notable achievements." />
+    <meta name="twitter:image" content="https://sakshatrao.github.io/Images/Frontpage/opengraph_frontpage.png" />
+
+    <!-- JSON-LD Structured Data - Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sakshat Rao",
+        "url": "https://sakshatrao.github.io",
+        "image": "https://sakshatrao.github.io/Images/Frontpage/sakshat_frontpage.webp",
+        "jobTitle": "Verification Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "NVIDIA"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "NITK Surathkal"
+        },
+        "email": "sakshatrao99@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bengaluru",
+            "addressRegion": "Karnataka",
+            "addressCountry": "India"
+        },
+        "knowsAbout": ["Hardware Verification", "Embedded Design", "Data Analysis", "Machine Learning", "Web Development"],
+        "sameAs": [
+            "https://www.linkedin.com/in/sakshatrao/",
+            "https://github.com/SakshatRao",
+            "https://www.kaggle.com/sakshatrao",
+            "https://www.youtube.com/@sakshatrao"
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data - VideoObject Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "VideoObject",
+                "position": 1,
+                "name": "Wharton People Analytics Case Competition 2021 - Winning Presentation",
+                "description": "Winning team presentation at the Wharton People Analytics Case Competition 2021",
+                "thumbnailUrl": "https://sakshatrao.github.io/Images/Achievements/wharton.webp",
+                "contentUrl": "https://www.youtube.com/watch?v=zcZ6XvGnbms",
+                "embedUrl": "https://www.youtube.com/embed/zcZ6XvGnbms",
+                "uploadDate": "2021-01-01"
+            },
+            {
+                "@type": "VideoObject",
+                "position": 2,
+                "name": "Smart Hospital - Patient Health Monitoring IoT System",
+                "description": "Automated and continuous Patient Health Monitoring IoT system integrated to a web server",
+                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/hospital_operation_management_system.webp",
+                "contentUrl": "https://www.youtube.com/watch?v=t0MK1a7VLh0",
+                "embedUrl": "https://www.youtube.com/embed/t0MK1a7VLh0",
+                "uploadDate": "2021-01-01"
+            },
+            {
+                "@type": "VideoObject",
+                "position": 3,
+                "name": "AI-boosted Online Ordering for CubeStops",
+                "description": "Virtual food menu with AI-assisted recommendation and customer feedback system",
+                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/ai_boosted_online_ordering.webp",
+                "contentUrl": "https://www.youtube.com/watch?v=edR0hk6SKzE",
+                "embedUrl": "https://www.youtube.com/embed/edR0hk6SKzE",
+                "uploadDate": "2021-01-01"
+            },
+            {
+                "@type": "VideoObject",
+                "position": 4,
+                "name": "Signalytics - Dynamic Traffic Signal Scheduling",
+                "description": "Simulation and analytics tool for testing dynamic traffic signal scheduling algorithms",
+                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/rurban_traveller_cover.png",
+                "contentUrl": "https://youtu.be/WVtYt4UV8-g",
+                "embedUrl": "https://www.youtube.com/embed/WVtYt4UV8-g",
+                "uploadDate": "2021-01-01"
+            }
+        ]
+    }
+    </script>
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYM0Z66DQF"></script>
@@ -56,7 +149,7 @@
         <div id="frontpage">
             <div id="frontpage_content">
                 <div id="frontpage_img">
-                    <img src="./Images/Frontpage/sakshat_frontpage.webp" alt="Sakshat Rao">
+                    <img src="./Images/Frontpage/sakshat_frontpage.webp" alt="Sakshat Rao - Verification Engineer at NVIDIA" width="400" height="400">
                 </div>
                 <div id="frontpage_text">
                     <h2 class='frontpage_text1'>My name is</h2>
@@ -84,12 +177,12 @@
                                     <h5>I am fluent in <span itemprop="knowsLanguage">English</span>, <span itemprop="knowsLanguage">Hindi</span>, <span itemprop="knowsLanguage">Kannada</span> & <span itemprop="knowsLanguage">Tulu</span>.</h5>
                                 </div>
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/About/udupi.webp" alt="Udupi Sri Krishna Matha">
+                                    <img src="./Images/About/udupi.webp" alt="Udupi Sri Krishna Matha temple in Karnataka, India -  width="300" height="200" width="300" height="200" loading="lazy">
                                 </div>
                             </div>
                             <div class="about_box">
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/About/keyboard.webp" alt="Playing Keyboard">
+                                    <img src="./Images/About/keyboard.webp" alt="Sakshat Rao playing keyboard - 15+ years of musical experience" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='about_box_box about_text'>
                                     <h5>Playing music is my most fulfilling pastime. I have played the keyboard for 15+ years.</h5>
@@ -106,7 +199,7 @@
                                     <h5><i>"We mature in knowledge and wisdom but never leave the playground of our hearts."<br>-<small>Terri Guillemets</small></i></h5>
                                 </div>
                                 <div class='about_box_box about_img'>
-                                    <img src="./Images/About/siblings.webp" alt="Siblings">
+                                    <img src="./Images/About/siblings.webp" alt="Sakshat Rao with siblings - family photo" width="300" height="200" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -261,7 +354,7 @@
                         <div class='achievements_boxes'>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/Achievements/wharton.webp" alt="Wharton People Analytics Case Competition">
+                                    <img src="./Images/Achievements/wharton.webp" alt="Sakshat Rao - Winner at Wharton People Analytics Case Competition 2021" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>Winning Team</h5>
@@ -273,7 +366,7 @@
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/Achievements/asean_india.webp" alt="ASEAN-India Hackathon">
+                                    <img src="./Images/Achievements/asean_india.webp" alt="Sakshat Rao - Winner at ASEAN-India Hackathon 2021" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'> Winning Team </h5>
@@ -285,7 +378,7 @@
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/Achievements/sih.webp" alt="Smart India Hackathon">
+                                    <img src="./Images/Achievements/sih.webp" alt="Sakshat Rao - Winner at Smart India Hackathon 2020" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>  Winning Team  </h5>
@@ -297,7 +390,7 @@
                             </div>
                             <div class="achievement_box">
                                 <div class='achievement_image'>
-                                    <img src="./Images/Achievements/r2_data_labs_hackathon.png" alt="R2 Data Labs Hackathon">
+                                    <img src="./Images/Achievements/r2_data_labs_hackathon.png" alt="Sakshat Rao - Winner at R2 Data Labs Hackathon 2023 by Rolls-Royce" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'> Winner </h5>
@@ -333,7 +426,7 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/hospital_operation_management_system.webp" alt="Smart Hospital">
+                                        <img src="./Images/Projects/hospital_operation_management_system.webp" alt="Smart Hospital IoT Project by Sakshat Rao - Automated Patient Health Monitoring System" width="300" height="200" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Hospital Operation Management System</h5>
@@ -352,7 +445,7 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/ai_boosted_online_ordering.webp" alt="Cube Highways Hackathon">
+                                        <img src="./Images/Projects/ai_boosted_online_ordering.webp" alt="AI-boosted Online Ordering System by Sakshat Rao - CubeStops Virtual Menu with AI Recommendations" width="300" height="200" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>AI-boosted Online Ordering for CubeStops</h5>
@@ -371,7 +464,7 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/rurban_traveller_cover.png" alt="The Rurban Traveller">
+                                        <img src="./Images/Projects/rurban_traveller_cover.png" alt="Signalytics Project by Sakshat Rao - Traffic Signal Scheduling Simulation Tool" width="300" height="200" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Signalytics</h5>
@@ -390,7 +483,7 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/kaggle_data_analysis.webp" alt="Kaggle Data Analysis">
+                                        <img src="./Images/Projects/kaggle_data_analysis.webp" alt="Kaggle Data Analysis by Sakshat Rao - Data Visualizations and Insights" width="300" height="200" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Data Analysis on Kaggle</h5>
@@ -441,22 +534,22 @@
                         <div class="contact_boxes">
                             <a href="https://www.linkedin.com/in/sakshatrao/" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
-                                    <img src="./Images/Contacts/linkedin_logo.webp" alt="LinkedIn">
+                                    <img src="./Images/Contacts/linkedin_logo.webp" alt="Sakshat Rao LinkedIn Profile" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
                             <a href="https://www.youtube.com/@sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
-                                    <img src="./Images/Contacts/youtube_logo.webp" alt="YouTube">
+                                    <img src="./Images/Contacts/youtube_logo.webp" alt="Sakshat Rao YouTube Channel" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
                             <a href="https://github.com/SakshatRao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
-                                    <img src="./Images/Contacts/github_logo.webp" alt="GitHub">
+                                    <img src="./Images/Contacts/github_logo.webp" alt="Sakshat Rao GitHub Profile" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
                             <a href="https://www.kaggle.com/sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
                                 <div class="contact_box">
-                                    <img src="./Images/Contacts/kaggle_logo.webp" alt="Kaggle">
+                                    <img src="./Images/Contacts/kaggle_logo.webp" alt="Sakshat Rao Kaggle Profile" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
                         </div>
