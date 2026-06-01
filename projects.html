@@ -18,6 +18,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Know more about the different academic & personal projects that Sakshat Rao has worked on." />
     <meta property="og:image" content="https://sakshatrao.github.io/Images/Frontpage/opengraph_frontpage.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +38,7 @@
                 "position": 1,
                 "name": "Smart Hospital - Patient Health Monitoring IoT System Demo",
                 "description": "Demo of IoT-based Smart Hospital environment with automated patient health monitoring, electronic health records and hospital analytics by Sakshat Rao",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/hospital_operation_management_system.webp",
+                "thumbnailUrl": "https://img.youtube.com/vi/t0MK1a7VLh0/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=t0MK1a7VLh0",
                 "embedUrl": "https://www.youtube.com/embed/t0MK1a7VLh0",
                 "uploadDate": "2021-01-01"
@@ -46,7 +48,7 @@
                 "position": 2,
                 "name": "AI-boosted Online Ordering for CubeStops Demo",
                 "description": "Demo of virtual food menu web application with AI-assisted recommendations for highway travelers by Sakshat Rao",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/ai_boosted_online_ordering.webp",
+                "thumbnailUrl": "https://img.youtube.com/vi/edR0hk6SKzE/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=edR0hk6SKzE",
                 "embedUrl": "https://www.youtube.com/embed/edR0hk6SKzE",
                 "uploadDate": "2021-01-01"
@@ -56,7 +58,7 @@
                 "position": 3,
                 "name": "Signalytics - Traffic Signal Scheduling Simulation Demo",
                 "description": "Demo of simulation and analytics tool for testing dynamic traffic signal scheduling algorithms by Sakshat Rao",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/rurban_traveller_cover.png",
+                "thumbnailUrl": "https://img.youtube.com/vi/WVtYt4UV8-g/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=WVtYt4UV8-g",
                 "embedUrl": "https://www.youtube.com/embed/WVtYt4UV8-g",
                 "uploadDate": "2021-01-01"
@@ -66,6 +68,7 @@
                 "position": 4,
                 "name": "DigitBoard - TinyML Handwriting Recognition Demo",
                 "description": "Demo of TinyML prototype using IMU sensor and piezo-electric cells for digit recognition by Sakshat Rao",
+                "thumbnailUrl": "https://img.youtube.com/vi/AjmVhXhJIRY/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=AjmVhXhJIRY",
                 "embedUrl": "https://www.youtube.com/embed/AjmVhXhJIRY",
                 "uploadDate": "2021-01-01"
@@ -75,6 +78,7 @@
                 "position": 5,
                 "name": "Reassurance Chatbot - NL-to-SQL Homebuyer Assistant Demo",
                 "description": "Demo of chatbot for under-construction homebuyers with NL-to-SQL querying and construction forecasts by Sakshat Rao",
+                "thumbnailUrl": "https://img.youtube.com/vi/bUZdlgTj4HI/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=bUZdlgTj4HI",
                 "embedUrl": "https://www.youtube.com/embed/bUZdlgTj4HI",
                 "uploadDate": "2021-01-01"
@@ -91,14 +95,14 @@
         gtag('config', 'G-HYM0Z66DQF');
     </script>
 
-    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/page.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/styles.css?v=20260601-mobile-work-title-gap">
+    <link rel="stylesheet" type="text/css" href="./CSS/page.css?v=20260601-mobile-title-gap">
 
     <!-- Adding website logo -->
     <link rel="shortcut icon" type="image/x-icon" href="https://sakshatrao.github.io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="https://sakshatrao.github.io/favicon.ico">
 </head>
-<body>
+<body class="projects_page">
     <main>
         <h1 class='page_title rainbow'>Projects</h1>
         <div class='blocks'>
@@ -201,7 +205,7 @@
                 <div class="subblock">
                     <h3>I have analyzed several Kaggle datasets in engaging ways and with interesting visualizations to improve my Python & R programming skills. I have often focused on combining such data analyses with storytelling and keeping the visualizations concise and insightful.</h3>
                     <div class="analyses">
-                        <a href="./analysis.html" class="analyses_link">
+                        <a href="./analysis.html" class="analyses_link" target="_blank" rel="noopener noreferrer" data-mobile-href="https://www.kaggle.com/sakshatrao/code">
                             <div class="analyses_box">
                                 <div class="analyses_info">
                                     <h3>View Kaggle Notebooks</h3>
@@ -350,8 +354,25 @@
                 </div>
             </div>
         </div>
-        <div class="go_back">
-            <a href="./index.html#projects"><h4>Back to Home Page</h4></a>
-        </div>
     </main>
+    <div class="go_back">
+        <a href="./index.html" data-return-section="projects"><h4>Return to Digital Resume</h4></a>
+    </div>
+    <script type='text/javascript' src="./scroll.js?v=20260530-one-shot-return-section"></script>
+    <script>
+        (function () {
+            var kaggleLink = document.querySelector('.analyses_link[data-mobile-href]');
+
+            if (!kaggleLink) {
+                return;
+            }
+
+            kaggleLink.addEventListener('click', function (event) {
+                if (window.matchMedia('(max-width: 599px)').matches) {
+                    event.preventDefault();
+                    window.open(kaggleLink.getAttribute('data-mobile-href'), '_blank', 'noopener,noreferrer');
+                }
+            });
+        }());
+    </script>
 </body>

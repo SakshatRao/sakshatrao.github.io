@@ -1,65 +1,424 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
+  <url>
+    <loc>https://sakshatrao.github.io/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Frontpage/sakshat_frontpage.webp</image:loc>
+      <image:title>Sakshat Rao portfolio profile photo</image:title>
+      <image:caption>Sakshat Rao - verification engineer, musician and sports enthusiast.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Frontpage/opengraph_frontpage.png</image:loc>
+      <image:title>Sakshat Rao social sharing image</image:title>
+      <image:caption>Open Graph image for Sakshat Rao's portfolio website.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/wharton.webp</image:loc>
+      <image:title>Wharton People Analytics Case Competition 2021</image:title>
+      <image:caption>Sakshat Rao and team won the Wharton People Analytics Case Competition 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/asean_india.webp</image:loc>
+      <image:title>ASEAN-India Hackathon 2021</image:title>
+      <image:caption>Sakshat Rao and team won the ASEAN-India Hackathon 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/sih.webp</image:loc>
+      <image:title>Smart India Hackathon 2020</image:title>
+      <image:caption>Sakshat Rao and team won Smart India Hackathon 2020.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/r2_data_labs_hackathon.png</image:loc>
+      <image:title>R2 Data Labs Responsible Growth Hackathon 2023</image:title>
+      <image:caption>Sakshat Rao won the R2 Data Labs Responsible Growth Hackathon 2023.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/udupi_pic1.webp</image:loc>
+      <image:title>Born in Udupi</image:title>
+      <image:caption>Story section image for Sakshat Rao's Udupi roots.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/udupi_pic2.webp</image:loc>
+      <image:title>Udupi childhood memory</image:title>
+      <image:caption>Second story section image for Sakshat Rao's Udupi roots.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/keyboard.webp</image:loc>
+      <image:title>Brought up in Mumbai</image:title>
+      <image:caption>Story section image for Sakshat Rao's Mumbai years and music.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/siblings.webp</image:loc>
+      <image:title>Mumbai childhood memory</image:title>
+      <image:caption>Second story section image for Sakshat Rao's Mumbai years.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/bengaluru_pic1.webp</image:loc>
+      <image:title>Living in Bengaluru</image:title>
+      <image:caption>Story section image for Sakshat Rao's Bengaluru chapter.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/bengaluru_pic2.webp</image:loc>
+      <image:title>Bengaluru memory photo</image:title>
+      <image:caption>Second story section image for Sakshat Rao's Bengaluru chapter.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/awards.webp</image:loc>
+      <image:title>Football trophies and half-marathon medals</image:title>
+      <image:caption>Sports section image showing football awards and race medals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/football1.webp</image:loc>
+      <image:title>Football goalkeeper photo</image:title>
+      <image:caption>Sports section image of Sakshat Rao playing as a goalkeeper.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/football2.webp</image:loc>
+      <image:title>Football goalkeeper gallery photo</image:title>
+      <image:caption>Additional sports gallery image of Sakshat Rao playing football.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/football3.webp</image:loc>
+      <image:title>Football goalkeeper gallery photo</image:title>
+      <image:caption>Additional sports gallery image of Sakshat Rao playing football.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/half_marathon1.webp</image:loc>
+      <image:title>Half-marathon photo</image:title>
+      <image:caption>Sports section image from Sakshat Rao's half-marathon journey.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/half_marathon2.webp</image:loc>
+      <image:title>Half-marathon gallery photo</image:title>
+      <image:caption>Additional sports gallery image from Sakshat Rao's half-marathon journey.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/half_marathon3.webp</image:loc>
+      <image:title>Half-marathon gallery photo</image:title>
+      <image:caption>Additional sports gallery image from Sakshat Rao's half-marathon journey.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/half_marathon4.webp</image:loc>
+      <image:title>Half-marathon gallery photo</image:title>
+      <image:caption>Additional sports gallery image from Sakshat Rao's half-marathon journey.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/kaagaz_ki_kashti_award.webp</image:loc>
+      <image:title>IFP 50 Hours Silver Track Award</image:title>
+      <image:caption>Writing section image for Kaagaz Ki Kashti award recognition.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/dance.webp</image:loc>
+      <image:title>Dance portfolio photo</image:title>
+      <image:caption>Sakshat Rao performing dance at a company event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/dance2.webp</image:loc>
+      <image:title>Dance gallery photo</image:title>
+      <image:caption>Additional dance section image of Sakshat Rao performing at a company event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/About/dance3.webp</image:loc>
+      <image:title>Dance gallery photo</image:title>
+      <image:caption>Additional dance section image of Sakshat Rao in a group dance performance.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Contacts/linkedin_logo.webp</image:loc>
+      <image:title>LinkedIn profile icon</image:title>
+      <image:caption>Contact section icon linking to Sakshat Rao's LinkedIn profile.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Contacts/youtube_logo.webp</image:loc>
+      <image:title>YouTube channel icon</image:title>
+      <image:caption>Contact section icon linking to Sakshat Rao's YouTube channel.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Contacts/github_logo.webp</image:loc>
+      <image:title>GitHub profile icon</image:title>
+      <image:caption>Contact section icon linking to Sakshat Rao's GitHub profile.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Contacts/kaggle_logo.webp</image:loc>
+      <image:title>Kaggle profile icon</image:title>
+      <image:caption>Contact section icon linking to Sakshat Rao's Kaggle profile.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/UXDeEaBjCfQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Kaagaz Ki Kashti</video:title>
+      <video:description>Original music video featuring Sakshat Rao as lyricist, composer, keyboardist and backing vocalist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/UXDeEaBjCfQ</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/bINN1k6DGBI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Tum Hi Ho cover</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist and video director.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/bINN1k6DGBI</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/0EjSgTodJzU/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Kesariya cover</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/0EjSgTodJzU</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/kfADGfRIPMo/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Chaleya cover</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/kfADGfRIPMo</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/80v9mxHdlqM/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Soch cover</video:title>
+      <video:description>Music video featuring Sakshat Rao as guitarist and keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/80v9mxHdlqM</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/dy88O4A33XI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Pasoori cover</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/dy88O4A33XI</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/yZshsszY048/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>English Love Medley</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/yZshsszY048</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/r2AppQRdUsY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Patriotic Medley</video:title>
+      <video:description>Music video featuring Sakshat Rao as keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/r2AppQRdUsY</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/iqj7ehWn5jQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Bengali Medley</video:title>
+      <video:description>Music video featuring Sakshat Rao as saxophonist and keyboardist.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/iqj7ehWn5jQ</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 
-<url>
-  <loc>https://sakshatrao.github.io/</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>1.00</priority>
-  <!-- Profile Image -->
-  <image:image>
-    <image:loc>https://sakshatrao.github.io/Images/Frontpage/sakshat_frontpage.webp</image:loc>
-    <image:title>Sakshat Rao - Verification Engineer at NVIDIA</image:title>
-    <image:caption>Sakshat Rao portfolio profile photo - NITK Surathkal alumnus and NVIDIA engineer</image:caption>
-  </image:image>
-  <!-- About Section Images -->
-  <image:image>
-    <image:loc>https://sakshatrao.github.io/Images/About/keyboard.webp</image:loc>
-    <image:title>Sakshat Rao Playing Keyboard</image:title>
-    <image:caption>Sakshat Rao playing keyboard - 15+ years of musical experience</image:caption>
-  </image:image>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/personal.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/experience.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/skills.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/achievements.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/projects.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/index.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sakshatrao.github.io/analysis.html</loc>
-  <lastmod>2026-01-26T13:33:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>https://sakshatrao.github.io/experience.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Experience/nvidia.webp</image:loc>
+      <image:title>NVIDIA work experience</image:title>
+      <image:caption>Sakshat Rao works as a verification engineer at NVIDIA.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Experience/nitk.webp</image:loc>
+      <image:title>NITK Surathkal education</image:title>
+      <image:caption>Sakshat Rao studied Electronics and Communication Engineering at NITK Surathkal.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Experience/pace.webp</image:loc>
+      <image:title>PACE Junior Science College education</image:title>
+      <image:caption>Sakshat Rao completed junior college at PACE Junior Science College.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Experience/avm.webp</image:loc>
+      <image:title>Arya Vidya Mandir education</image:title>
+      <image:caption>Sakshat Rao completed schooling at Arya Vidya Mandir.</image:caption>
+    </image:image>
+  </url>
 
+  <url>
+    <loc>https://sakshatrao.github.io/skills.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://sakshatrao.github.io/achievements.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/wharton.webp</image:loc>
+      <image:title>Wharton People Analytics Case Competition 2021</image:title>
+      <image:caption>Sakshat Rao and team won the Wharton People Analytics Case Competition 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/asean_india.webp</image:loc>
+      <image:title>ASEAN-India Hackathon 2021</image:title>
+      <image:caption>Sakshat Rao and team won the ASEAN-India Hackathon 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/sih.webp</image:loc>
+      <image:title>Smart India Hackathon 2020</image:title>
+      <image:caption>Sakshat Rao and team won Smart India Hackathon 2020.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/r2_data_labs_hackathon.png</image:loc>
+      <image:title>R2 Data Labs Responsible Growth Hackathon 2023</image:title>
+      <image:caption>Sakshat Rao won the R2 Data Labs Responsible Growth Hackathon 2023.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/india_automobile_hackathon.png</image:loc>
+      <image:title>India Automobile Hackathon 2022</image:title>
+      <image:caption>Sakshat Rao won India Automobile Hackathon 2022.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/swadeshi_uP.webp</image:loc>
+      <image:title>Swadeshi Microprocessor Challenge 2020</image:title>
+      <image:caption>Sakshat Rao was a semi-finalist in Swadeshi Microprocessor Challenge 2020.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/cubestop.webp</image:loc>
+      <image:title>Cube Highways Hackathon 2021</image:title>
+      <image:caption>Sakshat Rao was a finalist in Cube Highways Hackathon 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/india_proptech_hackathon.png</image:loc>
+      <image:title>India PropTech Hackathon 2021</image:title>
+      <image:caption>Sakshat Rao was a finalist in India PropTech Hackathon 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/wow_ai_hackathon.jpg</image:loc>
+      <image:title>Worldwide AI Hackathon 2023</image:title>
+      <image:caption>Sakshat Rao was a semi-finalist in the Worldwide AI Hackathon 2023.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/univ_ai.webp</image:loc>
+      <image:title>Geoffrey Hinton Fellowship Hackathon 2021</image:title>
+      <image:caption>Sakshat Rao reached the top 30 in the Geoffrey Hinton Fellowship Hackathon 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/iet.webp</image:loc>
+      <image:title>IET Present Around The World 2020</image:title>
+      <image:caption>Sakshat Rao placed in the IET Present Around The World local network round.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/iet_patw.webp</image:loc>
+      <image:title>IET PATW presentation</image:title>
+      <image:caption>Sakshat Rao presenting on the future of AI in healthcare.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/iet_nitk.webp</image:loc>
+      <image:title>IET NITK Present Around The Net 2021</image:title>
+      <image:caption>Sakshat Rao placed second at IET NITK Present Around The Net 2021.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Achievements/ieee_nitk.webp</image:loc>
+      <image:title>IEEE NITK Synthessence 2018</image:title>
+      <image:caption>Sakshat Rao placed second at IEEE NITK Synthessence 2018.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/wharton.webp</video:thumbnail_loc>
+      <video:title>Wharton People Analytics Case Competition 2021 winning presentation</video:title>
+      <video:description>Winning presentation by Sakshat Rao and team at Wharton People Analytics Case Competition 2021.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/zcZ6XvGnbms</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/wharton.webp</video:thumbnail_loc>
+      <video:title>Wharton People Analytics Case Competition 2021 global finals</video:title>
+      <video:description>Global finals presentation featuring Sakshat Rao's team at Wharton People Analytics Conference 2021.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/kGjOKEOrfig</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/sih.webp</video:thumbnail_loc>
+      <video:title>Smart India Hackathon 2020 cotton price forecasting submission</video:title>
+      <video:description>Team CodeBreakers Smart India Hackathon 2020 video submission for a cotton price forecasting pricing model.</video:description>
+      <video:player_loc>https://x.com/17shashank17/status/1286356527016796160</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/r2_data_labs_hackathon.png</video:thumbnail_loc>
+      <video:title>AIRDASHER - R2 Data Labs Responsible Growth Hackathon 2023</video:title>
+      <video:description>Winning proposal by Sakshat Rao for identifying new air travel routes at the R2 Data Labs Responsible Growth Hackathon.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/_wftrsszOh0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/india_automobile_hackathon.png</video:thumbnail_loc>
+      <video:title>The Rurban Traveller - India Automobile Hackathon 2022</video:title>
+      <video:description>Winning proposal by Sakshat Rao for Isuzu pickup truck IoT mobile app at India Automobile Hackathon.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/n_vhLdWA5T0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://sakshatrao.github.io/Images/Achievements/swadeshi_uP.webp</video:thumbnail_loc>
+      <video:title>Smart Road Traffic Control - Swadeshi Microprocessor Challenge 2020</video:title>
+      <video:description>Semi-finalist proposal by Sakshat Rao for dynamic traffic signal scheduling using Shakti and Vega microprocessors.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/XRCv2K1eP9s</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://sakshatrao.github.io/projects.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://sakshatrao.github.io/Images/Contacts/kaggle_logo.webp</image:loc>
+      <image:title>Kaggle data analysis projects</image:title>
+      <image:caption>Sakshat Rao's Kaggle notebooks and data analysis work.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/t0MK1a7VLh0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Smart Hospital - Patient Health Monitoring IoT System demo</video:title>
+      <video:description>Demo of an IoT-based smart hospital environment with patient health monitoring and hospital analytics.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/t0MK1a7VLh0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/edR0hk6SKzE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>AI-boosted Online Ordering for CubeStops demo</video:title>
+      <video:description>Demo of virtual food menu web application with AI-assisted recommendations for highway travelers.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/edR0hk6SKzE</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/WVtYt4UV8-g/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Signalytics - traffic signal scheduling simulation demo</video:title>
+      <video:description>Demo of a simulation and analytics tool for testing dynamic traffic signal scheduling algorithms.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/WVtYt4UV8-g</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/AjmVhXhJIRY/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>DigitBoard - TinyML handwriting recognition demo</video:title>
+      <video:description>Demo of a TinyML prototype using an IMU sensor and piezo-electric cells for digit recognition.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/AjmVhXhJIRY</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/bUZdlgTj4HI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Reassurance Chatbot - NL-to-SQL homebuyer assistant demo</video:title>
+      <video:description>Demo of a chatbot for under-construction homebuyers with NL-to-SQL querying and construction forecasts.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/bUZdlgTj4HI</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://sakshatrao.github.io/analysis.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
 
 </urlset>

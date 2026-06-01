@@ -63,6 +63,21 @@
     }
     </script>
 
+    <!-- JSON-LD Structured Data - Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sakshat Rao",
+        "url": "https://sakshatrao.github.io/",
+        "description": "Sakshat Rao's digital resume and personal portfolio covering hardware verification, projects, achievements, music, sports, writing and dance.",
+        "publisher": {
+            "@type": "Person",
+            "name": "Sakshat Rao"
+        }
+    }
+    </script>
+
     <!-- JSON-LD Structured Data - VideoObject Schema -->
     <script type="application/ld+json">
     {
@@ -84,7 +99,7 @@
                 "position": 2,
                 "name": "Smart Hospital - Patient Health Monitoring IoT System",
                 "description": "Automated and continuous Patient Health Monitoring IoT system integrated to a web server",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/hospital_operation_management_system.webp",
+                "thumbnailUrl": "https://img.youtube.com/vi/t0MK1a7VLh0/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=t0MK1a7VLh0",
                 "embedUrl": "https://www.youtube.com/embed/t0MK1a7VLh0",
                 "uploadDate": "2022-06-28T00:00:00+05:30"
@@ -94,7 +109,7 @@
                 "position": 3,
                 "name": "AI-boosted Online Ordering for CubeStops",
                 "description": "Virtual food menu with AI-assisted recommendation and customer feedback system",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/ai_boosted_online_ordering.webp",
+                "thumbnailUrl": "https://img.youtube.com/vi/edR0hk6SKzE/hqdefault.jpg",
                 "contentUrl": "https://www.youtube.com/watch?v=edR0hk6SKzE",
                 "embedUrl": "https://www.youtube.com/embed/edR0hk6SKzE",
                 "uploadDate": "2022-06-28T00:00:00+05:30"
@@ -104,7 +119,7 @@
                 "position": 4,
                 "name": "Signalytics - Dynamic Traffic Signal Scheduling",
                 "description": "Simulation and analytics tool for testing dynamic traffic signal scheduling algorithms",
-                "thumbnailUrl": "https://sakshatrao.github.io/Images/Projects/rurban_traveller_cover.png",
+                "thumbnailUrl": "https://img.youtube.com/vi/WVtYt4UV8-g/hqdefault.jpg",
                 "contentUrl": "https://youtu.be/WVtYt4UV8-g",
                 "embedUrl": "https://www.youtube.com/embed/WVtYt4UV8-g",
                 "uploadDate": "2023-07-09T00:00:00+05:30"
@@ -123,14 +138,14 @@
     </script>
     
     <!-- Importing Styles -->
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="CSS/frontpage.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css?v=20260601-mobile-work-title-gap">
+    <link rel="stylesheet" type="text/css" href="CSS/frontpage.css?v=20260530-frontpage-text-spacing">
     <link rel="stylesheet" type="text/css" href="CSS/scroll.css">
     <link rel="stylesheet" type="text/css" href="CSS/about.css">
     <link rel="stylesheet" type="text/css" href="CSS/experience.css">
-    <link rel="stylesheet" type="text/css" href="CSS/skills.css">
-    <link rel="stylesheet" type="text/css" href="CSS/achievements.css">
-    <link rel="stylesheet" type="text/css" href="CSS/projects.css">
+    <link rel="stylesheet" type="text/css" href="CSS/skills.css?v=20260529-skill-heading-purple">
+    <link rel="stylesheet" type="text/css" href="CSS/achievements.css?v=20260530-achievement-arrow-glyph-large">
+    <link rel="stylesheet" type="text/css" href="CSS/projects.css?v=20260529-project-card-interaction">
     <link rel="stylesheet" type="text/css" href="CSS/contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/footer.css">
@@ -144,7 +159,6 @@
 </head>
 <body>
     <main itemscope itemtype="https://schema.org/Person" id='main_body'>
-
         <!-- Frontpage -->
         <div id="frontpage">
             <div id="frontpage_content">
@@ -154,67 +168,46 @@
                 <div id="frontpage_text">
                     <h2 class='frontpage_text1'>My name is</h2>
                     <h1 class='frontpage_text2 rainbow' itemprop="name">Sakshat Rao</h1>
-                </div>
-            </div>
-            <a href="#about_content" class="scroll_button frontpage_scroll"><span></span></a>
-            <a href="#about" class="scroll_button_2"><span></span></a>
-        </div>
-
-        <!-- About -->
-        <div class='page' id="about">
-            <div class="page_content" id='about_content'>
-                <div class="page_title">
-                    <h2 class='rainbow'>About Me</h2>
-                </div>
-                <div class="page_info">
-                    <div class="about_info">
-                        <div class="about_boxes">
-                            <div class="about_box">
-                                <div class='about_box_box about_text'>
-                                    <h5>I was born in the coastal town of <span itemprop="birthPlace" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Udupi</span>, <span itemprop="containedInPlace" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Karnataka</span></span></span> and was brought up in <span itemprop="homeLocation" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Mumbai</span></span>.</h5>
-                                </div>
-                                <div class='about_box_box about_text2'>
-                                    <h5>I am fluent in <span itemprop="knowsLanguage">English</span>, <span itemprop="knowsLanguage">Hindi</span>, <span itemprop="knowsLanguage">Kannada</span> & <span itemprop="knowsLanguage">Tulu</span>.</h5>
-                                </div>
-                                <div class='about_box_box about_img'>
-                                    <img src="./Images/About/udupi.webp" alt="Udupi Sri Krishna Matha temple in Karnataka, India -  width="300" height="200" width="300" height="200" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="about_box">
-                                <div class='about_box_box about_img'>
-                                    <img src="./Images/About/keyboard.webp" alt="Sakshat Rao playing keyboard - 15+ years of musical experience" width="300" height="200" loading="lazy">
-                                </div>
-                                <div class='about_box_box about_text'>
-                                    <h5>Playing music is my most fulfilling pastime. I have played the keyboard for 15+ years.</h5>
-                                </div>
-                                <div class='about_box_box about_text2'>
-                                    <h5>I also enjoy sports, poetry & dance.</h5>
-                                </div>
-                            </div>
-                            <div class="about_box">
-                                <div class='about_box_box about_text2'>
-                                    <h5>My most relatable quote <span>&#129321;</span></h5>
-                                </div>
-                                <div class='about_box_box about_text'>
-                                    <h5><i>"We mature in knowledge and wisdom but never leave the playground of our hearts."<br>-<small>Terri Guillemets</small></i></h5>
-                                </div>
-                                <div class='about_box_box about_img'>
-                                    <img src="./Images/About/siblings.webp" alt="Sakshat Rao with siblings - family photo" width="300" height="200" loading="lazy">
-                                </div>
-                            </div>
-                        </div>
+                    <p class="frontpage_subtitle">Verification Engineer, Musician and Sports Enthusiast</p>
+                    <div class="frontpage_actions">
+                        <a class="frontpage_profile_button frontpage_profile_work" href="#profiles" data-profile-target="work">
+                            <span>Digital Resume</span>
+                            <span class="frontpage_button_arrow" aria-hidden="true"></span>
+                        </a>
+                        <a class="frontpage_profile_button frontpage_profile_personal" href="#profiles" data-profile-target="personal">
+                            <span>Personal Portfolio</span>
+                            <span class="frontpage_button_arrow" aria-hidden="true"></span>
+                        </a>
                     </div>
                 </div>
-                <div class='know_more'>
-                    <a class='tooltip' href="./personal.html">
-                        <p>i</p>
-                        <span class='tooltiptext'>More About Me</span>
-                    </a>
-                </div>
             </div>
-            <a href="#experience_content" class="scroll_button"><span></span></a>
-            <a href="#experience" class="scroll_button_2"><span></span></a>
         </div>
+
+        <section id="profiles" class="profiles" data-active-profile="work">
+            <div class="profile_chrome" aria-label="Profile controls">
+                <div class="profile_toggle_group" role="tablist" aria-label="Choose view">
+                    <button type="button" class="profile_toggle active" data-profile-target="work" role="tab" aria-selected="true">Digital Resume</button>
+                    <button type="button" class="profile_toggle" data-profile-target="personal" role="tab" aria-selected="false">Personal Portfolio</button>
+                </div>
+                <nav class="chapter_nav work_chapters" aria-label="Digital resume chapters">
+                    <a href="#experience" data-profile-target="work">Work</a>
+                    <a href="#skills" data-profile-target="work">Skills</a>
+                    <a href="#achievements" data-profile-target="work">Wins</a>
+                    <a href="#projects" data-profile-target="work">Projects</a>
+                    <a href="#contact" data-profile-target="work">Contact</a>
+                </nav>
+                <nav class="chapter_nav personal_chapters" aria-label="Personal portfolio chapters">
+                    <a href="#about" data-profile-target="personal">Story</a>
+                    <a href="#music" data-profile-target="personal">Music</a>
+                    <a href="#sports" data-profile-target="personal">Sports</a>
+                    <a href="#writing" data-profile-target="personal">Writing</a>
+                    <a href="#dance" data-profile-target="personal">Dance</a>
+                    <a href="#contact" data-profile-target="personal">Contact</a>
+                </nav>
+            </div>
+            <div class="profile_viewport">
+                <div class="profile_track">
+                    <div class="profile_panel work_profile" data-profile-panel="work">
 
         <!-- Experience -->
         <div class='page' id="experience">
@@ -235,7 +228,7 @@
                                         <h5><span itemprop="jobTitle">Verification Engineer</span><br><span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name"><small>NVIDIA</small></span></span></h5>
                                     </div>
                                     <div class='timeline_descr'>
-                                        <p>I have mainly worked in safety & performance verification for NVIDIA's Tegra SoC and Spectrum Switch chips.</p>
+                                        <p>I have mainly worked in safety verification for Tegra SoCs & performance verification for Spectrum Switches.</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,14 +268,13 @@
                     </div>
                 </div>
                 <div class='know_more'>
-                    <a class='tooltip' href="./experience.html">
-                        <p>i</p>
-                        <span class='tooltiptext'>Know More Details</span>
+                    <a href="./experience.html" aria-label="View detailed experience">
+                        <p>Know more</p>
                     </a>
                 </div>
             </div>
-            <a href="#skills_content" class="scroll_button"><span></span></a>
-            <a href="#skills" class="scroll_button_2"><span></span></a>
+            <a href="#skills" class="scroll_button" aria-label="Scroll to skills chapter"><span></span></a>
+            <a href="#skills" class="scroll_button_2" aria-label="Scroll to skills chapter"><span></span></a>
         </div>
 
         <!-- Skills -->
@@ -297,24 +289,30 @@
                             <div class="skill_box">
                                 <p class="skill_name" itemprop="knowsAbout">Hardware Verification</p>
                                 <p class="skill_info1">I have developed skills in functional verification, testbench design & post-silicon validation.</p>
-                                <p class="skill_info2">I am proficient in SV-UVM & Specman E.</p>
-                                <p class="skill_detail1">I have developed skills in functional verification, testbench design & post-silicon validation.</p>
+                                <div class="skill_tags" aria-label="Programming languages">
+                                    <span itemprop="knowsAbout">SV-UVM</span>
+                                    <span itemprop="knowsAbout">Specman E</span>
+                                </div>
                             </div>
                             <div class="skill_box">
                                 <p class="skill_name" itemprop="knowsAbout">Embedded Design</p>
                                 <p class="skill_info1">I am experienced in embedded coding, IoT system design & driver development.</p>
-                                <p class="skill_info2">I am experienced in C++ & C.</p>
-                                <p class="skill_detail1">I have experience in embedded coding, IoT systems & driver development.</p>
+                                <div class="skill_tags" aria-label="Programming languages">
+                                    <span itemprop="knowsAbout">C++</span>
+                                    <span itemprop="knowsAbout">C</span>
+                                </div>
                             </div>
                             <div class="skill_box">
                                 <p class="skill_name" itemprop="knowsAbout">Data Analysis</p>
-                                <p class="skill_info1">I have skills in hypothesis testing, feature engineering and clean data visualizations.</p>
-                                <p class="skill_info2">I am proficient in Python & R.</p>
-                                <p class="skill_detail1">I have skills in hypothesis testing, feature engineering and clean data visualizations.</p>
+                                <p class="skill_info1">I continue building skills in hypothesis testing, feature engineering and clean data visualizations.</p>
+                                <div class="skill_tags" aria-label="Programming languages">
+                                    <span itemprop="knowsAbout">Python</span>
+                                    <span itemprop="knowsAbout">R</span>
+                                </div>
                             </div>
                         </div>
                         <div class='skills_others'>
-                            <h3>Other areas where I've poked my nose</h3>
+                            <h3>Other keen interests of mine</h3>
                             <div class="skills_others_boxes">
                                 <div class="skill_other_box">
                                     <div class="skill_other_text">
@@ -325,7 +323,7 @@
                                 <div class="skill_other_box">
                                     <div class="skill_other_text">
                                         <p class='skill_other_name' itemprop="knowsAbout">Web Development</p>
-                                        <p class='skill_other_info' itemprop="knowsAbout">I have functional knowledge of HTML, CSS and JavaScript.</p>
+                                        <p class='skill_other_info' itemprop="knowsAbout">I have basic functional knowledge of HTML, CSS and JavaScript.</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,14 +331,13 @@
                     </div>
                 </div>
                 <div class='know_more'>
-                    <a class='tooltip' href="./skills.html">
-                        <p>i</p>
-                        <span class='tooltiptext'>View All Skills</span>
+                    <a href="./skills.html" aria-label="View all skills">
+                        <p>Know more</p>
                     </a>
                 </div>
             </div>
-            <a href="#achievements_content" class="scroll_button"><span></span></a>
-            <a href="#achievements" class="scroll_button_2"><span></span></a>
+            <a href="#achievements" class="scroll_button" aria-label="Scroll to achievements chapter"><span></span></a>
+            <a href="#achievements" class="scroll_button_2" aria-label="Scroll to achievements chapter"><span></span></a>
         </div>
 
         <!-- Achievements -->
@@ -352,66 +349,57 @@
                 <div class="page_info">
                     <div class="achievements_info">
                         <div class='achievements_boxes'>
-                            <div class="achievement_box">
+                            <a href="https://www.youtube.com/watch?v=zcZ6XvGnbms" class="achievement_box" target="_blank" rel="noopener noreferrer" aria-label="View details for Wharton People Analytics Case Competition 2021 achievement">
                                 <div class='achievement_image'>
                                     <img src="./Images/Achievements/wharton.webp" alt="Sakshat Rao - Winner at Wharton People Analytics Case Competition 2021" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>Winning Team</h5>
                                     <h4 class='achievement_name' itemprop="award">Wharton People Analytics<br>Case Competition 2021</h4>
-                                    <a href="https://www.youtube.com/watch?v=zcZ6XvGnbms" class='achievement_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Know More</p>
-                                    </a>
+                                    <span class="achievement_cta" aria-hidden="true">&raquo;</span>
                                 </div>
-                            </div>
-                            <div class="achievement_box">
+                            </a>
+                            <a href="https://mic.gov.in/hackathon/india-asean-hackathon" class="achievement_box" target="_blank" rel="noopener noreferrer" aria-label="View details for ASEAN-India Hackathon 2021 achievement">
                                 <div class='achievement_image'>
                                     <img src="./Images/Achievements/asean_india.webp" alt="Sakshat Rao - Winner at ASEAN-India Hackathon 2021" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'> Winning Team </h5>
                                     <h4 class='achievement_name' itemprop="award">ASEAN-India Hackathon 2021</h4>
-                                    <a href="https://mic.gov.in/hackathon/india-asean-hackathon" class='achievement_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Know More</p>
-                                    </a>
+                                    <span class="achievement_cta" aria-hidden="true">&raquo;</span>
                                 </div>
-                            </div>
-                            <div class="achievement_box">
+                            </a>
+                            <a href="https://pulse.nitk.ac.in/2020/08/15/smart-india-hackathon-2020-6-students-from-nitk-developed-cottonhub" class="achievement_box" target="_blank" rel="noopener noreferrer" aria-label="View details for Smart India Hackathon 2020 achievement">
                                 <div class='achievement_image'>
                                     <img src="./Images/Achievements/sih.webp" alt="Sakshat Rao - Winner at Smart India Hackathon 2020" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'>  Winning Team  </h5>
                                     <h4 class='achievement_name' itemprop="award">Smart India Hackathon 2020</h4>
-                                    <a href="https://pulse.nitk.ac.in/2020/08/15/smart-india-hackathon-2020-6-students-from-nitk-developed-cottonhub" class='achievement_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Know More</p>
-                                    </a>
+                                    <span class="achievement_cta" aria-hidden="true">&raquo;</span>
                                 </div>
-                            </div>
-                            <div class="achievement_box">
+                            </a>
+                            <a href="https://www.hackerearth.com/challenges/hackathon/rolls-royce/" class="achievement_box" target="_blank" rel="noopener noreferrer" aria-label="View details for R2 Data Labs Hackathon 2023 achievement">
                                 <div class='achievement_image'>
                                     <img src="./Images/Achievements/r2_data_labs_hackathon.png" alt="Sakshat Rao - Winner at R2 Data Labs Hackathon 2023 by Rolls-Royce" width="300" height="200" loading="lazy">
                                 </div>
                                 <div class='achievement_text'>
                                     <h5 class='achievement_title'> Winner </h5>
                                     <h4 class='achievement_name' itemprop="award">R2 Data Labs Hackathon 2023</h4>
-                                    <a href="https://www.hackerearth.com/challenges/hackathon/rolls-royce/" class='achievement_button' target="_blank" rel="noopener noreferrer">
-                                        <p>Know More</p>
-                                    </a>
+                                    <span class="achievement_cta" aria-hidden="true">&raquo;</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class='know_more'>
-                    <a class='tooltip' href='./achievements.html'>
-                        <p>i</p>
-                        <span class='tooltiptext'>All Achievements</span>
+                    <a href='./achievements.html' aria-label="Know more about achievements">
+                        <p>Know more</p>
                     </a>
                 </div>
             </div>
-            <a href="#projects_content" class="scroll_button"><span></span></a>
-            <a href="#projects" class="scroll_button_2"><span></span></a>
+            <a href="#projects" class="scroll_button" aria-label="Scroll to projects chapter"><span></span></a>
+            <a href="#projects" class="scroll_button_2" aria-label="Scroll to projects chapter"><span></span></a>
         </div>
 
         <!-- Projects -->
@@ -426,13 +414,13 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/hospital_operation_management_system.webp" alt="Smart Hospital IoT Project by Sakshat Rao - Automated Patient Health Monitoring System" width="300" height="200" loading="lazy">
+                                        <img src="https://img.youtube.com/vi/t0MK1a7VLh0/hqdefault.jpg" alt="Smart Hospital IoT Project by Sakshat Rao - Automated Patient Health Monitoring System" width="480" height="360" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Hospital Operation Management System</h5>
                                         <p class='project_descr'>Automated & continuous Patient Health Monitoring IoT system integrated to a web server</p>
                                         <div class='project_buttons'>
-                                            <a href="https://www.youtube.com/watch?v=t0MK1a7VLh0&list=PLCR3DBlE5tQzeM-mrDAG539wftLftTnCd&index=2" class='project_button' target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.youtube.com/watch?v=t0MK1a7VLh0&list=PLCR3DBlE5tQzeM-mrDAG539wftLftTnCd&index=2" class='project_button' target="_blank" rel="noopener noreferrer" aria-label="Watch Hospital Operation Management System demo">
                                                 <p>▶</p>
                                             </a>
                                             <!-- <a href="https://github.com/SakshatRao/SmartHospital" class='project_extra_button' target="_blank" rel="noopener noreferrer">
@@ -445,13 +433,13 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/ai_boosted_online_ordering.webp" alt="AI-boosted Online Ordering System by Sakshat Rao - CubeStops Virtual Menu with AI Recommendations" width="300" height="200" loading="lazy">
+                                        <img src="https://img.youtube.com/vi/edR0hk6SKzE/hqdefault.jpg" alt="AI-boosted Online Ordering System by Sakshat Rao - CubeStops Virtual Menu with AI Recommendations" width="480" height="360" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>AI-boosted Online Ordering for CubeStops</h5>
                                         <p class='project_descr'>Virtual food menu with AI-assisted recommendation and customer feedback</p>
                                         <div class='project_buttons'>
-                                            <a href="https://www.youtube.com/watch?v=edR0hk6SKzE&list=PLCR3DBlE5tQzeM-mrDAG539wftLftTnCd&index=3" class='project_button' target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.youtube.com/watch?v=edR0hk6SKzE&list=PLCR3DBlE5tQzeM-mrDAG539wftLftTnCd&index=3" class='project_button' target="_blank" rel="noopener noreferrer" aria-label="Watch AI-boosted Online Ordering demo">
                                                 <p>▶</p>
                                             </a>
                                             <!-- <a href="https://github.com/SakshatRao/CubeHighwayHackathonWebApp" class='project_extra_button' target="_blank" rel="noopener noreferrer">
@@ -464,13 +452,13 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/rurban_traveller_cover.png" alt="Signalytics Project by Sakshat Rao - Traffic Signal Scheduling Simulation Tool" width="300" height="200" loading="lazy">
+                                        <img src="https://img.youtube.com/vi/WVtYt4UV8-g/hqdefault.jpg" alt="Signalytics Project by Sakshat Rao - Traffic Signal Scheduling Simulation Tool" width="480" height="360" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Signalytics</h5>
                                         <p class='project_descr'>Simulation & analytics tool for testing dynamic traffic signal scheduling algorithms</p>
                                         <div class='project_buttons'>
-                                            <a href="https://youtu.be/WVtYt4UV8-g" class='project_button' target="_blank" rel="noopener noreferrer">
+                                            <a href="https://youtu.be/WVtYt4UV8-g" class='project_button' target="_blank" rel="noopener noreferrer" aria-label="Watch Signalytics demo">
                                                 <p>▶</p>
                                             </a>
                                             <!-- <a href="https://github.com/SakshatRao/Signalytics" class='project_extra_button' target="_blank" rel="noopener noreferrer">
@@ -483,13 +471,13 @@
                             <div class="project_box snake-border">
                                 <div class='project_box_info'>
                                     <div class="project_image">
-                                        <img src="./Images/Projects/kaggle_data_analysis.webp" alt="Kaggle Data Analysis by Sakshat Rao - Data Visualizations and Insights" width="300" height="200" loading="lazy">
+                                        <img src="./Images/Contacts/kaggle_logo.webp" alt="Kaggle Data Analysis by Sakshat Rao - Data Visualizations and Insights" width="300" height="300" loading="lazy">
                                     </div>
                                     <div class="project_text">
                                         <h5 class='project_title'>Data Analysis on Kaggle</h5>
                                         <p class='project_descr'>Interesting analyses & insightful visualizations on various Kaggle datasets</p>
                                         <div class='project_buttons'>
-                                            <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.kaggle.com/sakshatrao/code" class='project_button' target="_blank" rel="noopener noreferrer" aria-label="Open Kaggle notebooks">
                                                 <p>🔗</p>
                                             </a>
                                         </div>
@@ -500,16 +488,265 @@
                     </div>
                 </div>
                 <div class='know_more'>
-                    <a class='tooltip' href="./projects.html">
-                        <p>i</p>
-                        <span class='tooltiptext'>View All Projects</span>
+                    <a href="./projects.html" aria-label="Know more about projects">
+                        <p>Know more</p>
                     </a>
                 </div>
             </div>
-            <a href="#contact_content" class="scroll_button"><span></span></a>
-            <a href="#contact" class="scroll_button_2"><span></span></a>
+            <a href="#contact" class="scroll_button" aria-label="Scroll to contact links"><span></span></a>
+            <a href="#contact" class="scroll_button_2" aria-label="Scroll to contact links"><span></span></a>
         </div>
 
+                    </div>
+
+                    <div class="profile_panel personal_profile" data-profile-panel="personal">
+                        <!-- Personal: About -->
+                        <div class='page' id="about">
+                            <div class="page_content" id='about_content'>
+                                <div class="page_title">
+                                    <h2 class='rainbow'>Story So Far</h2>
+                                </div>
+                                <div class="page_info">
+                                    <div class="personal_story_grid">
+                                        <div class="personal_story_card">
+                                            <div class="story_photo_stack" aria-label="Udupi photo pair">
+                                                <img class="story_photo_main" src="./Images/About/udupi_pic1.webp" alt="Udupi memory photo" width="300" height="200" loading="lazy">
+                                                <img class="story_photo_memory" src="./Images/About/udupi_pic2.webp" alt="" width="300" height="200" loading="lazy">
+                                            </div>
+                                            <div class="story_place_text">
+                                                <h5>Born in<br><span itemprop="birthPlace" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Udupi</span></span></h5>
+                                                <div class="story_tags" aria-label="Udupi tags">
+                                                    <span>Tuluva Pride</span>
+                                                    <span>Churmuri &amp; Goli Soda</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal_story_card">
+                                            <div class="story_photo_stack" aria-label="Mumbai photo pair">
+                                                <img class="story_photo_main" src="./Images/About/keyboard.webp" alt="Sakshat Rao playing keyboard" width="300" height="200" loading="lazy">
+                                                <img class="story_photo_memory" src="./Images/About/siblings.webp" alt="" width="300" height="200" loading="lazy">
+                                            </div>
+                                            <div class="story_place_text">
+                                                <h5>Brought up in<br><span itemprop="homeLocation" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Mumbai</span></span></h5>
+                                                <div class="story_tags" aria-label="Mumbai tags">
+                                                    <span>2000s Bollywood</span>
+                                                    <span>Gully Cricket</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal_story_card">
+                                            <div class="story_photo_stack" aria-label="Bengaluru photo pair">
+                                                <img class="story_photo_main" src="./Images/About/bengaluru_pic1.webp" alt="Bengaluru memory photo" width="300" height="200" loading="lazy">
+                                                <img class="story_photo_memory" src="./Images/About/bengaluru_pic2.webp" alt="" width="300" height="200" loading="lazy">
+                                            </div>
+                                            <div class="story_place_text">
+                                                <h5>Living in<br><span itemprop="homeLocation" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Bengaluru</span></span></h5>
+                                                <div class="story_tags" aria-label="Bengaluru tags">
+                                                    <span>+Moustache &amp; Glasses</span>
+                                                    <span>Work Hard, Play Harder</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#music" class="scroll_button" aria-label="Scroll to music chapter"><span></span></a>
+                            <a href="#music" class="scroll_button_2" aria-label="Scroll to music chapter"><span></span></a>
+                        </div>
+
+                        <!-- Personal: Music -->
+                        <div class='page personal_feature_page' id="music">
+                            <div class="page_content" id='music_content'>
+                                <div class="page_title">
+                                    <h2 class='rainbow'>Music</h2>
+                                </div>
+                                <div class="page_info">
+                                    <div class="music_showcase">
+                                        <div class="music_intro">
+                                            <div>
+                                                <h5>I have played keyboard for 15+ years and love exploring other instruments too.</h5>
+                                                <p>I have been part of my school, college &amp; office music clubs where I've enjoyed jamming, performing in live shows and producing music videos.</p>
+                                            </div>
+                                        </div>
+                                        <div class="music_video_carousel" data-music-carousel aria-label="Music video showcase">
+                                            <button class="carousel_button carousel_button_prev" type="button" aria-label="Previous music video"></button>
+                                            <div class="music_carousel_stage">
+                                                <div class="video_embed_card is-prev" role="button" tabindex="0" data-carousel-card data-video-id="iqj7ehWn5jQ" data-video-title="Bengali Medley">
+                                                    <img src="https://img.youtube.com/vi/iqj7ehWn5jQ/hqdefault.jpg" alt="Bengali Medley YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Bengali Medley</h5>
+                                                        <p>Saxophonist, Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-active" role="button" tabindex="0" data-carousel-card data-video-id="UXDeEaBjCfQ" data-video-title="Kaagaz Ki Kashti">
+                                                    <img src="https://img.youtube.com/vi/UXDeEaBjCfQ/hqdefault.jpg" alt="Kaagaz Ki Kashti YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Kaagaz Ki Kashti</h5>
+                                                        <p>Lyricist, Composer, Keyboardist, Backing Vocalist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-next" role="button" tabindex="0" data-carousel-card data-video-id="bINN1k6DGBI" data-video-title="Tum Hi Ho">
+                                                    <img src="https://img.youtube.com/vi/bINN1k6DGBI/hqdefault.jpg" alt="Tum Hi Ho YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Tum Hi Ho</h5>
+                                                        <p>Keyboardist, Video director</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="0EjSgTodJzU" data-video-title="Kesariya">
+                                                    <img src="https://img.youtube.com/vi/0EjSgTodJzU/hqdefault.jpg" alt="Kesariya YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Kesariya</h5>
+                                                        <p>Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="kfADGfRIPMo" data-video-title="Chaleya">
+                                                    <img src="https://img.youtube.com/vi/kfADGfRIPMo/hqdefault.jpg" alt="Chaleya YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Chaleya</h5>
+                                                        <p>Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="r2AppQRdUsY" data-video-title="Patriotic Medley">
+                                                    <img src="https://img.youtube.com/vi/r2AppQRdUsY/hqdefault.jpg" alt="Patriotic Medley YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Patriotic Medley</h5>
+                                                        <p>Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="dy88O4A33XI" data-video-title="Pasoori">
+                                                    <img src="https://img.youtube.com/vi/dy88O4A33XI/hqdefault.jpg" alt="Pasoori YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Pasoori</h5>
+                                                        <p>Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="yZshsszY048" data-video-title="English Love Medley">
+                                                    <img src="https://img.youtube.com/vi/yZshsszY048/hqdefault.jpg" alt="English Love Medley YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>English Love Medley</h5>
+                                                        <p>Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="video_embed_card is-hidden" role="button" tabindex="-1" data-carousel-card data-video-id="80v9mxHdlqM" data-video-title="Soch">
+                                                    <img src="https://img.youtube.com/vi/80v9mxHdlqM/hqdefault.jpg" alt="Soch YouTube thumbnail" loading="lazy">
+                                                    <div class="video_card_overlay">
+                                                        <h5>Soch</h5>
+                                                        <p>Guitarist, Keyboardist</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel_button carousel_button_next" type="button" aria-label="Next music video"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#sports" class="scroll_button" aria-label="Scroll to sports chapter"><span></span></a>
+                            <a href="#sports" class="scroll_button_2" aria-label="Scroll to sports chapter"><span></span></a>
+                        </div>
+
+                        <!-- Personal: Sports -->
+                        <div class='page personal_feature_page' id="sports">
+                            <div class="page_content" id='sports_content'>
+                                <div class="page_title">
+                                    <h2 class='rainbow'>Sports</h2>
+                                </div>
+                                <div class="page_info">
+                                    <div class="sports_showcase">
+                                        <div class="personal_feature_text sports_copy">
+                                            <h5>I love to regularly play football, cricket and other sports with friends. I have participated in corporate tournaments as part of <span>NVIDIA's football team</span> as a goalkeeper.</h5>
+                                            <h5>I have also recently started taking part in long-distance running events, earning multiple <span>21km half-marathon medals</span> in the last year. I am training to attempt a full 42km marathon this year.</h5>
+                                        </div>
+                                        <div class="sports_photo_grid sports_wall" aria-label="Sports photo wall">
+                                            <figure class="sports_frame sports_frame_awards">
+                                                <img class="sports_photo sports_photo_main" src="./Images/About/awards.webp" alt="Football trophies and marathon medals" width="1200" height="1600" loading="lazy">
+                                            </figure>
+                                            <figure class="sports_frame sports_frame_football sports_gallery_frame" role="button" tabindex="0" data-sports-gallery data-gallery-images="./Images/About/football1.webp,./Images/About/football2.webp,./Images/About/football3.webp" data-gallery-alt="Sakshat Rao playing goalkeeper">
+                                                <img class="sports_photo" src="./Images/About/football1.webp" alt="Sakshat Rao playing goalkeeper" width="1200" height="1600" loading="lazy">
+                                                <div class="sports_gallery_dots" aria-hidden="true">
+                                                    <span class="is-active"></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </figure>
+                                            <figure class="sports_frame sports_frame_run sports_gallery_frame" role="button" tabindex="0" data-sports-gallery data-gallery-images="./Images/About/half_marathon1.webp,./Images/About/half_marathon2.webp,./Images/About/half_marathon3.webp,./Images/About/half_marathon4.webp" data-gallery-alt="Sakshat Rao after completing a half marathon">
+                                                <img class="sports_photo" src="./Images/About/half_marathon1.webp" alt="Sakshat Rao after completing a half marathon" width="1200" height="1599" loading="lazy">
+                                                <div class="sports_gallery_dots" aria-hidden="true">
+                                                    <span class="is-active"></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#writing" class="scroll_button" aria-label="Scroll to writing chapter"><span></span></a>
+                            <a href="#writing" class="scroll_button_2" aria-label="Scroll to writing chapter"><span></span></a>
+                        </div>
+
+                        <!-- Personal: Writing -->
+                        <div class='page personal_feature_page' id="writing">
+                            <div class="page_content" id='writing_content'>
+                                <div class="page_title">
+                                    <h2 class='rainbow'>Writing</h2>
+                                </div>
+                                <div class="page_info">
+                                    <div class="writing_showcase poetry_showcase">
+                                        <div class="writing_photo_frame">
+                                            <img src="./Images/About/kaagaz_ki_kashti_award.webp" alt="Music challenge award for Kaagaz Ki Kashti" width="300" height="200" loading="lazy">
+                                            <span class="writing_badge">IFP Silver Rock Track Award 2025<br>(My Original Lyrics)</span>
+                                        </div>
+                                        <div class="personal_feature_text writing_copy">
+                                            <h5>
+                                                <span class="writing_desktop_heading">Poetry is an occasional interest of mine. I write whenever the intent to write feels natural.</span>
+                                                <span class="writing_mobile_heading">Poetry &amp; songwriting are occasional interests of mine. I write whenever the intent to write feels natural.</span>
+                                            </h5>
+                                            <p class="writing_desktop_subtext">My interest in poetry paired with my music knowledge helps me excel at songwriting too. I like experimenting with different rhyming schemes and creative metaphors. I would also like to explore short story writing and script writing in the future.</p>
+                                        </div>
+                                        <div class="poetry_carousel" data-poetry-carousel data-poem-files="./Writing/thunder_against_the_clouds.txt,./Writing/afterlife.txt,./Writing/swiss_bliss.txt,./Writing/an_oasis_in_the_city.txt,./Writing/little_brown_pot.txt,./Writing/master_of_the_mind.txt,./Writing/starless_night.txt,./Writing/the_dreamy_sky_above_the_stony_reality.txt,./Writing/those_moments.txt,./Writing/two_strangers.txt,./Writing/water_shortage.txt,./Writing/the_seedling.txt,./Writing/walking_home.txt" aria-label="Poetry showcase">
+                                            <button class="poetry_arrow poetry_arrow_prev" type="button" aria-label="Previous poem"></button>
+                                            <div class="poetry_stage" data-poetry-stage aria-live="polite">
+                                                <article class="poem_card is-active" data-poem-card tabindex="0" role="button" aria-label="Loading writings">
+                                                    <h5>Loading writings</h5>
+                                                    <p class="poem_card_excerpt">Fetching poems from text files.</p>
+                                                </article>
+                                            </div>
+                                            <button class="poetry_arrow poetry_arrow_next" type="button" aria-label="Next poem"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#dance" class="scroll_button" aria-label="Scroll to dance chapter"><span></span></a>
+                            <a href="#dance" class="scroll_button_2" aria-label="Scroll to dance chapter"><span></span></a>
+                        </div>
+
+                        <!-- Personal: Dance -->
+                        <div class='page personal_feature_page' id="dance">
+                            <div class="page_content" id='dance_content'>
+                                <div class="page_title">
+                                    <h2 class='rainbow'>Dance</h2>
+                                </div>
+                                <div class="page_info">
+                                    <div class="dance_showcase">
+                                        <div class="dance_photo_stack">
+                                            <img class="dance_photo is-dance-left" role="button" tabindex="0" data-dance-photo src="./Images/About/dance2.webp" alt="Sakshat Rao performing Bollywood dance at an office event" width="300" height="200" loading="lazy">
+                                            <img class="dance_photo is-dance-active" role="button" tabindex="0" data-dance-photo src="./Images/About/dance.webp" alt="Sakshat Rao dancing" width="300" height="200" loading="lazy">
+                                            <img class="dance_photo is-dance-right" role="button" tabindex="0" data-dance-photo src="./Images/About/dance3.webp" alt="Sakshat Rao in a group dance performance" width="300" height="200" loading="lazy">
+                                        </div>
+                                        <div class="personal_feature_text">
+                                            <h5>Dance is a recent addition to the list of things I enjoy learning and doing.</h5>
+                                            <p>I am part of the dance club at my office and have performed bollywood &amp; freestyle dances at company events. But there are many things yet to learn, which I look forward to.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#contact" class="scroll_button" aria-label="Scroll to contact links"><span></span></a>
+                            <a href="#contact" class="scroll_button_2" aria-label="Scroll to contact links"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Contact -->
         <div class='page' id="contact">
             <div class="page_content" id='contact_content'>
@@ -527,27 +764,27 @@
                         <div class="contact_mail">
                             <div class="contact_card">
                                 <i class="fa-solid fa-envelope"></i>
-                                <h5 itemprop="email">sakshatrao99@gmail.com</h5>
+                                <h5><a href="mailto:sakshatrao99@gmail.com" itemprop="email">sakshatrao99@gmail.com</a></h5>
                             </div>
                         </div>
                         <h3 class='contact_boxes_heading'>Find Me On</h3>
                         <div class="contact_boxes">
-                            <a href="https://www.linkedin.com/in/sakshatrao/" class='contact_box_link' target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/sakshatrao/" class='contact_box_link' target="_blank" rel="noopener noreferrer" aria-label="Open Sakshat Rao on LinkedIn">
                                 <div class="contact_box">
                                     <img src="./Images/Contacts/linkedin_logo.webp" alt="Sakshat Rao LinkedIn Profile" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
-                            <a href="https://www.youtube.com/@sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/@sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer" aria-label="Open Sakshat Rao on YouTube">
                                 <div class="contact_box">
                                     <img src="./Images/Contacts/youtube_logo.webp" alt="Sakshat Rao YouTube Channel" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
-                            <a href="https://github.com/SakshatRao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/SakshatRao" class='contact_box_link' target="_blank" rel="noopener noreferrer" aria-label="Open Sakshat Rao on GitHub">
                                 <div class="contact_box">
                                     <img src="./Images/Contacts/github_logo.webp" alt="Sakshat Rao GitHub Profile" width="50" height="50" loading="lazy">
                                 </div>
                             </a>
-                            <a href="https://www.kaggle.com/sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.kaggle.com/sakshatrao" class='contact_box_link' target="_blank" rel="noopener noreferrer" aria-label="Open Sakshat Rao on Kaggle">
                                 <div class="contact_box">
                                     <img src="./Images/Contacts/kaggle_logo.webp" alt="Sakshat Rao Kaggle Profile" width="50" height="50" loading="lazy">
                                 </div>
@@ -557,18 +794,23 @@
                 </div>
             </div>
         </div>
+        </section>
 
         <!-- Optional Footer -->
         <div id='footer'></div>
     </main>
 
+    <div class="poem_modal" data-poem-modal hidden>
+        <button class="poem_modal_backdrop" type="button" data-poem-close aria-label="Close poem"></button>
+        <article class="poem_modal_panel" role="dialog" aria-modal="true" aria-labelledby="poem_modal_title">
+            <button class="poem_modal_close" type="button" data-poem-close aria-label="Close poem"></button>
+            <h3 id="poem_modal_title" data-poem-modal-title></h3>
+            <div class="poem_modal_body" data-poem-modal-body></div>
+        </article>
+    </div>
+
     <!-- Importing Scripts -->
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-    </script>
-    <script type='text/javascript' src="./scroll.js"></script>
+    <script type='text/javascript' src="./scroll.js?v=20260601-writing-final"></script>
 
 </body>
 </html>

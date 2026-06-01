@@ -3,20 +3,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    gap: 14px;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .skill_box {
+    box-sizing: border-box;
     flex: 1;
-    background-color: var(--cardMediumColor);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.012)),
+        var(--cardMediumColor);
     color: var(--textColor);
-    /* border: 2px solid var(--complColor); */
-    border: none;
-    display: inline-block;
-    margin: 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 14px;
+    margin: 0;
+    padding: 14px 12px;
+    text-align: left;
     width: 100%;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
+
+.skill_box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.028), transparent 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 58%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.skill_box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    right: 18px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.14), transparent);
+    pointer-events: none;
 }
 
 .skill_box p:nth-child(n+2) {
@@ -25,27 +64,75 @@
 
 .skill_box:hover {
     transform: translateY(-1px);
+    background:
+        linear-gradient(180deg, rgba(6, 182, 212, 0.052), rgba(99, 102, 241, 0.024)),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.034), transparent 28%),
+        var(--cardMediumColor);
+    border-color: rgba(34, 211, 238, 0.17);
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.18),
+        0 0 18px rgba(6, 182, 212, 0.055),
+        inset 0 1px 0 rgba(255, 255, 255, 0.075);
 }
 
 .skill_box:hover .skill_name {
-    color: rgba(6, 182, 212, 0.8);
-    text-shadow: 0 0 4px rgba(6, 182, 212, 0.15);
+    color: var(--accent-light);
+    text-shadow: 0 0 6px rgba(6, 182, 212, 0.13);
 }
 
 .skill_box p, .skill_other_box p {
     margin: 0;
-    padding: 5px;
+    padding: 4px;
     position: relative;
     z-index: 1;
 }
 
+.skill_tags {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: max-content;
+    margin-top: 0;
+    padding-left: 13px;
+    border-left: 1px solid rgba(255, 255, 255, 0.085);
+    position: relative;
+    z-index: 1;
+}
+
+.skill_tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24px;
+    padding: 3px 10px;
+    color: var(--text-primary);
+    font-size: calc(0.78rem * var(--fontFactor_Mobile));
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    border: 1px solid rgba(34, 211, 238, 0.22);
+    border-radius: 999px;
+    background:
+        linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(6, 182, 212, 0.07)),
+        rgba(255, 255, 255, 0.026);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
 .skill_name, .skill_other_name {
     font-weight: bold;
-    color: var(--complColor);
+    color: #a5b4fc;
+    text-shadow: 0 0 6px rgba(129, 140, 248, 0.16);
     font-size: calc(1rem * var(--fontFactor_Mobile) * 1.25) !important;
 }
 
-.skill_detail1, .skill_detail2, .skills_others, .skills_heading2 {
+.skills_others, .skills_heading2 {
     display: none;
 }
 
@@ -56,8 +143,25 @@
     }
 
     .skill_box {
-        margin: 5px 0;
-        border: none;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 12px 10px;
+    }
+
+    .skill_tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 7px;
+        padding-top: 8px;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.075);
+        border-left: 0;
+    }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_SmallMobile));
     }
 
     .skill_name {
@@ -78,8 +182,12 @@
     
     .skill_box {
         width: 30%;
-        margin: 0 5px;
-        padding: 3px;
+        margin: 0;
+        padding: 12px 9px;
+    }
+
+    .skill_tags {
+        padding-left: 9px;
     }
 
     .skills_others, .skills_heading2 {
@@ -129,6 +237,10 @@
     .skill_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_RotTablet));
     }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_RotTablet));
+    }
 }
 
 /* Tablet */
@@ -139,8 +251,12 @@
 
     .skill_box {
         width: 30%;
-        margin: 0 5px;
-        padding: 5px;
+        margin: 0;
+        padding: 13px 10px;
+    }
+
+    .skill_tags {
+        padding-left: 10px;
     }
 
     .skills_others, .skills_heading2 {
@@ -189,6 +305,10 @@
     .skill_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_Tablet));
     }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_Tablet));
+    }
 }
 
 /* Small Desktop */
@@ -218,16 +338,27 @@
 
     .skill_box {
         width: 30%;
-        margin: 0 10px;
-        padding: 5px;
-        border: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 4px;
+        margin: 0;
+        padding: 14px 12px;
+        text-align: center;
     }
 
-    .skill_info1, .skill_info2 {
-        display: none;
+    .skill_tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 6px;
+        padding-top: 9px;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.075);
+        border-left: 0;
     }
 
-    .skill_detail1, .skill_detail2, .skills_others, .skills_heading2 {
+    .skills_others, .skills_heading2 {
         display: block;
     }
 
@@ -261,6 +392,10 @@
 
     .skill_box p:nth-child(n+2), .skill_other_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_SmallDesktop) * 1.1);
+    }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_SmallDesktop) * 1.05);
     }
 
     .skill_other_box {
@@ -313,9 +448,24 @@
 
     .skill_box {
         width: 30%;
-        margin: 0 10px;
-        padding: 5px;
-        border: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 4px;
+        margin: 0;
+        padding: 14px 12px;
+        text-align: center;
+    }
+
+    .skill_tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 6px;
+        padding-top: 9px;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.075);
+        border-left: 0;
     }
 
     .skill_name, .skill_other_name {
@@ -323,11 +473,7 @@
         font-weight: bold;
     }
 
-    .skill_info1, .skill_info2 {
-        display: none;
-    }
-
-    .skill_detail1, .skill_detail2, .skills_others, .skills_heading2 {
+    .skills_others, .skills_heading2 {
         display: block;
     }
 
@@ -356,6 +502,10 @@
 
     .skill_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_Desktop));
+    }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_Desktop));
     }
 
     .skill_other_box {
@@ -389,13 +539,20 @@
 
     .skill_box {
         width: 30%;
-        margin: 0 10px;
-        padding: 5px;
-        border: none;
+        margin: 0;
+        padding: 12px 9px;
+}
+
+    .skill_tags {
+        padding-left: 9px;
     }
 
     .skill_box p:nth-child(n+2) {
         font-size: calc(1rem * var(--fontFactor_RotMobile) * 1);
+    }
+
+    .skill_tags span {
+        font-size: calc(0.78rem * var(--fontFactor_RotMobile));
     }
 
     .skills_heading2, .skills_others h3 {
@@ -405,4 +562,72 @@
     .skill_name {
         font-size: calc(1rem * var(--fontFactor_RotMobile) * 1.25) !important;
     }
+}
+
+.skill_other_box {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.012)),
+        var(--cardMediumColor);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    border-radius: 6px;
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
+
+.skill_other_box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.028), transparent 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 58%);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.skill_other_box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    right: 18px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.14), transparent);
+    pointer-events: none;
+}
+
+.skill_other_box:hover {
+    background:
+        linear-gradient(180deg, rgba(6, 182, 212, 0.052), rgba(99, 102, 241, 0.024)),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.034), transparent 28%),
+        var(--cardMediumColor);
+    border-color: rgba(34, 211, 238, 0.17);
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.18),
+        0 0 18px rgba(6, 182, 212, 0.055),
+        inset 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+
+.skill_other_box:hover .skill_other_name {
+    color: var(--accent-light);
+    text-shadow: 0 0 6px rgba(6, 182, 212, 0.13);
+}
+
+/* Experiment: code-style language tags. Remove this block to revert. */
+.skill_tags span {
+    font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    letter-spacing: 0;
+    color: var(--text-primary);
+    border-color: rgba(34, 211, 238, 0.20);
+    background:
+        linear-gradient(180deg, rgba(15, 23, 42, 0.62), rgba(15, 23, 42, 0.42)),
+        rgba(255, 255, 255, 0.018);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.075),
+        inset 0 -1px 0 rgba(6, 182, 212, 0.10),
+        0 4px 12px rgba(0, 0, 0, 0.12);
 }

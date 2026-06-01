@@ -1,39 +1,61 @@
-.scroll_button {
+.scroll_button,
+.scroll_button_2 {
     width: 36px;
     height: 36px;
     border: none;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.14);
     border-radius: 50%;
-    position: relative;
-    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: clamp(18px, 4svh, 42px);
+    z-index: 30;
+    transform: translateX(-50%);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
     animation: scrollPulse 2s infinite;
 }
 
-.scroll_button::before {
+.scroll_button_2 {
+    display: none;
+}
+
+.scroll_button::before,
+.scroll_button_2::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 12px;
     height: 12px;
-    border-bottom: 2px solid #6366f1;
-    border-right: 2px solid #6366f1;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
     transform: translate(-50%, -60%) rotate(45deg);
     transition: all 0.3s ease;
 }
 
-.scroll_button:hover {
-    background: rgba(34, 211, 238, 0.2);
-    transform: scale(1.1) translateY(-2px);
-    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.2);
+.scroll_button:hover,
+.scroll_button_2:hover {
+    background: rgba(var(--profile-accent-rgb, 34, 211, 238), 0.20);
+    box-shadow: 0 8px 25px rgba(var(--profile-accent-rgb, 34, 211, 238), 0.20);
 }
 
-.scroll_button:hover::before {
-    border-color: #06b6d4;
+.scroll_button:hover::before,
+.scroll_button_2:hover::before {
+    border-color: var(--accent);
     transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
 }
 
 @keyframes scrollPulse {
+    0%, 100% {
+        opacity: 0.7;
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.05);
+    }
+}
+
+@keyframes profileScrollPulse {
     0%, 100% {
         opacity: 0.7;
         transform: scale(1);
@@ -44,131 +66,75 @@
     }
 }
 
-.scroll_button_2 {
-    display: none;
+.profiles .scroll_button,
+.profiles .scroll_button_2 {
+    grid-row: 2;
+    justify-self: center;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 8px auto clamp(14px, 3svh, 28px);
+    transform: none;
+    animation: profileScrollPulse 2s infinite;
+}
+
+.profiles .scroll_button {
+    display: block;
 }
 
 /* Small Mobile */
 @media screen and (max-width: 374px) and (min-height: 500px) {
-    .scroll_button {
-        width: 28px;
-        height: 28px;
+    .scroll_button,
+    .scroll_button_2 {
+        width: 30px;
+        height: 30px;
+        bottom: clamp(14px, 3svh, 28px);
     }
     
-    .scroll_button::before {
+    .scroll_button::before,
+    .scroll_button_2::before {
         width: 8px;
         height: 8px;
     }
 }
 
-/* Rotated Tablet */
-@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 500px) and (max-height: 899px) {
+@media screen and (max-width: 599px) {
+    .profiles .scroll_button,
+    .profiles .scroll_button_2 {
+        margin-bottom: clamp(12px, 3svh, 24px);
+    }
 }
 
-/* Tablet */
-@media screen and (min-width: 600px) and (max-width: 1199px) and (min-height: 900px) {
-}
-
-/* Small Desktop */
-@media screen and (min-width:1200px) and (max-width:1899px) {
-    /* Disabling scroll to top of page */
+/* Small Desktop and up */
+@media screen and (min-width:1200px) {
     .scroll_button {
         display: none;
     }
 
-    /* Enabling scroll to top of content */
     .scroll_button_2 {
-        display: inline;
-        width: 36px;
-        height: 36px;
-        border: none;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 50%;
-        position: relative;
-        transition: all 0.3s ease;
-        animation: scrollPulse 2s infinite;
-    }
-    
-    .scroll_button_2::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        border-bottom: 2px solid #6366f1;
-        border-right: 2px solid #6366f1;
-        transform: translate(-50%, -60%) rotate(45deg);
-        transition: all 0.3s ease;
-    }
-    
-    .scroll_button_2:hover {
-        background: rgba(34, 211, 238, 0.2);
-        transform: scale(1.1);
-    }
-    
-    .scroll_button_2:hover::before {
-        border-color: #06b6d4;
-        transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
+        display: inline-block;
     }
 
-}
-
-/* Desktop */
-@media screen and (min-width:1900px) {
-    /* Disabling scroll to top of page */
-    .scroll_button {
+    .profiles .scroll_button {
         display: none;
     }
 
-    /* Enabling scroll to top of content */
-    .scroll_button_2 {
-        display: inline;
-        width: 36px;
-        height: 36px;
-        border: none;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 50%;
-        position: relative;
-        transition: all 0.3s ease;
-        animation: scrollPulse 2s infinite;
+    .profiles .scroll_button_2 {
+        display: block;
     }
-    
-    .scroll_button_2::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        border-bottom: 2px solid #6366f1;
-        border-right: 2px solid #6366f1;
-        transform: translate(-50%, -60%) rotate(45deg);
-        transition: all 0.3s ease;
-    }
-    
-    .scroll_button_2:hover {
-        background: rgba(34, 211, 238, 0.2);
-        transform: scale(1.1);
-    }
-    
-    .scroll_button_2:hover::before {
-        border-color: #06b6d4;
-        transform: translate(-50%, -60%) rotate(45deg) scale(1.2);
-    }
-
 }
 
 /* Rotated mobile */
 @media screen and (max-height: 499px) and (max-width: 1199px) {
-    .scroll_button {
-        width: 24px;
-        height: 24px;
+    .scroll_button,
+    .scroll_button_2 {
+        width: 26px;
+        height: 26px;
+        bottom: 12px;
     }
     
-    .scroll_button::before {
+    .scroll_button::before,
+    .scroll_button_2::before {
         width: 6px;
         height: 6px;
     }
