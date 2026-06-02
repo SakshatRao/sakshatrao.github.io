@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Kalam:wght@400;700&display=swap');
 
 :root {
     /* Modern Color Palette */
@@ -1807,6 +1807,12 @@ main p {
 .writing_photo_frame {
     grid-area: photo;
     position: relative;
+    justify-self: center;
+    width: 100%;
+    max-width: 220px;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
     transform: rotate(-2deg);
     padding: 7px;
     border-radius: 18px;
@@ -1819,8 +1825,9 @@ main p {
 }
 
 .writing_photo_frame img {
+    display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -1882,32 +1889,252 @@ main p {
     position: relative;
     display: grid;
     grid-template-columns: minmax(0, 0.48fr) minmax(0, 0.82fr) minmax(0, 1.08fr) minmax(0, 0.82fr) minmax(0, 0.48fr);
-    grid-template-rows: minmax(128px, 1fr);
+    grid-template-rows: minmax(148px, 1fr);
     align-items: center;
     gap: 9px;
-    min-height: 128px;
+    min-height: 148px;
     overflow: visible;
 }
 
+.poetry_stage.is-book-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 182px;
+    perspective: 900px;
+}
+
+.poetry_stage.is-book-stage .poem_card {
+    display: none !important;
+}
+
+.poetry_book {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 12px minmax(0, 1fr);
+    width: min(100%, 560px);
+    min-height: 174px;
+    padding: 10px;
+    border: 1px solid rgba(var(--profile-accent-rgb), 0.34);
+    border-radius: 18px;
+    color: var(--text-primary);
+    background:
+        linear-gradient(135deg, rgba(var(--profile-primary-rgb), 0.34), rgba(var(--profile-accent-rgb), 0.18)),
+        rgba(16, 14, 34, 0.92);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 20px 46px rgba(0, 0, 0, 0.32),
+        0 0 28px rgba(var(--profile-accent-rgb), 0.12);
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.poetry_book::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    width: 24px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.24), rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.24));
+    pointer-events: none;
+    z-index: 2;
+}
+
+.poetry_book_page {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    min-height: 154px;
+    padding: 18px 22px;
+    overflow: hidden;
+    font-family: 'Kalam', 'Comic Sans MS', cursive;
+    color: rgba(255, 255, 255, 0.88);
+    background:
+        repeating-linear-gradient(180deg, transparent 0, transparent 24px, rgba(255, 255, 255, 0.11) 25px, transparent 26px),
+        linear-gradient(145deg, rgba(68, 45, 83, 0.96), rgba(34, 30, 55, 0.98));
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.16),
+        inset 0 0 24px rgba(0, 0, 0, 0.16);
+}
+
+.poetry_book_page_left {
+    border-radius: 12px 5px 5px 12px;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(90deg, transparent 0%, transparent 58%, rgba(9, 8, 22, 0.24) 100%),
+        repeating-linear-gradient(180deg, transparent 0, transparent 24px, rgba(255, 255, 255, 0.11) 25px, transparent 26px),
+        linear-gradient(145deg, rgba(77, 51, 92, 0.98), rgba(38, 32, 59, 0.98));
+    box-shadow:
+        inset -14px 0 22px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.poetry_book_page_right {
+    appearance: none;
+    border: 0;
+    border-radius: 5px 12px 12px 5px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    background:
+        linear-gradient(90deg, rgba(9, 8, 22, 0.24) 0%, transparent 42%, transparent 100%),
+        repeating-linear-gradient(180deg, transparent 0, transparent 24px, rgba(255, 255, 255, 0.11) 25px, transparent 26px),
+        linear-gradient(145deg, rgba(77, 51, 92, 0.98), rgba(38, 32, 59, 0.98));
+    box-shadow:
+        inset 14px 0 22px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.poetry_book_page_right:focus-visible {
+    outline: 2px solid rgba(var(--profile-accent-rgb), 0.88);
+    outline-offset: -5px;
+}
+
+.poetry_book_spine {
+    position: relative;
+    z-index: 3;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.38), rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.34));
+    box-shadow:
+        inset 2px 0 4px rgba(0, 0, 0, 0.32),
+        inset -2px 0 4px rgba(255, 255, 255, 0.08);
+}
+
+.poetry_book_collection {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 100%;
+}
+
+.poetry_book_collection_title {
+    color: #f9a8d4;
+    font-size: 1.54rem;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.poetry_book_title {
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 1.28rem;
+    line-height: 1.04;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.poetry_book_excerpt {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    max-width: 100%;
+    margin-top: 10px;
+    color: rgba(248, 250, 252, 0.78);
+    font-size: 0.82rem;
+    line-height: 1.32;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.poetry_book_sheet {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    width: calc(50% - 6px);
+    border-radius: 5px 12px 12px 5px;
+    background:
+        linear-gradient(90deg, rgba(9, 8, 22, 0.24) 0%, transparent 42%, transparent 100%),
+        repeating-linear-gradient(180deg, transparent 0, transparent 24px, rgba(255, 255, 255, 0.10) 25px, transparent 26px),
+        linear-gradient(145deg, rgba(76, 50, 92, 0.98), rgba(36, 31, 57, 0.98));
+    box-shadow: -12px 0 28px rgba(0, 0, 0, 0.20);
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(0deg);
+    transform-origin: left center;
+    z-index: 4;
+}
+
+.poetry_book.is-flipping-next .poetry_book_sheet {
+    animation: poetryPageFlipNext 0.36s ease-in-out;
+}
+
+.poetry_book.is-flipping-prev .poetry_book_sheet {
+    left: 10px;
+    right: auto;
+    border-radius: 12px 5px 5px 12px;
+    transform-origin: right center;
+    animation: poetryPageFlipPrev 0.36s ease-in-out;
+}
+
+@keyframes poetryPageFlipNext {
+    0% {
+        opacity: 0;
+        transform: rotateY(0deg);
+    }
+    18% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotateY(-168deg);
+    }
+}
+
+@keyframes poetryPageFlipPrev {
+    0% {
+        opacity: 0;
+        transform: rotateY(0deg);
+    }
+    18% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotateY(168deg);
+    }
+}
+
 .poem_card {
+    --poem-ink-rgb: 248, 250, 252;
     display: none;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 0;
-    height: 112px;
+    height: 126px;
     min-height: 0;
-    padding: 10px 11px;
+    padding: 14px 13px 12px;
     overflow: hidden;
     text-align: center;
     color: rgba(248, 250, 252, 0.76);
-    border: 1px solid rgba(var(--profile-accent-rgb), 0.18);
-    border-radius: 13px;
-    background: rgba(255, 255, 255, 0.035);
-    box-shadow: none;
+    border: 1px solid rgba(var(--profile-accent-rgb), 0.22);
+    border-radius: 16px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.018)),
+        repeating-linear-gradient(180deg, rgba(var(--poem-ink-rgb), 0.035) 0, rgba(var(--poem-ink-rgb), 0.035) 1px, transparent 1px, transparent 18px),
+        radial-gradient(circle at 18% 8%, rgba(var(--profile-accent-rgb), 0.16), transparent 42%),
+        rgba(31, 22, 48, 0.70);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 12px 26px rgba(0, 0, 0, 0.18);
     cursor: default;
-    transition: transform 0.28s ease, opacity 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+    transition: transform 0.28s ease, opacity 0.28s ease, border-color 0.28s ease, background 0.28s ease, box-shadow 0.28s ease;
 }
 
 .poem_card::before {
@@ -1915,7 +2142,15 @@ main p {
 }
 
 .poem_card::after {
-    display: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 16px;
+    bottom: 16px;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(var(--profile-accent-rgb), 0.84), rgba(96, 165, 250, 0.56));
+    opacity: 0.42;
 }
 
 .poem_card.is-active,
@@ -1929,75 +2164,105 @@ main p {
 .poem_card.is-far-prev {
     grid-column: 1;
     grid-row: 1;
-    opacity: 0.58;
-    transform: scale(0.88);
+    opacity: 0.42;
+    transform: scale(0.84);
 }
 
 .poem_card.is-prev {
     grid-column: 2;
     grid-row: 1;
-    opacity: 0.88;
-    transform: translateY(5px) scale(0.94);
+    opacity: 0.78;
+    transform: translateY(9px) rotate(-1.4deg) scale(0.92);
 }
 
 .poem_card.is-active {
     grid-column: 3;
     grid-row: 1;
     justify-content: center;
-    gap: 8px;
+    gap: 7px;
     color: var(--text-primary);
-    border-color: rgba(var(--profile-accent-rgb), 0.42);
-    background: rgba(var(--profile-primary-rgb), 0.14);
+    border-color: rgba(var(--profile-accent-rgb), 0.58);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.03)),
+        repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0, rgba(255, 255, 255, 0.045) 1px, transparent 1px, transparent 19px),
+        radial-gradient(circle at 22% 12%, rgba(var(--profile-accent-rgb), 0.24), transparent 40%),
+        linear-gradient(145deg, rgba(var(--profile-primary-rgb), 0.28), rgba(16, 185, 129, 0.08)),
+        rgba(46, 30, 62, 0.90);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.18),
+        0 18px 38px rgba(0, 0, 0, 0.26),
+        0 0 26px rgba(var(--profile-accent-rgb), 0.14);
     cursor: pointer;
 }
 
 .poem_card.is-next {
     grid-column: 4;
     grid-row: 1;
-    opacity: 0.88;
-    transform: translateY(5px) scale(0.94);
+    opacity: 0.78;
+    transform: translateY(9px) rotate(1.4deg) scale(0.92);
 }
 
 .poem_card.is-far-next {
     grid-column: 5;
     grid-row: 1;
-    opacity: 0.58;
-    transform: scale(0.88);
+    opacity: 0.42;
+    transform: scale(0.84);
 }
 
 .poem_card.is-active:hover,
 .poem_card.is-active:focus-visible {
     opacity: 1;
-    border-color: rgba(var(--profile-accent-rgb), 0.42);
-    background: rgba(var(--profile-primary-rgb), 0.1);
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(var(--profile-accent-rgb), 0.72);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.20),
+        0 22px 46px rgba(0, 0, 0, 0.30),
+        0 0 32px rgba(var(--profile-accent-rgb), 0.20);
     outline: none;
 }
 
 .poem_card_kicker {
-    display: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 3px 8px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.48rem;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border: 1px solid rgba(var(--profile-accent-rgb), 0.24);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .poem_card h5 {
     margin: 0;
     color: inherit;
-    font-size: 0.74rem;
-    line-height: 1.12;
-    font-weight: 750;
+    font-size: 0.76rem;
+    line-height: 1.13;
+    font-weight: 800;
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    position: relative;
+    z-index: 1;
 }
 
 .poem_card_excerpt {
     display: none;
     margin: 0;
-    color: rgba(248, 250, 252, 0.76);
+    color: rgba(248, 250, 252, 0.80);
     font-size: 0.55rem;
-    line-height: 1.25;
+    line-height: 1.28;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    position: relative;
+    z-index: 1;
 }
 
 .poem_card.is-active .poem_card_excerpt {
@@ -2089,8 +2354,8 @@ body.poem_modal_open {
     border: 1px solid rgba(249, 168, 212, 0.30);
     border-radius: 20px;
     background:
-        radial-gradient(circle at 14% 8%, rgba(249, 168, 212, 0.16), transparent 34%),
-        linear-gradient(145deg, rgba(31, 30, 58, 0.98), rgba(20, 20, 43, 0.98));
+        repeating-linear-gradient(180deg, transparent 0, transparent 30px, rgba(255, 255, 255, 0.09) 31px, transparent 32px),
+        linear-gradient(145deg, rgba(58, 40, 72, 0.98), rgba(26, 25, 48, 0.98));
     box-shadow: 0 28px 90px rgba(0, 0, 0, 0.52);
 }
 
@@ -2104,6 +2369,7 @@ body.poem_modal_open {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.055);
     cursor: pointer;
+    z-index: 2;
 }
 
 .poem_modal_close::before,
@@ -2126,15 +2392,20 @@ body.poem_modal_open {
 }
 
 .poem_modal_panel h3 {
+    position: relative;
+    z-index: 1;
     margin: 0;
     padding: clamp(22px, 4vw, 34px) calc(clamp(22px, 4vw, 34px) + 38px) 14px clamp(22px, 4vw, 34px);
     color: var(--text-primary);
+    font-family: 'Kalam', 'Comic Sans MS', cursive;
     font-size: clamp(1.45rem, 4vw, 2.4rem);
     line-height: 1.05;
     overflow-wrap: anywhere;
 }
 
 .poem_modal_body {
+    position: relative;
+    z-index: 1;
     min-height: 0;
     overflow-y: auto;
     padding: 0 clamp(22px, 4vw, 34px) clamp(22px, 4vw, 34px);
@@ -2159,8 +2430,10 @@ body.poem_modal_open {
 
 .poem_modal_body p {
     margin: 0 0 1rem;
-    font-size: 0.92rem;
-    line-height: 1.75;
+    color: rgba(248, 250, 252, 0.86);
+    font-family: 'Kalam', 'Comic Sans MS', cursive;
+    font-size: 1.02rem;
+    line-height: 1.78;
     overflow-wrap: anywhere;
 }
 
@@ -2685,7 +2958,8 @@ body.poem_modal_open {
     }
 
     .writing_photo_frame {
-        width: min(76%, 230px);
+        width: min(76vw, 230px);
+        max-width: 230px;
         margin: 0 auto;
         padding: 5px;
         transform: rotate(-1.5deg);
@@ -2731,37 +3005,90 @@ body.poem_modal_open {
 
     .poetry_stage {
         grid-template-columns: minmax(0, 0.26fr) minmax(0, 0.62fr) minmax(0, 1.08fr) minmax(0, 0.62fr) minmax(0, 0.26fr);
-        grid-template-rows: minmax(118px, 1fr);
+        grid-template-rows: minmax(132px, 1fr);
         gap: 5px;
-        min-height: 118px;
+        min-height: 132px;
         overflow: visible;
     }
 
+    .poetry_stage.is-book-stage {
+        min-height: 172px;
+    }
+
+    .poetry_book {
+        grid-template-columns: minmax(0, 1fr) 8px minmax(0, 1fr);
+        min-height: 164px;
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+    .poetry_book::before {
+        top: 8px;
+        bottom: 8px;
+        left: 50%;
+        width: 18px;
+    }
+
+    .poetry_book_page {
+        min-height: 146px;
+        padding: 14px 10px 13px;
+    }
+
+    .poetry_book_collection_title {
+        font-size: 1.02rem;
+        line-height: 1.04;
+    }
+
+    .poetry_book_title {
+        font-size: 0.9rem;
+        line-height: 1.06;
+    }
+
+    .poetry_book_excerpt {
+        margin-top: 7px;
+        font-size: 0.58rem;
+        line-height: 1.28;
+        -webkit-line-clamp: 3;
+    }
+
+    .poetry_book_sheet {
+        top: 8px;
+        bottom: 8px;
+        right: 8px;
+        width: calc(50% - 4px);
+    }
+
+    .poetry_book.is-flipping-prev .poetry_book_sheet {
+        left: 8px;
+        right: auto;
+    }
+
     .poem_card {
-        height: 104px;
+        height: 122px;
         min-height: 0;
-        padding: 8px 8px;
-        border-radius: 13px;
+        padding: 11px 8px 10px;
+        border-radius: 15px;
     }
 
     .poem_card.is-far-prev,
     .poem_card.is-far-next {
-        opacity: 0.34;
-        transform: scale(0.82);
+        opacity: 0.24;
+        transform: scale(0.78);
     }
 
     .poem_card.is-prev,
     .poem_card.is-next {
-        opacity: 0.76;
-        transform: translateY(8px) scale(0.88);
+        opacity: 0.58;
+        transform: translateY(10px) scale(0.86);
     }
 
     .poem_card_kicker {
-        display: none;
+        padding: 3px 7px;
+        font-size: 0.42rem;
     }
 
     .poem_card h5 {
-        font-size: 0.58rem;
+        font-size: 0.62rem;
         line-height: 1.12;
     }
 

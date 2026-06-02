@@ -94,7 +94,7 @@
             }
 
             const rect = section.getBoundingClientRect();
-            if (rect.top <= marker && rect.bottom > chromeHeight + 8) {
+            if (rect.top <= marker) {
                 currentId = id;
             }
         });
@@ -118,11 +118,16 @@
             return;
         }
 
+        const currentProfile = activeProfile();
         const profileTop = profiles.offsetTop;
         const localScroll = Math.max(0, window.scrollY - profileTop);
         profiles.dataset.activeProfile = profile;
         updateProfileButtons(profile);
-        setActiveChapter(options.scrollToHash || firstProfileHash(profile));
+
+        const isSameProfileSmoothScroll = currentProfile === profile && Boolean(options.scrollToHash) && options.scrollBehavior !== 'auto';
+        if (!isSameProfileSmoothScroll) {
+            setActiveChapter(options.scrollToHash || firstProfileHash(profile));
+        }
 
         requestAnimationFrame(() => {
             updateProfileHeight();
@@ -171,7 +176,6 @@
             const chrome = profiles.querySelector('.profile_chrome');
             const chromeHeight = chrome ? chrome.getBoundingClientRect().height : 0;
             const targetTop = window.scrollY + target.getBoundingClientRect().top - chromeHeight;
-            setActiveChapter(hash);
             window.scrollTo({ top: Math.max(0, targetTop), behavior });
             return;
         }
@@ -378,7 +382,7 @@
         const title = card.dataset.videoTitle || 'YouTube video';
         const start = card.dataset.videoStart;
         const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0${start ? `&start=${encodeURIComponent(start)}` : ''}`;
+        iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0${start ? `&start=${encodeURIComponent(start)}` : ''}`;
         iframe.title = title;
         iframe.loading = 'lazy';
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
@@ -797,6 +801,7 @@
 
     function createPoemCard(poem) {
         const card = document.createElement('article');
+        const kicker = document.createElement('span');
         const title = document.createElement('h5');
         const description = document.createElement('p');
         const fullText = document.createElement('div');
@@ -807,6 +812,8 @@
         card.setAttribute('role', 'button');
         card.setAttribute('aria-label', `Open ${poem.title}`);
 
+        kicker.className = 'poem_card_kicker';
+        kicker.textContent = 'Poem';
         title.textContent = poem.title;
         description.className = 'poem_card_excerpt';
         description.textContent = poem.description;
@@ -814,16 +821,16 @@
         fullText.hidden = true;
         fullText.innerHTML = poemContentToHTML(poem.content);
 
-        card.append(title, description, fullText);
+        card.append(kicker, title, description, fullText);
         return card;
     }
 
-    function openPoem(card) {
+    function openPoem(card, focusReturn = card) {
         if (!poemModal || !poemModalTitle || !poemModalBody) {
             return;
         }
 
-        lastFocusedPoemCard = card;
+        lastFocusedPoemCard = focusReturn;
         poemModalTitle.textContent = card.querySelector('h5')?.textContent?.trim() || 'Poem';
         poemModalBody.innerHTML = card.querySelector('.poem_full_text')?.innerHTML || '';
         poemModal.hidden = false;
@@ -858,7 +865,61 @@
     function setupPoetryCarousel(carousel, cards) {
         const prevButton = carousel.querySelector('.poetry_arrow_prev');
         const nextButton = carousel.querySelector('.poetry_arrow_next');
+        const stage = carousel.querySelector('[data-poetry-stage]') || carousel.querySelector('.poetry_stage');
         let activeIndex = Math.max(0, cards.findIndex((card) => card.classList.contains('is-active')));
+        let flipTimer = null;
+        let flipResetTimer = null;
+        let isFlipping = false;
+
+        function poemTitle(card) {
+            return card?.querySelector('h5')?.textContent?.trim() || 'Poem';
+        }
+
+        function poemDescription(card) {
+            return card?.querySelector('.poem_card_excerpt')?.textContent?.trim() || '';
+        }
+
+        function createPoetryBook() {
+            const book = document.createElement('div');
+            const spine = document.createElement('span');
+            const leftPage = document.createElement('span');
+            const rightPage = document.createElement('button');
+            const collection = document.createElement('span');
+            const collectionTitle = document.createElement('span');
+            const title = document.createElement('span');
+            const description = document.createElement('span');
+            const flippingSheet = document.createElement('span');
+
+            book.className = 'poetry_book';
+            rightPage.type = 'button';
+            spine.className = 'poetry_book_spine';
+            leftPage.className = 'poetry_book_page poetry_book_page_left';
+            rightPage.className = 'poetry_book_page poetry_book_page_right';
+            collection.className = 'poetry_book_collection';
+            collectionTitle.className = 'poetry_book_collection_title';
+            title.className = 'poetry_book_title';
+            description.className = 'poetry_book_excerpt';
+            flippingSheet.className = 'poetry_book_sheet';
+            flippingSheet.setAttribute('aria-hidden', 'true');
+
+            collectionTitle.textContent = 'Poetry Collection';
+
+            collection.append(collectionTitle);
+            leftPage.append(collection);
+            rightPage.append(title, description);
+            book.append(leftPage, spine, rightPage, flippingSheet);
+
+            rightPage.addEventListener('click', () => {
+                openPoem(cards[activeIndex], rightPage);
+            });
+
+            return book;
+        }
+
+        const book = createPoetryBook();
+        const bookPoemPage = book.querySelector('.poetry_book_page_right');
+        const bookTitle = book.querySelector('.poetry_book_title');
+        const bookExcerpt = book.querySelector('.poetry_book_excerpt');
 
         function updatePoetryCarousel() {
             const count = cards.length;
@@ -869,60 +930,55 @@
                 return;
             }
 
-            const states = new Map([
-                [((activeIndex - 2 + count) % count), 'is-far-prev'],
-                [((activeIndex - 1 + count) % count), 'is-prev'],
-                [activeIndex, 'is-active'],
-                [((activeIndex + 1) % count), 'is-next'],
-                [((activeIndex + 2) % count), 'is-far-next']
-            ]);
-
             cards.forEach((card, index) => {
-                const state = states.get(index) || 'is-hidden';
-                const isActive = state === 'is-active';
-                const isHidden = state === 'is-hidden';
+                const isActive = index === activeIndex;
+                const state = isActive ? 'is-active' : 'is-hidden';
                 card.classList.remove('is-far-prev', 'is-prev', 'is-active', 'is-next', 'is-far-next', 'is-hidden');
                 card.classList.add(state);
-                card.setAttribute('aria-hidden', String(isHidden));
-                card.setAttribute('tabindex', isActive ? '0' : '-1');
-
-                if (isActive) {
-                    card.setAttribute('role', 'button');
-                    card.setAttribute('aria-label', `Open ${card.querySelector('h5')?.textContent?.trim() || 'poem'}`);
-                } else {
-                    card.removeAttribute('role');
-                    card.removeAttribute('aria-label');
-                }
+                card.setAttribute('aria-hidden', 'true');
+                card.setAttribute('tabindex', '-1');
+                card.removeAttribute('role');
+                card.removeAttribute('aria-label');
             });
+
+            const activeCard = cards[activeIndex];
+            const title = poemTitle(activeCard);
+            const description = poemDescription(activeCard);
+            bookTitle.textContent = title;
+            bookExcerpt.textContent = description;
+            bookPoemPage?.setAttribute('aria-label', `Open ${title}`);
         }
 
         function rotate(direction) {
-            activeIndex = (activeIndex + direction + cards.length) % cards.length;
-            updatePoetryCarousel();
+            if (!cards.length || isFlipping) {
+                return;
+            }
+
+            isFlipping = true;
+            book.classList.remove('is-flipping-prev', 'is-flipping-next');
+            book.classList.add(direction > 0 ? 'is-flipping-next' : 'is-flipping-prev');
+
+            window.clearTimeout(flipTimer);
+            window.clearTimeout(flipResetTimer);
+
+            flipTimer = window.setTimeout(() => {
+                activeIndex = (activeIndex + direction + cards.length) % cards.length;
+                updatePoetryCarousel();
+            }, 150);
+
+            flipResetTimer = window.setTimeout(() => {
+                book.classList.remove('is-flipping-prev', 'is-flipping-next');
+                isFlipping = false;
+            }, 360);
         }
 
         prevButton?.addEventListener('click', () => rotate(-1));
         nextButton?.addEventListener('click', () => rotate(1));
 
-        cards.forEach((card, index) => {
-            function activateOrOpen() {
-                if (index !== activeIndex) {
-                    return;
-                }
-
-                openPoem(card);
-            }
-
-            card.addEventListener('click', activateOrOpen);
-            card.addEventListener('keydown', (event) => {
-                if (event.key !== 'Enter' && event.key !== ' ') {
-                    return;
-                }
-
-                event.preventDefault();
-                activateOrOpen();
-            });
-        });
+        if (stage) {
+            stage.classList.add('is-book-stage');
+            stage.replaceChildren(book, ...cards);
+        }
 
         updatePoetryCarousel();
     }
