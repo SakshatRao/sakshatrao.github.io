@@ -17,11 +17,12 @@
 }
 
 /* ============================================
-   Residence & Mail Cards
+   Residence, Mail & Resume Cards
    ============================================ */
 
 .contact_residence,
-.contact_mail {
+.contact_mail,
+.contact_resume {
     margin: 0;
     width: 100%;
     max-width: 340px;
@@ -30,7 +31,9 @@
 .contact_card {
     display: flex;
     align-items: center;
-    gap: 14px;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.05) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
@@ -50,6 +53,24 @@
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-primary);
+}
+
+.contact_resume_link {
+    color: var(--text-primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact_resume_link:hover,
+.contact_resume_link:focus-visible {
+    border-color: rgba(99, 102, 241, 0.25);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.contact_resume_link:hover h5,
+.contact_resume_link:focus-visible h5 {
+    color: var(--accent-light);
 }
 
 
@@ -212,7 +233,7 @@
 
     .contact_boxes {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
 
     .contact_box {
@@ -226,7 +247,7 @@
 
     .contact_card {
         padding: 12px 14px;
-        gap: 10px;
+        gap: 8px;
     }
 
     .contact_card i {
@@ -268,7 +289,8 @@
     }
 
     .contact_residence,
-    .contact_mail {
+    .contact_mail,
+    .contact_resume {
         max-width: 300px;
     }
 
@@ -319,7 +341,8 @@
     }
 
     .contact_residence,
-    .contact_mail {
+    .contact_mail,
+    .contact_resume {
         max-width: 360px;
     }
 
@@ -349,7 +372,8 @@
     }
 
     .contact_residence,
-    .contact_mail {
+    .contact_mail,
+    .contact_resume {
         max-width: 380px;
     }
 
@@ -398,7 +422,8 @@
     }
 
     .contact_residence,
-    .contact_mail {
+    .contact_mail,
+    .contact_resume {
         flex: 0 0 auto;
         max-width: 180px;
     }
@@ -406,7 +431,7 @@
     .contact_card {
         padding: 8px 12px;
         border-radius: 8px;
-        gap: 10px;
+        gap: 8px;
     }
 
     .contact_card i {

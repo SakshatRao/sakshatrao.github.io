@@ -3012,12 +3012,12 @@ body.poem_modal_open {
     }
 
     .poetry_stage.is-book-stage {
-        min-height: 172px;
+        min-height: 148px;
     }
 
     .poetry_book {
         grid-template-columns: minmax(0, 1fr) 8px minmax(0, 1fr);
-        min-height: 164px;
+        min-height: 136px;
         padding: 8px;
         border-radius: 16px;
     }
@@ -3030,8 +3030,8 @@ body.poem_modal_open {
     }
 
     .poetry_book_page {
-        min-height: 146px;
-        padding: 14px 10px 13px;
+        min-height: 120px;
+        padding: 12px 10px 11px;
     }
 
     .poetry_book_collection_title {
