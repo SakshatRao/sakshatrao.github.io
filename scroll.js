@@ -795,7 +795,8 @@
         return {
             title: parts[0].trim(),
             description: parts[1].trim(),
-            content: parts.slice(2).join('\n---\n').trim()
+            content: parts.slice(2).join('\n---\n').trim(),
+            type: source.endsWith('/no_regrets.txt') ? 'Short Story' : 'Poem'
         };
     }
 
@@ -813,7 +814,7 @@
         card.setAttribute('aria-label', `Open ${poem.title}`);
 
         kicker.className = 'poem_card_kicker';
-        kicker.textContent = 'Poem';
+        kicker.textContent = poem.type;
         title.textContent = poem.title;
         description.className = 'poem_card_excerpt';
         description.textContent = poem.description;
@@ -831,7 +832,7 @@
         }
 
         lastFocusedPoemCard = focusReturn;
-        poemModalTitle.textContent = card.querySelector('h5')?.textContent?.trim() || 'Poem';
+        poemModalTitle.textContent = card.querySelector('h5')?.textContent?.trim() || 'Writing';
         poemModalBody.innerHTML = card.querySelector('.poem_full_text')?.innerHTML || '';
         poemModal.hidden = false;
         poemModalBody.scrollTo({ top: 0, left: 0, behavior: 'auto' });
@@ -902,7 +903,7 @@
             flippingSheet.className = 'poetry_book_sheet';
             flippingSheet.setAttribute('aria-hidden', 'true');
 
-            collectionTitle.textContent = 'Poetry Collection';
+            collectionTitle.textContent = 'Writing Collection';
 
             collection.append(collectionTitle);
             leftPage.append(collection);
