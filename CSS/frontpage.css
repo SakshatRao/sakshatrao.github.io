@@ -145,14 +145,6 @@
     letter-spacing: 0.5px;
 }
 
-.frontpage_subtitle {
-    max-width: 620px;
-    margin: 24px auto 0;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.65;
-}
-
 .frontpage_actions {
     display: flex;
     justify-content: center;
@@ -237,12 +229,6 @@
     #frontpage_text h2 {
         font-size: 1.25rem;
         margin-bottom: 3px;
-    }
-
-    .frontpage_subtitle {
-        margin-top: 18px;
-        font-size: 0.92rem;
-        line-height: 1.5;
     }
 
     .frontpage_actions {
